@@ -3,9 +3,11 @@
 # prefix: gts
 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix gts: <http://resource.geosciml.org/ontology/timescale/gts#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rank: <http://resource.geosciml.org/ontology/timescale/rank/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -21,15 +23,15 @@
 <http://resource.geosciml.org/ontology/timescale/gts>
   a voaf:Vocabulary ;
   a owl:Ontology ;
-  dc:contributor "Stephen M RICHARD" ;
-  dc:creator "Simon J D COX" ;
-  dc:description "This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137." ;
-  dc:rights "Copyright © 2012-2017 CSIRO" ;
-  dc:source "Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137." ;
-  dc:title "Geologic Timescale model" ;
-  dct:created "2011-01-01"^^xsd:date ;
-  dct:license <http://creativecommons.org/licenses/by/3.0/> ;
-  dct:modified "2017-04-28"^^xsd:date ;
+  dcterms:contributor "<a href='https://orcid.org/0000-0001-6041-5302'>Stephen M RICHARD</a>"^^rdf:HTML ;
+  dcterms:created "2011-01-01"^^xsd:date ;
+  dcterms:creator "<a href='https://orcid.org/0000-0002-3884-3420'>Simon Jonathan David COX, CSIRO Australia</a>"^^rdf:HTML ;
+  dcterms:description "This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137." ;
+  dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:modified "2017-04-28"^^xsd:date ;
+  dcterms:rights "Copyright © 2012-2017 CSIRO" ;
+  dcterms:source "Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137." ;
+  dcterms:title "Geologic Timescale model" ;
   vann:preferredNamespacePrefix "gts" ;
   vann:preferredNamespaceUri gts: ;
   rdfs:seeAlso <doi:10.1130/GES00022.1> ;
@@ -37,24 +39,31 @@
   rdfs:seeAlso <http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1> ;
   rdfs:seeAlso <http://www.geosciml.org> ;
   owl:imports <http://resource.geosciml.org/ontology/timescale/thors> ;
-  owl:priorVersion <https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/gts.rdf> ;
-  owl:versionIRI <https://github.com/GeoscienceAustralia/geosciml.org/commit/24d302bf3f0fa315c1dddc2c734b84f52299cd02#diff-73b17e22072459ab7e06e9ab664a9d48> ;
   skos:changeNote "2017-04-28 - removed imports ISO ontologies" ;
+  prov:wasGeneratedBy [
+      a doap:Project ;
+      a prov:Activity ;
+      doap:repository <https://github.com/CGI-IUGS/timescale-ont> ;
+    ] ;
 .
 gts:Age
   a owl:Class ;
+  rdfs:label "Age" ;
   rdfs:subClassOf gts:GeochronologicEra ;
 .
 gts:Eon
   a owl:Class ;
+  rdfs:label "Eon" ;
   rdfs:subClassOf gts:GeochronologicEra ;
 .
 gts:Epoch
   a owl:Class ;
+  rdfs:label "Epoch" ;
   rdfs:subClassOf gts:GeochronologicEra ;
 .
 gts:Era
   a owl:Class ;
+  rdfs:label "Era" ;
   rdfs:subClassOf gts:GeochronologicEra ;
 .
 gts:EraCode
@@ -141,6 +150,7 @@ gts:NumericEraBoundary
 .
 gts:Period
   a owl:Class ;
+  rdfs:label "Period"@en ;
   rdfs:subClassOf gts:GeochronologicEra ;
 .
 gts:StratigraphicEvent
@@ -186,10 +196,12 @@ gts:StratigraphicSection
 .
 gts:Sub-Period
   a owl:Class ;
+  rdfs:label "Sub-Period" ;
   rdfs:subClassOf gts:GeochronologicEra ;
 .
 gts:Super-Eon
   a owl:Class ;
+  rdfs:label "Super-Eon" ;
   rdfs:subClassOf gts:GeochronologicEra ;
 .
 gts:boundary

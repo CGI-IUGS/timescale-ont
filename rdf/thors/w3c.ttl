@@ -1,12 +1,10 @@
 # baseURI: http://resource.geosciml.org/ontology/timescale/thors/w3c
 # imports: http://resource.geosciml.org/ontology/timescale/thors
 # imports: http://www.w3.org/2006/time
-# imports: http://www.w3.org/ns/prov-o#
 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix thors: <http://resource.geosciml.org/ontology/timescale/thors#> .
@@ -21,69 +19,57 @@ thors:EraBoundary
 .
 thors:ReferenceSystem
   rdfs:subClassOf time:TRS ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onClass time:ProperInterval ;
-      owl:onProperty time:hasMember ;
-    ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-      owl:onClass time:Instant ;
-      owl:onProperty time:hasMember ;
-    ] ;
 .
 thors:begin
-  rdf:type owl:DeprecatedProperty ;
-  owl:deprecated "true"^^xsd:boolean ;
+  a owl:DeprecatedProperty ;
+  owl:deprecated true ;
   owl:equivalentProperty time:hasBeginning ;
 .
 thors:component
-  rdf:type owl:DeprecatedProperty ;
+  a owl:DeprecatedProperty ;
   rdfs:subPropertyOf time:hasMember ;
-  owl:deprecated "true"^^xsd:boolean ;
+  owl:deprecated true ;
 .
 thors:end
-  rdf:type owl:DeprecatedProperty ;
-  owl:deprecated "true"^^xsd:boolean ;
+  a owl:DeprecatedProperty ;
+  owl:deprecated true ;
   owl:equivalentProperty time:hasEnd ;
 .
 thors:member
-  rdf:type owl:DeprecatedProperty ;
-  owl:deprecated "true"^^xsd:boolean ;
+  a owl:DeprecatedProperty ;
+  owl:deprecated true ;
   owl:equivalentProperty [
-      rdf:type owl:ObjectProperty ;
+      a owl:ObjectProperty ;
       owl:inverseOf time:intervalIn ;
     ] ;
 .
 thors:nextEra
-  rdf:type owl:DeprecatedProperty ;
-  owl:deprecated "true"^^xsd:boolean ;
+  a owl:DeprecatedProperty ;
+  owl:deprecated true ;
 .
 thors:positionalUncertainty
   rdfs:domain time:TimePosition ;
   rdfs:range time:Duration ;
 .
 thors:previousEra
-  rdf:type owl:DeprecatedProperty ;
-  owl:deprecated "true"^^xsd:boolean ;
+  a owl:DeprecatedProperty ;
+  owl:deprecated true ;
 .
 thors:referencePoint
-  rdf:type owl:DeprecatedProperty ;
+  a owl:DeprecatedProperty ;
   rdfs:subPropertyOf time:hasMember ;
-  owl:deprecated "true"^^xsd:boolean ;
+  owl:deprecated true ;
 .
 thors:system
-  rdf:type owl:DeprecatedProperty ;
+  a owl:DeprecatedProperty ;
   rdfs:subPropertyOf [
-      rdf:type owl:ObjectProperty ;
+      a owl:ObjectProperty ;
       owl:inverseOf time:hasMember ;
     ] ;
-  owl:deprecated "true"^^xsd:boolean ;
+  owl:deprecated true ;
 .
 <http://resource.geosciml.org/ontology/timescale/thors/w3c>
-  rdf:type owl:Ontology ;
+  a owl:Ontology ;
   dc:creator "Simon J D Cox" ;
   dc:rights "Copyright © 2017 CSIRO" ;
   dct:created "2017-03-31" ;
@@ -95,7 +81,6 @@ thors:system
 Where appropriate, THORS classes and properties are related to OWL-Time classes and properties using rdfs:subClassOf, rdfs:subPropertyOf and owl:equivalentProperty axioms. Where the latter apply, the THORS properties are also annotated \"deprecated\" with the expectation that the OWL-Time properties will be used instead. """ ;
   owl:imports <http://resource.geosciml.org/ontology/timescale/thors> ;
   owl:imports <http://www.w3.org/2006/time> ;
-  owl:imports <http://www.w3.org/ns/prov-o#> ;
 .
 time:intervalContains
   rdfs:subPropertyOf thors:member ;

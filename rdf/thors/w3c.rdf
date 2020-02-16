@@ -23,51 +23,25 @@ Where appropriate, THORS classes and properties are related to OWL-Time classes 
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
     >2017-07-23</dct:modified>
   </owl:Ontology>
-  <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalMeets">
-    <owl:propertyChainAxiom rdf:parseType="Collection">
-      <owl:DeprecatedProperty rdf:about="http://resource.geosciml.org/ontology/timescale/thors#end">
-        <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/time#hasEnd"/>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >true</owl:deprecated>
-      </owl:DeprecatedProperty>
-      <owl:DeprecatedProperty rdf:about="http://resource.geosciml.org/ontology/timescale/thors#nextEra">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >true</owl:deprecated>
-      </owl:DeprecatedProperty>
-    </owl:propertyChainAxiom>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty">
-    <rdfs:range rdf:resource="http://www.w3.org/2006/time#Duration"/>
-    <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TimePosition"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#Era">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#EraBoundary">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Instant"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalContains">
+  <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalStartedBy">
     <rdfs:subPropertyOf>
       <owl:DeprecatedProperty rdf:about="http://resource.geosciml.org/ontology/timescale/thors#member">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</owl:deprecated>
         <owl:equivalentProperty>
           <owl:ObjectProperty>
             <owl:inverseOf rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
           </owl:ObjectProperty>
         </owl:equivalentProperty>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-        >true</owl:deprecated>
       </owl:DeprecatedProperty>
     </rdfs:subPropertyOf>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalStartedBy">
-    <rdfs:subPropertyOf rdf:resource="http://resource.geosciml.org/ontology/timescale/thors#member"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalMetBy">
     <owl:propertyChainAxiom rdf:parseType="Collection">
       <owl:DeprecatedProperty rdf:about="http://resource.geosciml.org/ontology/timescale/thors#begin">
-        <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/time#hasBeginning"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >true</owl:deprecated>
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/time#hasBeginning"/>
       </owl:DeprecatedProperty>
       <owl:DeprecatedProperty rdf:about="http://resource.geosciml.org/ontology/timescale/thors#previousEra">
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -76,45 +50,55 @@ Where appropriate, THORS classes and properties are related to OWL-Time classes 
     </owl:propertyChainAxiom>
   </rdf:Description>
   <owl:DeprecatedProperty rdf:about="http://resource.geosciml.org/ontology/timescale/thors#component">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasMember"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</owl:deprecated>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasMember"/>
   </owl:DeprecatedProperty>
+  <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalMeets">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:DeprecatedProperty rdf:about="http://resource.geosciml.org/ontology/timescale/thors#end">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</owl:deprecated>
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/time#hasEnd"/>
+      </owl:DeprecatedProperty>
+      <owl:DeprecatedProperty rdf:about="http://resource.geosciml.org/ontology/timescale/thors#nextEra">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</owl:deprecated>
+      </owl:DeprecatedProperty>
+    </owl:propertyChainAxiom>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty">
+    <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TimePosition"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2006/time#Duration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#Era">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+  </rdf:Description>
   <owl:DeprecatedProperty rdf:about="http://resource.geosciml.org/ontology/timescale/thors#referencePoint">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasMember"/>
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</owl:deprecated>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasMember"/>
   </owl:DeprecatedProperty>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#EraBoundary">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Instant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalContains">
+    <rdfs:subPropertyOf rdf:resource="http://resource.geosciml.org/ontology/timescale/thors#member"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasMember"/>
-        <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >2</owl:minQualifiedCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasMember"/>
-        <owl:onClass rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:minQualifiedCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TRS"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalFinishedBy">
     <rdfs:subPropertyOf rdf:resource="http://resource.geosciml.org/ontology/timescale/thors#member"/>
   </rdf:Description>
   <owl:DeprecatedProperty rdf:about="http://resource.geosciml.org/ontology/timescale/thors#system">
-    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >true</owl:deprecated>
     <rdfs:subPropertyOf>
       <owl:ObjectProperty>
         <owl:inverseOf rdf:resource="http://www.w3.org/2006/time#hasMember"/>
       </owl:ObjectProperty>
     </rdfs:subPropertyOf>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</owl:deprecated>
   </owl:DeprecatedProperty>
 </rdf:RDF>
 

@@ -17,15 +17,15 @@
 
 gts:Age
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Epoch ;
       owl:onProperty time:intervalIn ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Epoch
               gts:Sub-Period
@@ -39,9 +39,9 @@ gts:Age
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Epoch
               gts:Sub-Period
@@ -55,9 +55,9 @@ gts:Age
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Epoch
               gts:Sub-Period
@@ -71,9 +71,9 @@ gts:Age
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Sub-Period
               gts:Period
@@ -88,27 +88,27 @@ gts:Age
 .
 gts:Eon
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Era ;
       owl:onProperty time:intervalFinishedBy ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Era ;
       owl:onProperty time:intervalStartedBy ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Super-Eon ;
       owl:onProperty time:intervalIn ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Epoch
               gts:Sub-Period
@@ -121,9 +121,9 @@ gts:Eon
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Epoch
               gts:Sub-Period
@@ -136,9 +136,9 @@ gts:Eon
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Sub-Period
               gts:Period
@@ -152,9 +152,9 @@ gts:Eon
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Sub-Period
               gts:Period
@@ -167,28 +167,28 @@ gts:Eon
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onProperty time:intervalContains ;
       owl:someValuesFrom gts:Era ;
     ] ;
 .
 gts:Epoch
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Age ;
       owl:onProperty time:intervalFinishedBy ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Age ;
       owl:onProperty time:intervalStartedBy ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Eon
               gts:Epoch
@@ -201,9 +201,9 @@ gts:Epoch
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Eon
               gts:Era
@@ -217,9 +217,9 @@ gts:Epoch
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Eon
               gts:Era
@@ -233,9 +233,9 @@ gts:Epoch
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Eon
               gts:Era
@@ -249,9 +249,9 @@ gts:Epoch
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Period
               gts:Sub-Period
@@ -261,34 +261,34 @@ gts:Epoch
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onProperty time:intervalContains ;
       owl:someValuesFrom gts:Age ;
     ] ;
 .
 gts:Era
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Eon ;
       owl:onProperty time:intervalIn ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Period ;
       owl:onProperty time:intervalFinishedBy ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Period ;
       owl:onProperty time:intervalStartedBy ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -302,9 +302,9 @@ gts:Era
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -318,9 +318,9 @@ gts:Era
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -334,9 +334,9 @@ gts:Era
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Era
@@ -350,22 +350,22 @@ gts:Era
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onProperty time:intervalContains ;
       owl:someValuesFrom gts:Period ;
     ] ;
 .
 gts:Period
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Era ;
       owl:onProperty time:intervalIn ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Epoch
               gts:Sub-Period
@@ -375,9 +375,9 @@ gts:Period
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Epoch
               gts:Sub-Period
@@ -387,9 +387,9 @@ gts:Period
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -402,9 +402,9 @@ gts:Period
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -417,9 +417,9 @@ gts:Period
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -432,9 +432,9 @@ gts:Period
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -448,10 +448,10 @@ gts:Period
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onProperty time:intervalContains ;
       owl:someValuesFrom [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Epoch
               gts:Sub-Period
@@ -470,27 +470,27 @@ gts:StratigraphicSection
 .
 gts:Sub-Period
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Epoch ;
       owl:onProperty time:intervalFinishedBy ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Epoch ;
       owl:onProperty time:intervalStartedBy ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Period ;
       owl:onProperty time:intervalIn ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -504,9 +504,9 @@ gts:Sub-Period
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -520,9 +520,9 @@ gts:Sub-Period
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -536,9 +536,9 @@ gts:Sub-Period
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -552,28 +552,28 @@ gts:Sub-Period
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onProperty time:intervalContains ;
       owl:someValuesFrom gts:Epoch ;
     ] ;
 .
 gts:Super-Eon
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Eon ;
       owl:onProperty time:intervalFinishedBy ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass gts:Eon ;
       owl:onProperty time:intervalStartedBy ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Eon
@@ -588,9 +588,9 @@ gts:Super-Eon
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Era
@@ -604,9 +604,9 @@ gts:Super-Eon
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Era
@@ -620,9 +620,9 @@ gts:Super-Eon
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onClass [
-          rdf:type owl:Class ;
+          a owl:Class ;
           owl:unionOf (
               gts:Super-Eon
               gts:Era
@@ -636,7 +636,7 @@ gts:Super-Eon
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
-      rdf:type owl:Restriction ;
+      a owl:Restriction ;
       owl:onProperty time:intervalContains ;
       owl:someValuesFrom gts:Eon ;
     ] ;
@@ -646,7 +646,7 @@ gts:positionalUncertainty
   rdfs:range time:TemporalDuration ;
 .
 <http://resource.geosciml.org/ontology/timescale/gts/w3c>
-  rdf:type owl:Ontology ;
+  a owl:Ontology ;
   dc:creator "Simon J D Cox" ;
   dc:rights "Copyright © 2017 CSIRO" ;
   dcterms:created "2017-03-31" ;

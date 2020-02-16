@@ -1,48 +1,56 @@
 <?xml version="1.0"?>
 <rdf:RDF
-    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:gts="http://resource.geosciml.org/ontology/timescale/gts#"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
     xmlns:voaf="http://purl.org/vocommons/voaf#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:vann="http://purl.org/vocab/vann/"
     xmlns:thors="http://resource.geosciml.org/ontology/timescale/thors#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rank="http://resource.geosciml.org/ontology/timescale/rank/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://resource.geosciml.org/ontology/timescale/gts">
-  <voaf:Vocabulary rdf:about="">
-    <vann:preferredNamespaceUri rdf:resource="#"/>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2017-04-28</dct:modified>
-    <owl:imports rdf:resource="http://resource.geosciml.org/ontology/timescale/thors"/>
-    <dc:creator>Simon J D COX</dc:creator>
-    <owl:versionIRI rdf:resource="https://github.com/GeoscienceAustralia/geosciml.org/commit/24d302bf3f0fa315c1dddc2c734b84f52299cd02#diff-73b17e22072459ab7e06e9ab664a9d48"/>
-    <rdfs:seeAlso rdf:resource="doi:10.1130/GES00022.1"/>
-    <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-    <dc:contributor>Stephen M RICHARD</dc:contributor>
-    <dc:title>Geologic Timescale model</dc:title>
-    <skos:changeNote>2017-04-28 - removed imports ISO ontologies</skos:changeNote>
-    <rdfs:seeAlso rdf:resource="http://www.geosciml.org"/>
-    <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/gts.rdf"/>
-    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2011-01-01</dct:created>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  <owl:Ontology rdf:about="">
+    <dcterms:creator rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    >&lt;a href='https://orcid.org/0000-0002-3884-3420'&gt;Simon Jonathan David COX, CSIRO Australia&lt;/a&gt;</dcterms:creator>
+    <dcterms:title>Geologic Timescale model</dcterms:title>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2011-01-01</dcterms:created>
+    <prov:wasGeneratedBy>
+      <prov:Activity>
+        <doap:repository rdf:resource="https://github.com/CGI-IUGS/timescale-ont"/>
+        <rdf:type rdf:resource="http://usefulinc.com/ns/doap#Project"/>
+      </prov:Activity>
+    </prov:wasGeneratedBy>
+    <dcterms:source>Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</dcterms:source>
     <vann:preferredNamespacePrefix>gts</vann:preferredNamespacePrefix>
-    <dc:rights>Copyright © 2012-2017 CSIRO</dc:rights>
-    <dc:description>This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</dc:description>
+    <dcterms:rights>Copyright © 2012-2017 CSIRO</dcterms:rights>
     <rdfs:seeAlso rdf:resource="http://dx.doi.org/10.1130/GES00022.1"/>
+    <skos:changeNote>2017-04-28 - removed imports ISO ontologies</skos:changeNote>
+    <dcterms:description>This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</dcterms:description>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:contributor rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    >&lt;a href='https://orcid.org/0000-0001-6041-5302'&gt;Stephen M RICHARD&lt;/a&gt;</dcterms:contributor>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2017-04-28</dcterms:modified>
+    <rdfs:seeAlso rdf:resource="doi:10.1130/GES00022.1"/>
+    <owl:imports rdf:resource="http://resource.geosciml.org/ontology/timescale/thors"/>
+    <vann:preferredNamespaceUri rdf:resource="#"/>
+    <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    <rdfs:seeAlso rdf:resource="http://www.geosciml.org"/>
     <rdfs:seeAlso rdf:resource="http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1"/>
-    <dc:source>Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</dc:source>
-  </voaf:Vocabulary>
+  </owl:Ontology>
   <rdfs:Datatype rdf:ID="EraCode">
     <owl:equivalentClass>
       <rdfs:Datatype>
         <owl:withRestrictions rdf:parseType="Collection">
           <rdf:Description>
-            <xsd:pattern>a[12](.[1-9])*</xsd:pattern>
+            <xsd:pattern>[ax][12](.[1-9])*</xsd:pattern>
           </rdf:Description>
         </owl:withRestrictions>
         <owl:onDataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -83,11 +91,13 @@
     <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
   <owl:Class rdf:ID="Period">
+    <rdfs:label xml:lang="en">Period</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeochronologicEra"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="Sub-Period">
+    <rdfs:label>Sub-Period</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeochronologicEra"/>
     </rdfs:subClassOf>
@@ -164,6 +174,7 @@
     <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
   <owl:Class rdf:ID="Age">
+    <rdfs:label>Age</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeochronologicEra"/>
     </rdfs:subClassOf>
@@ -184,11 +195,13 @@
     <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
   <owl:Class rdf:ID="Eon">
+    <rdfs:label>Eon</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeochronologicEra"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="Super-Eon">
+    <rdfs:label>Super-Eon</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeochronologicEra"/>
     </rdfs:subClassOf>
@@ -213,6 +226,7 @@
     <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
   <owl:Class rdf:ID="Epoch">
+    <rdfs:label>Epoch</rdfs:label>
     <rdfs:subClassOf rdf:resource="#GeochronologicEra"/>
   </owl:Class>
   <owl:Class rdf:ID="StratigraphicEvent">
@@ -221,6 +235,7 @@
     <rdfs:comment>A subclass of Geologic Event (placeholder) </rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="Era">
+    <rdfs:label>Era</rdfs:label>
     <rdfs:subClassOf rdf:resource="#GeochronologicEra"/>
   </owl:Class>
   <owl:ObjectProperty rdf:ID="era">
@@ -293,7 +308,7 @@
     <rdfs:label>Geochronologic era rank</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:domain rdf:resource="#GeochronologicEra"/>
-    <rdfs:comment>Elements of all ranks are included in the class 'gts:GeochronologicEra'. 
+    <rdfs:comment>Elements of all ranks are included in the class 'gts:GeochronologicEra'. &#xD;
 The rank may be indicated by membership of a sub-class, or is indicated using the 'gts:rank' property.</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="event">

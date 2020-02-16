@@ -1,100 +1,103 @@
 {
   "@graph" : [ {
     "@id" : "_:b0",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "gts:StratigraphicSection",
+    "onProperty" : "gts:stratotype"
+  }, {
+    "@id" : "_:b12",
     "@type" : "owl:Class",
     "unionOf" : {
-      "@list" : [ "gts:NumericEraBoundary", "gts:StratigraphicPoint" ]
+      "@list" : [ "gts:GeochronologicBoundary", "gts:GeochronologicEra" ]
     }
   }, {
-    "@id" : "_:b11",
+    "@id" : "_:b13",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:geologicDescription"
+  }, {
+    "@id" : "_:b14",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:status"
+  }, {
+    "@id" : "_:b16",
+    "@type" : "rdfs:Datatype",
+    "onDataType" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b38" ]
+    }
+  }, {
+    "@id" : "_:b18",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:geologicSetting"
+  }, {
+    "@id" : "_:b19",
+    "@type" : "owl:Restriction",
+    "maxCardinality" : "1",
+    "onProperty" : "gts:ratifiedGSSP"
+  }, {
+    "@id" : "_:b20",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:status"
+  }, {
+    "@id" : "_:b21",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:correlationEvent"
+  }, {
+    "@id" : "_:b22",
+    "@type" : "owl:Restriction",
+    "onProperty" : "skos:notation",
+    "someValuesFrom" : "gts:EraCode"
+  }, {
+    "@id" : "_:b25",
+    "@type" : [ "prov:Activity", "doap:Project" ],
+    "repository" : "https://github.com/CGI-IUGS/timescale-ont"
+  }, {
+    "@id" : "_:b28",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:GeochronologicBoundary", "gts:GeochronologicEra" ]
+    }
+  }, {
+    "@id" : "_:b29",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:GeochronologicBoundary", "gts:StratigraphicPoint" ]
+    }
+  }, {
+    "@id" : "_:b3",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "gts:StratigraphicPoint",
+    "onProperty" : "gts:stratotype"
+  }, {
+    "@id" : "_:b34",
     "@type" : "owl:Class",
     "unionOf" : {
       "@list" : [ "gts:StratigraphicPoint", "gts:GeochronologicBoundary", "gts:NumericEraBoundary" ]
     }
   }, {
-    "@id" : "_:b13",
+    "@id" : "_:b35",
     "@type" : "owl:Class",
     "unionOf" : {
-      "@list" : [ "gts:GeochronologicBoundary", "gts:GeochronologicEra" ]
-    }
-  }, {
-    "@id" : "_:b15",
-    "pattern" : "a[12](.[1-9])*"
-  }, {
-    "@id" : "_:b16",
-    "@type" : "owl:Restriction",
-    "cardinality" : "1",
-    "onProperty" : "gts:status"
-  }, {
-    "@id" : "_:b17",
-    "@type" : "rdfs:Datatype",
-    "onDataType" : "xsd:string",
-    "withRestrictions" : {
-      "@list" : [ "_:b15" ]
-    }
-  }, {
-    "@id" : "_:b18",
-    "@type" : "owl:Restriction",
-    "allValuesFrom" : "gts:StratigraphicPoint",
-    "onProperty" : "gts:stratotype"
-  }, {
-    "@id" : "_:b19",
-    "@type" : "owl:Restriction",
-    "cardinality" : "1",
-    "onProperty" : "gts:status"
-  }, {
-    "@id" : "_:b2",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:GeochronologicBoundary", "gts:NumericEraBoundary" ]
-    }
-  }, {
-    "@id" : "_:b20",
-    "@type" : "owl:Restriction",
-    "cardinality" : "1",
-    "onProperty" : "gts:geologicSetting"
-  }, {
-    "@id" : "_:b21",
-    "@type" : "owl:Restriction",
-    "cardinality" : "1",
-    "onProperty" : "gts:geologicDescription"
-  }, {
-    "@id" : "_:b22",
-    "@type" : "owl:Restriction",
-    "maxCardinality" : "1",
-    "onProperty" : "gts:ratifiedGSSP"
-  }, {
-    "@id" : "_:b23",
-    "@type" : "owl:Restriction",
-    "cardinality" : "1",
-    "onProperty" : "gts:correlationEvent"
-  }, {
-    "@id" : "_:b25",
-    "@type" : "owl:Restriction",
-    "onProperty" : "skos:notation",
-    "someValuesFrom" : "gts:EraCode"
-  }, {
-    "@id" : "_:b30",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:GeochronologicBoundary", "gts:GeochronologicEra" ]
-    }
-  }, {
-    "@id" : "_:b31",
-    "@type" : "owl:Restriction",
-    "allValuesFrom" : "gts:StratigraphicSection",
-    "onProperty" : "gts:stratotype"
-  }, {
-    "@id" : "_:b32",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:GeochronologicBoundary", "gts:StratigraphicPoint" ]
+      "@list" : [ "gts:NumericEraBoundary", "gts:StratigraphicPoint" ]
     }
   }, {
     "@id" : "_:b36",
     "@type" : "owl:Restriction",
     "allValuesFrom" : "gts:GeochronologicEra",
     "onProperty" : "thors:component"
+  }, {
+    "@id" : "_:b37",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "_:b8",
+    "onProperty" : "thors:referencePoint"
+  }, {
+    "@id" : "_:b38",
+    "pattern" : "[ax][12](.[1-9])*"
   }, {
     "@id" : "_:b4",
     "@type" : "owl:Class",
@@ -108,54 +111,58 @@
       "@list" : [ "gts:GeochronologicBoundary", "gts:GeochronologicEra" ]
     }
   }, {
-    "@id" : "_:b9",
-    "@type" : "owl:Restriction",
-    "allValuesFrom" : "_:b2",
-    "onProperty" : "thors:referencePoint"
+    "@id" : "_:b8",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:GeochronologicBoundary", "gts:NumericEraBoundary" ]
+    }
   }, {
     "@id" : "http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#Medium.name",
     "label" : "Medium.name"
   }, {
     "@id" : "http://resource.geosciml.org/ontology/timescale/gts",
-    "@type" : [ "voaf:Vocabulary", "owl:Ontology" ],
-    "contributor" : "Stephen M RICHARD",
-    "creator" : "Simon J D COX",
+    "@type" : [ "owl:Ontology", "voaf:Vocabulary" ],
+    "contributor" : "<a href='https://orcid.org/0000-0001-6041-5302'>Stephen M RICHARD</a>",
+    "created" : "2011-01-01",
+    "creator" : "<a href='https://orcid.org/0000-0002-3884-3420'>Simon Jonathan David COX, CSIRO Australia</a>",
     "description" : "This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.",
+    "license" : "http://creativecommons.org/licenses/by/4.0/",
+    "modified" : "2017-04-28",
     "rights" : "Copyright © 2012-2017 CSIRO",
     "source" : "Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.",
     "title" : "Geologic Timescale model",
-    "created" : "2011-01-01",
-    "license" : "http://creativecommons.org/licenses/by/3.0/",
-    "modified" : "2017-04-28",
     "preferredNamespacePrefix" : "gts",
     "preferredNamespaceUri" : "http://resource.geosciml.org/ontology/timescale/gts#",
-    "seeAlso" : [ "doi:10.1130/GES00022.1", "http://www.geosciml.org", "http://dx.doi.org/10.1130/GES00022.1", "http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1" ],
+    "seeAlso" : [ "http://dx.doi.org/10.1130/GES00022.1", "doi:10.1130/GES00022.1", "http://www.geosciml.org", "http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1" ],
     "imports" : "http://resource.geosciml.org/ontology/timescale/thors",
-    "priorVersion" : "https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/gts.rdf",
-    "versionIRI" : "https://github.com/GeoscienceAustralia/geosciml.org/commit/24d302bf3f0fa315c1dddc2c734b84f52299cd02#diff-73b17e22072459ab7e06e9ab664a9d48",
-    "changeNote" : "2017-04-28 - removed imports ISO ontologies"
+    "changeNote" : "2017-04-28 - removed imports ISO ontologies",
+    "wasGeneratedBy" : "_:b25"
   }, {
     "@id" : "gts:Age",
     "@type" : "owl:Class",
+    "label" : "Age",
     "subClassOf" : "gts:GeochronologicEra"
   }, {
     "@id" : "gts:Eon",
     "@type" : "owl:Class",
+    "label" : "Eon",
     "subClassOf" : "gts:GeochronologicEra"
   }, {
     "@id" : "gts:Epoch",
     "@type" : "owl:Class",
+    "label" : "Epoch",
     "subClassOf" : "gts:GeochronologicEra"
   }, {
     "@id" : "gts:Era",
     "@type" : "owl:Class",
+    "label" : "Era",
     "subClassOf" : "gts:GeochronologicEra"
   }, {
     "@id" : "gts:EraCode",
     "@type" : "rdfs:Datatype",
     "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
     "label" : "Era code",
-    "equivalentClass" : "_:b17"
+    "equivalentClass" : "_:b16"
   }, {
     "@id" : "gts:GeochronologicBoundary",
     "@type" : "owl:Class",
@@ -164,7 +171,7 @@
       "@language" : "en",
       "@value" : "Geochronologic Boundary"
     },
-    "subClassOf" : [ "_:b18", "thors:EraBoundary" ],
+    "subClassOf" : [ "_:b3", "thors:EraBoundary" ],
     "disjointWith" : "gts:NumericEraBoundary"
   }, {
     "@id" : "gts:GeochronologicEra",
@@ -174,7 +181,7 @@
       "@language" : "en",
       "@value" : "Geochronologic Era"
     },
-    "subClassOf" : [ "_:b25", "_:b31", "thors:Era" ]
+    "subClassOf" : [ "_:b22", "_:b0", "thors:Era" ]
   }, {
     "@id" : "gts:GeochronologicEraRank",
     "@type" : "rdfs:Class",
@@ -192,7 +199,7 @@
       "@language" : "en",
       "@value" : "Geologic Timescale"
     },
-    "subClassOf" : [ "_:b9", "_:b36", "thors:ReferenceSystem" ]
+    "subClassOf" : [ "_:b37", "_:b36", "thors:ReferenceSystem" ]
   }, {
     "@id" : "gts:NumericEraBoundary",
     "@type" : "owl:Class",
@@ -201,11 +208,15 @@
       "@language" : "en",
       "@value" : "Numeric Era Boundary"
     },
-    "subClassOf" : [ "_:b19", "thors:EraBoundary" ],
+    "subClassOf" : [ "_:b14", "thors:EraBoundary" ],
     "disjointWith" : "gts:GeochronologicBoundary"
   }, {
     "@id" : "gts:Period",
     "@type" : "owl:Class",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Period"
+    },
     "subClassOf" : "gts:GeochronologicEra"
   }, {
     "@id" : "gts:StratigraphicEvent",
@@ -224,7 +235,7 @@
       "@language" : "en",
       "@value" : "Stratigraphic Point"
     },
-    "subClassOf" : [ "_:b22", "_:b16", "_:b23" ]
+    "subClassOf" : [ "_:b19", "_:b20", "_:b21" ]
   }, {
     "@id" : "gts:StratigraphicSection",
     "@type" : "owl:Class",
@@ -233,14 +244,16 @@
       "@language" : "en",
       "@value" : "Stratigraphic Section"
     },
-    "subClassOf" : [ "_:b20", "_:b21" ]
+    "subClassOf" : [ "_:b18", "_:b13" ]
   }, {
     "@id" : "gts:Sub-Period",
     "@type" : "owl:Class",
+    "label" : "Sub-Period",
     "subClassOf" : "gts:GeochronologicEra"
   }, {
     "@id" : "gts:Super-Eon",
     "@type" : "owl:Class",
+    "label" : "Super-Eon",
     "subClassOf" : "gts:GeochronologicEra"
   }, {
     "@id" : "gts:boundary",
@@ -263,7 +276,7 @@
     "comment" : "This property points from a geologic feature or event to a geochronologic element",
     "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
     "label" : "correlating boundary or era",
-    "range" : "_:b30"
+    "range" : "_:b28"
   }, {
     "@id" : "gts:correlationEvent",
     "@type" : "owl:DatatypeProperty",
@@ -283,7 +296,7 @@
     "@id" : "gts:event",
     "@type" : "owl:ObjectProperty",
     "comment" : "stratigraphic event corresponding with this boundary or point",
-    "domain" : "_:b32",
+    "domain" : "_:b29",
     "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
     "label" : "stratigraphic event",
     "range" : "gts:StratigraphicEvent"
@@ -303,7 +316,7 @@
     "@id" : "gts:manifestedBy",
     "@type" : "owl:ObjectProperty",
     "comment" : "This property points from a geochronologic element to a geologic feature",
-    "domain" : "_:b13",
+    "domain" : "_:b12",
     "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
     "label" : "geologic manifestation",
     "inverseOf" : "gts:correlatesWith"
@@ -314,7 +327,7 @@
   }, {
     "@id" : "gts:rank",
     "@type" : "owl:ObjectProperty",
-    "comment" : "Elements of all ranks are included in the class 'gts:GeochronologicEra'. \nThe rank may be indicated by membership of a sub-class, or is indicated using the 'gts:rank' property.",
+    "comment" : "Elements of all ranks are included in the class 'gts:GeochronologicEra'. \r\nThe rank may be indicated by membership of a sub-class, or is indicated using the 'gts:rank' property.",
     "domain" : "gts:GeochronologicEra",
     "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
     "label" : "Geochronologic era rank",
@@ -323,14 +336,14 @@
     "@id" : "gts:ratifiedGSSP",
     "@type" : "owl:DatatypeProperty",
     "comment" : "'true' if ratified by ICS",
-    "domain" : "_:b11",
+    "domain" : "_:b34",
     "label" : "ratified",
     "range" : "xsd:boolean"
   }, {
     "@id" : "gts:status",
     "@type" : "owl:DatatypeProperty",
     "comment" : "formal ICS status of this boundary and point",
-    "domain" : "_:b0",
+    "domain" : "_:b35",
     "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
     "label" : "status"
   }, {
@@ -343,8 +356,20 @@
     "range" : "_:b4"
   } ],
   "@context" : {
-    "unionOf" : {
-      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
       "@type" : "@id"
     },
     "range" : {
@@ -365,33 +390,21 @@
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
-    "rest" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
-      "@type" : "@id"
-    },
-    "first" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
-      "@type" : "@id"
-    },
-    "onProperty" : {
-      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
-      "@type" : "@id"
-    },
-    "allValuesFrom" : {
-      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
       "@type" : "@id"
     },
     "inverseOf" : {
       "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
       "@type" : "@id"
     },
-    "subClassOf" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-      "@type" : "@id"
-    },
     "cardinality" : {
       "@id" : "http://www.w3.org/2002/07/owl#cardinality",
       "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
     },
     "withRestrictions" : {
       "@id" : "http://www.w3.org/2002/07/owl#withRestrictions",
@@ -401,9 +414,51 @@
       "@id" : "http://www.w3.org/2002/07/owl#onDataType",
       "@type" : "@id"
     },
-    "preferredNamespaceUri" : {
-      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "someValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
       "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "wasGeneratedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
     },
     "modified" : {
       "@id" : "http://purl.org/dc/terms/modified",
@@ -413,52 +468,8 @@
       "@id" : "http://www.w3.org/2002/07/owl#imports",
       "@type" : "@id"
     },
-    "creator" : {
-      "@id" : "http://purl.org/dc/elements/1.1/creator"
-    },
-    "versionIRI" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
-      "@type" : "@id"
-    },
-    "seeAlso" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-      "@type" : "@id"
-    },
-    "license" : {
-      "@id" : "http://purl.org/dc/terms/license",
-      "@type" : "@id"
-    },
-    "contributor" : {
-      "@id" : "http://purl.org/dc/elements/1.1/contributor"
-    },
-    "title" : {
-      "@id" : "http://purl.org/dc/elements/1.1/title"
-    },
-    "changeNote" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
-    },
-    "priorVersion" : {
-      "@id" : "http://www.w3.org/2002/07/owl#priorVersion",
-      "@type" : "@id"
-    },
-    "created" : {
-      "@id" : "http://purl.org/dc/terms/created",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "preferredNamespacePrefix" : {
-      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
-    },
-    "rights" : {
-      "@id" : "http://purl.org/dc/elements/1.1/rights"
-    },
-    "description" : {
-      "@id" : "http://purl.org/dc/elements/1.1/description"
-    },
-    "source" : {
-      "@id" : "http://purl.org/dc/elements/1.1/source"
-    },
-    "someValuesFrom" : {
-      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
       "@type" : "@id"
     },
     "maxCardinality" : {
@@ -476,17 +487,23 @@
     "pattern" : {
       "@id" : "http://www.w3.org/2001/XMLSchema#pattern"
     },
-    "dct" : "http://purl.org/dc/terms/",
+    "repository" : {
+      "@id" : "http://usefulinc.com/ns/doap#repository",
+      "@type" : "@id"
+    },
     "owl" : "http://www.w3.org/2002/07/owl#",
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "gts" : "http://resource.geosciml.org/ontology/timescale/gts#",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
-    "skos" : "http://www.w3.org/2004/02/skos/core#",
     "voaf" : "http://purl.org/vocommons/voaf#",
-    "rank" : "http://resource.geosciml.org/ontology/timescale/rank/",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-    "vann" : "http://purl.org/vocab/vann/",
     "thors" : "http://resource.geosciml.org/ontology/timescale/thors#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "doap" : "http://usefulinc.com/ns/doap#",
+    "rank" : "http://resource.geosciml.org/ontology/timescale/rank/",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/",
+    "prov" : "http://www.w3.org/ns/prov#",
     "dc" : "http://purl.org/dc/elements/1.1/"
   }
 }
