@@ -27,7 +27,7 @@
   
   The THORS ontology introduces the classes thors:Era and thors:eraBoundary which are elements in a thors:ReferenceSystem. 
 
-  The temporal positions of boundaries, and topological relationships between Eras may be encoded using <a href='https://www.w3.org/TR/owl-time/'>OWL-Time</a>.
+  The temporal positions of boundaries, and topological relationships between Eras are aligned to the Allen temporal algebra, as impl;emented in <a href='https://www.w3.org/TR/owl-time/'>OWL-Time</a>.
   """ ;
   dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   dcterms:modified "2020-05-31"^^xsd:date ;

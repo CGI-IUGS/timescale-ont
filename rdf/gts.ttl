@@ -25,7 +25,9 @@
   dcterms:contributor <https://orcid.org/0000-0001-6041-5302> ;
   dcterms:created "2011-01-01"^^xsd:date ;
   dcterms:creator <https://orcid.org/0000-0002-3884-3420> ;
-  dcterms:description "This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137." ;
+  dcterms:description """This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.
+
+The permitted nesting relationships between eras of different ranks are axiomatized as local constraints using interval relationships from OWL-Time. """ ;
   dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   dcterms:modified "2020-05-31"^^xsd:date ;
   dcterms:rights "Copyright 2012-2020 CSIRO" ;
