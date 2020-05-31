@@ -1,16 +1,18 @@
 # baseURI: http://resource.geosciml.org/ontology/timescale/thors
 # imports: http://purl.org/dc/elements/1.1/
+# imports: http://www.w3.org/2006/time
 # prefix: thors
 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix thors: <http://resource.geosciml.org/ontology/timescale/thors#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -18,17 +20,18 @@
 <http://resource.geosciml.org/ontology/timescale/thors>
   a voaf:Vocabulary ;
   a owl:Ontology ;
+  dcterms:contributor <https://orcid.org/0000-0001-6041-5302> ;
   dcterms:created "2011-01-01"^^xsd:date ;
-  dcterms:creator "<a href='https://orcid.org/0000-0002-3884-3420'>Simon Jonathan David COX, CSIRO Australia</a>" ;
+  dcterms:creator <https://orcid.org/0000-0002-3884-3420> ;
   dcterms:description """An OWL representation of the model for Temporal Hierarchical Ordinal Reference Systems defined in GeoSciML v3, and modeled after ISO 19108. 
   
   The THORS ontology introduces the classes thors:Era and thors:eraBoundary which are elements in a thors:ReferenceSystem. 
 
   The temporal positions of boundaries, and topological relationships between Eras may be encoded using <a href='https://www.w3.org/TR/owl-time/'>OWL-Time</a>.
   """ ;
-  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  dcterms:modified "2017-04-28"^^xsd:date ;
-  dcterms:rights "Copyright © 2012-2017 CSIRO" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  dcterms:modified "2020-05-31"^^xsd:date ;
+  dcterms:rights "Copyright 2012-2020 CSIRO" ;
   dcterms:source "Simon J.D. Cox and Stephen M. Richard, A formal model for the geologic time scale and global stratotype section and point, compatible with geospatial information transfer standards, Geosphere, 1, 119-137 (2005)" ;
   dcterms:title "Temporal Hierarchical Ordinal Reference System model" ;
   vann:preferredNamespacePrefix "thors" ;
@@ -38,13 +41,11 @@
   rdfs:seeAlso <http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1> ;
   rdfs:seeAlso <http://www.geosciml.org> ;
   owl:imports dc: ;
+  owl:imports <http://www.w3.org/2006/time> ;
   skos:changeNote "2017-04-28 - removed imports of ISO ontologies " ;
+  skos:changeNote "2020-05-31 - add OWL-Time alignment to primary graph; add inline examples for documentation" ;
   skos:note "This model is related to the model for TORS in ISO 19108:2002, except that boundaries between eras are first class objects, supporting multiple properties, rather than being just time coordinates. It is also linked to the ISO 19108 Temporal Topology model. " ;
-  prov:wasGeneratedBy [
-      a doap:Project ;
-      a prov:Activity ;
-      doap:repository <https://github.com/CGI-IUGS/timescale-ont> ;
-    ] ;
+  sdo:codeRepository <https://github.com/CGI-IUGS/timescale-ont> ;
 .
 thors:Era
   a owl:Class ;
@@ -52,6 +53,7 @@ thors:Era
   rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/thors> ;
   rdfs:label "Time Ordinal Era or Interval" ;
   rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf time:ProperInterval ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
@@ -69,6 +71,7 @@ thors:EraBoundary
   rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/thors> ;
   rdfs:label "Time Ordinal Era Boundary" ;
   rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf time:Instant ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
@@ -82,10 +85,13 @@ thors:EraBoundary
 .
 thors:ReferenceSystem
   a owl:Class ;
-  dcterms:description "A temporal ordinal reference system is a constrained temporal topological complex, in which the edges are called 'eras'. Each era may be subdivided into one set of eras of the next finer rank. This constraint is required to establish a mono-hierarchy, so that a set of temporal positions defined relative to the reference system may be uniquely ordered." ;
+  dcterms:description """A temporal ordinal reference system is a constrained temporal topological complex, in which the edges are called 'eras'. 
+
+Each era may be subdivided into one set of eras of the next finer rank. This constraint is required to establish a mono-hierarchy, so that a set of temporal positions defined relative to the reference system may be uniquely ordered.""" ;
   rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/thors> ;
   rdfs:label "Hierarchical Time Ordinal Reference System" ;
   rdfs:subClassOf skos:ConceptScheme ;
+  rdfs:subClassOf time:TRS ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
@@ -98,12 +104,15 @@ thors:ReferenceSystem
     ] ;
 .
 thors:begin
+  a owl:DeprecatedProperty ;
   a owl:ObjectProperty ;
   rdfs:domain thors:Era ;
   rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/thors> ;
   rdfs:label "era beginning"@en ;
   rdfs:range thors:EraBoundary ;
   rdfs:subPropertyOf skos:semanticRelation ;
+  rdfs:subPropertyOf time:hasBeginning ;
+  owl:deprecated true ;
   owl:inverseOf thors:nextEra ;
 .
 thors:component
@@ -116,21 +125,30 @@ thors:component
   owl:inverseOf thors:system ;
 .
 thors:end
+  a owl:DeprecatedProperty ;
   a owl:ObjectProperty ;
   rdfs:domain thors:Era ;
   rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/thors> ;
   rdfs:label "era end"@en ;
   rdfs:range thors:EraBoundary ;
   rdfs:subPropertyOf skos:semanticRelation ;
+  rdfs:subPropertyOf time:hasEnd ;
+  owl:deprecated true ;
   owl:inverseOf thors:previousEra ;
 .
 thors:member
+  a owl:DeprecatedProperty ;
   a owl:ObjectProperty ;
   rdfs:domain thors:Era ;
   rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/thors> ;
   rdfs:label "era member / sub-era"@en ;
   rdfs:range thors:Era ;
   rdfs:subPropertyOf skos:narrower ;
+  owl:deprecated true ;
+  owl:equivalentProperty [
+      a owl:ObjectProperty ;
+      owl:inverseOf time:intervalIn ;
+    ] ;
 .
 thors:nextEra
   a owl:ObjectProperty ;
@@ -139,12 +157,18 @@ thors:nextEra
   rdfs:label "next era"@en ;
   rdfs:range thors:Era ;
   rdfs:subPropertyOf skos:semanticRelation ;
+  rdfs:subPropertyOf [
+      a owl:ObjectProperty ;
+      owl:inverseOf time:hasBeginning ;
+    ] ;
   owl:inverseOf thors:begin ;
 .
 thors:positionalUncertainty
   a owl:DatatypeProperty ;
+  rdfs:domain time:TimePosition ;
   rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/thors> ;
   rdfs:label "uncertainty in temporal position"@en ;
+  rdfs:range time:Duration ;
 .
 thors:previousEra
   a owl:ObjectProperty ;
@@ -153,6 +177,10 @@ thors:previousEra
   rdfs:label "previous era"@en ;
   rdfs:range thors:Era ;
   rdfs:subPropertyOf skos:semanticRelation ;
+  rdfs:subPropertyOf [
+      a owl:ObjectProperty ;
+      owl:inverseOf time:hasEnd ;
+    ] ;
   owl:inverseOf thors:end ;
 .
 thors:referencePoint
@@ -172,4 +200,43 @@ thors:system
   rdfs:range thors:ReferenceSystem ;
   rdfs:subPropertyOf skos:topConceptOf ;
   owl:inverseOf thors:component ;
+.
+time:intervalContains
+  rdfs:subPropertyOf thors:member ;
+.
+time:intervalFinishedBy
+  rdfs:subPropertyOf thors:member ;
+.
+time:intervalMeets
+  owl:propertyChainAxiom (
+      thors:end
+      thors:nextEra
+    ) ;
+.
+time:intervalMetBy
+  owl:propertyChainAxiom (
+      thors:begin
+      thors:previousEra
+    ) ;
+.
+time:intervalStartedBy
+  rdfs:subPropertyOf thors:member ;
+.
+<https://orcid.org/0000-0001-6041-5302>
+  a owl:NamedIndividual ;
+  a sdo:Person ;
+  sdo:email <mailto:smrTucson@gmail.com> ;
+  sdo:identifier "https://orcid.org/0000-0001-6041-5302"^^xsd:anyURI ;
+  sdo:name "Stepehen M Richard"@en ;
+.
+<https://orcid.org/0000-0002-3884-3420>
+  a owl:NamedIndividual ;
+  a sdo:Person ;
+  sdo:affiliation [
+      sdo:identifier "http://catalogue.linked.data.gov.au/org/csiro"^^xsd:anyURI ;
+      sdo:name "CSIRO" ;
+    ] ;
+  sdo:email <mailto:simon.cox@csiro.au> ;
+  sdo:identifier "https://orcid.org/0000-0002-3884-3420"^^xsd:anyURI ;
+  sdo:name "Simon J D Cox"@en ;
 .
