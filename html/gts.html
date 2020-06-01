@@ -1,15 +1,1895 @@
-<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Geologic Timescale model</title><title>Geologic Timescale model</title><link href="http://eelst.cs.unibo.it/apps/LODE/owl.css" rel="stylesheet" type="text/css" /><link href="http://eelst.cs.unibo.it/apps/LODE/Primer.css" rel="stylesheet" type="text/css" /><link href="http://eelst.cs.unibo.it/apps/LODE/rec.css" rel="stylesheet" type="text/css" /><link href="http://eelst.cs.unibo.it/apps/LODE/extra.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="http://eelst.cs.unibo.it/apps/LODE/favicon.ico" /><script src="http://eelst.cs.unibo.it/apps/LODE/jquery.js"></script><script src="http://eelst.cs.unibo.it/apps/LODE/jquery.scrollTo.js"></script><script src="http://eelst.cs.unibo.it/apps/LODE/marked.min.js"></script><script>
-                $(document).ready(
-                    function () {
-                    	jQuery(".markdown").each(function(el){
-							jQuery(this).after(marked(jQuery(this).text())).remove()});
-                        var list = $('a[name="http://resource.geosciml.org/ontology/timescale/gts"]');
-                        if (list.size() != 0) {
-                        	var element = list.first();
-                        	$.scrollTo(element);
-                        }
-                    });
-        </script></head><body><div class="head"><h1>Geologic Timescale model</h1><dl><dt>IRI:</dt><dd>http://resource.geosciml.org/ontology/timescale/gts</dd><dt>Version IRI:</dt><dd>https://github.com/GeoscienceAustralia/geosciml.org/commit/24d302bf3f0fa315c1dddc2c734b84f52299cd02#diff-73b17e22072459ab7e06e9ab664a9d48</dd></dl><dl><dt>Previous version:</dt><dd><a href="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/gts.rdf">https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/gts.rdf</a> (<a href="http://www.essepuntato.it/lode/owlapi/https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/gts.rdf">visualise it with LODE</a>)</dd></dl><dl><dt>Authors:</dt><dd>Simon J D COX</dd><dt>Contributors:</dt><dd>Stephen M RICHARD</dd></dl><dl><dt>Imported Ontologies:</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/thors">http://resource.geosciml.org/ontology/timescale/thors</a> (<a href="http://www.essepuntato.it/lode/owlapi/http://resource.geosciml.org/ontology/timescale/thors">visualise it with LODE</a>)</dd></dl><dl><dt>Other visualisation:</dt><dd><a href="http://eelst.cs.unibo.it/apps/LODE/source?url=http://resource.geosciml.org/ontology/timescale/gts">Ontology source</a></dd></dl><div class="copyright"><span class="markdown">Copyright © 2012-2017 CSIRO</span></div></div><hr /><div id="toc"><h2>Table of Content</h2><ol><li><a href="#introduction">Introduction</a></li><li><a href="#classes">Classes</a></li><li><a href="#objectproperties">Object Properties</a></li><li><a href="#dataproperties">Data Properties</a></li><li><a href="#namedindividuals">Named Individuals</a></li><li><a href="#namespacedeclarations">Namespace Declarations</a></li></ol></div><h2 id="introduction">Introduction</h2><span class="markdown">This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</span><div id="classes"><h2>Classes</h2><ul class="hlist"><li><a href="#d4e381" title="http://resource.geosciml.org/ontology/timescale/gts#Age"><span>age</span></a></li><li><a href="#d4e388" title="http://resource.geosciml.org/ontology/timescale/gts#Eon"><span>eon</span></a></li><li><a href="#d4e396" title="http://resource.geosciml.org/ontology/timescale/gts#Epoch"><span>epoch</span></a></li><li><a href="#d4e403" title="http://resource.geosciml.org/ontology/timescale/gts#Era"><span>era</span></a></li><li><a href="#d4e410" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary">Geochronologic Boundary</a></li><li><a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a></li><li><a href="#d4e467" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank">Geochronologic Era Rank</a></li><li><a href="#d4e479" title="http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale">Geologic Timescale</a></li><li><a href="#d4e523" title="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary">Numeric Era Boundary</a></li><li><a href="#d4e546" title="http://resource.geosciml.org/ontology/timescale/gts#Period"><span>period</span></a></li><li><a href="#d4e553" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent">Stratigraphic Event</a></li><li><a href="#d4e567" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint">Stratigraphic Point</a></li><li><a href="#d4e610" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection">Stratigraphic Section</a></li><li><a href="#d4e642" title="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"><span>sub period</span></a></li><li><a href="#d4e650" title="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"><span>super eon</span></a></li></ul><div id="d4e381" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#Age"></a><a name="Age"></a><h3>age<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#Age</p><dl class="description"><dt>has super-classes</dt><dd><a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd></dl></div><div id="d4e388" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#Eon"></a><a name="Eon"></a><h3>eon<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#Eon</p><dl class="description"><dt>has super-classes</dt><dd><a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd></dl></div><div id="d4e396" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#Epoch"></a><a name="Epoch"></a><h3>epoch<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#Epoch</p><dl class="description"><dt>has super-classes</dt><dd><a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd></dl></div><div id="d4e403" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#Era"></a><a name="Era"></a><h3>era<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#Era</p><dl class="description"><dt>has super-classes</dt><dd><a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd></dl></div><div id="d4e410" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary"></a><a name="GeochronologicBoundary"></a><h3>Geochronologic Boundary<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><dl class="description"><dt>has super-classes</dt><dd><span class="dotted" title="http://resource.geosciml.org/ontology/timescale/thors#EraBoundary">era boundary</span></dd><dd><a href="#d4e223" title="http://resource.geosciml.org/ontology/timescale/gts#stratotype">stratotype</a><sup title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e567" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint">Stratigraphic Point</a><sup title="class" class="type-c">c</sup></dd><dt>is in range of</dt><dd><a href="#d4e80" title="http://resource.geosciml.org/ontology/timescale/gts#boundary">geochronologic boundary</a><sup title="object property" class="type-op">op</sup></dd><dt>is disjoint with</dt><dd><a href="#d4e523" title="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary">Numeric Era Boundary</a><sup title="class" class="type-c">c</sup></dd></dl></div><div id="d4e435" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"></a><a name="GeochronologicEra"></a><h3>Geochronologic Era<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><dl class="description"><dt>has super-classes</dt><dd><span class="dotted" title="http://resource.geosciml.org/ontology/timescale/thors#Era">era</span></dd><dd><a href="#d4e223" title="http://resource.geosciml.org/ontology/timescale/gts#stratotype">stratotype</a><sup title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e610" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection">Stratigraphic Section</a><sup title="class" class="type-c">c</sup></dd><dd><span class="dotted" title="http://www.w3.org/2004/02/skos/core#notation">notation</span><sup title="data property" class="type-dp">dp</sup> <span class="logic">some</span> <span class="dotted" title="http://resource.geosciml.org/ontology/timescale/gts#EraCode">Era code</span></dd><dt>has sub-classes</dt><dd><a href="#d4e381" title="http://resource.geosciml.org/ontology/timescale/gts#Age">age</a><sup title="class" class="type-c">c</sup>, <a href="#d4e388" title="http://resource.geosciml.org/ontology/timescale/gts#Eon">eon</a><sup title="class" class="type-c">c</sup>, <a href="#d4e396" title="http://resource.geosciml.org/ontology/timescale/gts#Epoch">epoch</a><sup title="class" class="type-c">c</sup>, <a href="#d4e403" title="http://resource.geosciml.org/ontology/timescale/gts#Era">era</a><sup title="class" class="type-c">c</sup>, <a href="#d4e546" title="http://resource.geosciml.org/ontology/timescale/gts#Period">period</a><sup title="class" class="type-c">c</sup>, <a href="#d4e642" title="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">sub period</a><sup title="class" class="type-c">c</sup>, <a href="#d4e650" title="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">super eon</a><sup title="class" class="type-c">c</sup></dd><dt>is in domain of</dt><dd><a href="#d4e206" title="http://resource.geosciml.org/ontology/timescale/gts#rank">Geochronologic era rank</a><sup title="object property" class="type-op">op</sup></dd><dt>is in range of</dt><dd><a href="#d4e124" title="http://resource.geosciml.org/ontology/timescale/gts#era">geochronologic era</a><sup title="object property" class="type-op">op</sup></dd></dl></div><div id="d4e467" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank"></a><a name="GeochronologicEraRank"></a><h3>Geochronologic Era Rank<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><dl class="description"><dt>has super-classes</dt><dd><span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span></dd><dt>is in range of</dt><dd><a href="#d4e206" title="http://resource.geosciml.org/ontology/timescale/gts#rank">Geochronologic era rank</a><sup title="object property" class="type-op">op</sup></dd></dl></div><div id="d4e479" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale"></a><a name="GeologicTimescale"></a><h3>Geologic Timescale<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><dl class="description"><dt>has super-classes</dt><dd><span class="dotted" title="http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem">reference system</span></dd><dd><span class="dotted" title="http://resource.geosciml.org/ontology/timescale/thors#component">component</span> <span class="logic">only</span> <a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd><dd><span class="dotted" title="http://resource.geosciml.org/ontology/timescale/thors#referencePoint">reference point</span> <span class="logic">only</span> <a href="#d4e410" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary">Geochronologic Boundary</a><sup title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e523" title="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary">Numeric Era Boundary</a><sup title="class" class="type-c">c</sup></dd></dl></div><div id="d4e523" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"></a><a name="NumericEraBoundary"></a><h3>Numeric Era Boundary<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><dl class="description"><dt>has super-classes</dt><dd><span class="dotted" title="http://resource.geosciml.org/ontology/timescale/thors#EraBoundary">era boundary</span></dd><dd><a href="#d4e348" title="http://resource.geosciml.org/ontology/timescale/gts#status">status</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd><dt>is disjoint with</dt><dd><a href="#d4e410" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary">Geochronologic Boundary</a><sup title="class" class="type-c">c</sup></dd></dl></div><div id="d4e546" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#Period"></a><a name="Period"></a><h3>period<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#Period</p><dl class="description"><dt>has super-classes</dt><dd><a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd></dl></div><div id="d4e553" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent"></a><a name="StratigraphicEvent"></a><h3>Stratigraphic Event<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">A subclass of Geologic Event (placeholder) </span></div><dl class="description"><dt>is in range of</dt><dd><a href="#d4e141" title="http://resource.geosciml.org/ontology/timescale/gts#event">stratigraphic event</a><sup title="object property" class="type-op">op</sup></dd></dl></div><div id="d4e567" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint"></a><a name="StratigraphicPoint"></a><h3>Stratigraphic Point<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><dl class="description"><dt>has super-classes</dt><dd><a href="#d4e320" title="http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP">ratified</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd><dd><a href="#d4e348" title="http://resource.geosciml.org/ontology/timescale/gts#status">status</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd><dd><a href="#d4e280" title="http://resource.geosciml.org/ontology/timescale/gts#correlationEvent">correlation event</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd><dt>is in domain of</dt><dd><a href="#d4e265" title="http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel">boundary level</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e280" title="http://resource.geosciml.org/ontology/timescale/gts#correlationEvent">correlation event</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e80" title="http://resource.geosciml.org/ontology/timescale/gts#boundary">geochronologic boundary</a><sup title="object property" class="type-op">op</sup></dd></dl></div><div id="d4e610" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection"></a><a name="StratigraphicSection"></a><h3>Stratigraphic Section<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><dl class="description"><dt>has super-classes</dt><dd><a href="#d4e308" title="http://resource.geosciml.org/ontology/timescale/gts#geologicSetting">geologic setting</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd><dd><a href="#d4e295" title="http://resource.geosciml.org/ontology/timescale/gts#geologicDescription">geologic description</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd><dt>is in domain of</dt><dd><a href="#d4e124" title="http://resource.geosciml.org/ontology/timescale/gts#era">geochronologic era</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e295" title="http://resource.geosciml.org/ontology/timescale/gts#geologicDescription">geologic description</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e308" title="http://resource.geosciml.org/ontology/timescale/gts#geologicSetting">geologic setting</a><sup title="data property" class="type-dp">dp</sup></dd></dl></div><div id="d4e642" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"></a><a name="Sub-Period"></a><h3>sub period<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#Sub-Period</p><dl class="description"><dt>has super-classes</dt><dd><a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd></dl></div><div id="d4e650" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"></a><a name="Super-Eon"></a><h3>super eon<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#Super-Eon</p><dl class="description"><dt>has super-classes</dt><dd><a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd></dl></div></div><div id="objectproperties"><h2>Object Properties</h2><ul class="hlist"><li><a href="#d4e97" title="http://resource.geosciml.org/ontology/timescale/gts#correlatesWith">correlating boundary or era</a></li><li><a href="#d4e80" title="http://resource.geosciml.org/ontology/timescale/gts#boundary">geochronologic boundary</a></li><li><a href="#d4e124" title="http://resource.geosciml.org/ontology/timescale/gts#era">geochronologic era</a></li><li><a href="#d4e206" title="http://resource.geosciml.org/ontology/timescale/gts#rank">Geochronologic era rank</a></li><li><a href="#d4e169" title="http://resource.geosciml.org/ontology/timescale/gts#manifestedBy">geologic manifestation</a></li><li><a href="#d4e141" title="http://resource.geosciml.org/ontology/timescale/gts#event">stratigraphic event</a></li><li><a href="#d4e223" title="http://resource.geosciml.org/ontology/timescale/gts#stratotype">stratotype</a></li><li><a href="#d4e198" title="http://resource.geosciml.org/ontology/timescale/gts#positionalUncertainty">Uncertainty in time position</a></li></ul><div id="d4e97" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#correlatesWith"></a><a name="correlatesWith"></a><h3>correlating boundary or era<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#correlatesWith</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">This property points from a geologic feature or event to a geochronologic element</span></div><div class="description"><dl><dt>has range</dt><dd><a href="#d4e410" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary">Geochronologic Boundary</a><sup title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd><dt>is inverse of</dt><dd><a href="#d4e169" title="http://resource.geosciml.org/ontology/timescale/gts#manifestedBy">geologic manifestation</a><sup title="object property" class="type-op">op</sup></dd></dl></div></div><div id="d4e80" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#boundary"></a><a name="boundary"></a><h3>geochronologic boundary<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#boundary</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">geochronologic boundary corresponding with this point</span></div><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e567" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint">Stratigraphic Point</a><sup title="class" class="type-c">c</sup></dd><dt>has range</dt><dd><a href="#d4e410" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary">Geochronologic Boundary</a><sup title="class" class="type-c">c</sup></dd></dl></div></div><div id="d4e124" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#era"></a><a name="era"></a><h3>geochronologic era<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#era</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">geochronologic era corresponding with this section</span></div><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e610" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection">Stratigraphic Section</a><sup title="class" class="type-c">c</sup></dd><dt>has range</dt><dd><a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd></dl></div></div><div id="d4e206" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#rank"></a><a name="rank"></a><h3>Geochronologic era rank<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#rank</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">Elements of all ranks are included in the class 'gts:GeochronologicEra'. 
-The rank may be indicated by membership of a sub-class, or is indicated using the 'gts:rank' property.</span></div><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd><dt>has range</dt><dd><a href="#d4e467" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank">Geochronologic Era Rank</a><sup title="class" class="type-c">c</sup></dd></dl></div></div><div id="d4e169" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#manifestedBy"></a><a name="manifestedBy"></a><h3>geologic manifestation<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#manifestedBy</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">This property points from a geochronologic element to a geologic feature</span></div><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e410" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary">Geochronologic Boundary</a><sup title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd><dt>is inverse of</dt><dd><a href="#d4e97" title="http://resource.geosciml.org/ontology/timescale/gts#correlatesWith">correlating boundary or era</a><sup title="object property" class="type-op">op</sup></dd></dl></div></div><div id="d4e141" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#event"></a><a name="event"></a><h3>stratigraphic event<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#event</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">stratigraphic event corresponding with this boundary or point</span></div><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e410" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary">Geochronologic Boundary</a><sup title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e567" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint">Stratigraphic Point</a><sup title="class" class="type-c">c</sup></dd><dt>has range</dt><dd><a href="#d4e553" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent">Stratigraphic Event</a><sup title="class" class="type-c">c</sup></dd></dl></div></div><div id="d4e223" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#stratotype"></a><a name="stratotype"></a><h3>stratotype<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#stratotype</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">the characteristic point or section corresponding with a geochronologic concept</span></div><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e410" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary">Geochronologic Boundary</a><sup title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e435" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra">Geochronologic Era</a><sup title="class" class="type-c">c</sup></dd><dt>has range</dt><dd><a href="#d4e567" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint">Stratigraphic Point</a><sup title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e610" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection">Stratigraphic Section</a><sup title="class" class="type-c">c</sup></dd></dl></div></div><div id="d4e198" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#positionalUncertainty"></a><a name="positionalUncertainty"></a><h3>Uncertainty in time position<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#positionalUncertainty</p></div></div><div id="dataproperties"><h2>Data Properties</h2><ul class="hlist"><li><a href="#d4e265" title="http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel">boundary level</a></li><li><a href="#d4e280" title="http://resource.geosciml.org/ontology/timescale/gts#correlationEvent">correlation event</a></li><li><a href="#d4e295" title="http://resource.geosciml.org/ontology/timescale/gts#geologicDescription">geologic description</a></li><li><a href="#d4e308" title="http://resource.geosciml.org/ontology/timescale/gts#geologicSetting">geologic setting</a></li><li><a href="#d4e320" title="http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP">ratified</a></li><li><a href="#d4e348" title="http://resource.geosciml.org/ontology/timescale/gts#status">status</a></li></ul><div id="d4e265" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel"></a><a name="boundaryLevel"></a><h3>boundary level<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">the level within the section of the point characterizing the boundary</span></div><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e567" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint">Stratigraphic Point</a><sup title="class" class="type-c">c</sup></dd></dl></div></div><div id="d4e280" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#correlationEvent"></a><a name="correlationEvent"></a><h3>correlation event<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#correlationEvent</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">the stratigraphic event that is intended to be represented by this stratigraphic point</span></div><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e567" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint">Stratigraphic Point</a><sup title="class" class="type-c">c</sup></dd></dl></div></div><div id="d4e295" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#geologicDescription"></a><a name="geologicDescription"></a><h3>geologic description<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#geologicDescription</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e610" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection">Stratigraphic Section</a><sup title="class" class="type-c">c</sup></dd></dl></div></div><div id="d4e308" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#geologicSetting"></a><a name="geologicSetting"></a><h3>geologic setting<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#geologicSetting</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e610" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection">Stratigraphic Section</a><sup title="class" class="type-c">c</sup></dd></dl></div></div><div id="d4e320" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP"></a><a name="ratifiedGSSP"></a><h3>ratified<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP</p><div class="comment"><span class="markdown">'true' if ratified by ICS</span></div><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e410" title="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary">Geochronologic Boundary</a><sup title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e523" title="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary">Numeric Era Boundary</a><sup title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e567" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint">Stratigraphic Point</a><sup title="class" class="type-c">c</sup></dd><dt>has range</dt><dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span></dd></dl></div></div><div id="d4e348" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts#status"></a><a name="status"></a><h3>status<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts#status</p><dl class="definedBy"><dt>is defined by</dt><dd><a href="http://resource.geosciml.org/ontology/timescale/gts">http://resource.geosciml.org/ontology/timescale/gts</a></dd></dl><div class="comment"><span class="markdown">formal ICS status of this boundary and point</span></div><div class="description"><dl><dt>has domain</dt><dd><a href="#d4e523" title="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary">Numeric Era Boundary</a><sup title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e567" title="http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint">Stratigraphic Point</a><sup title="class" class="type-c">c</sup></dd></dl></div></div></div><div id="namedindividuals"><h2>Named Individuals</h2><ul class="hlist"><li><a href="#d4e659" title="http://resource.geosciml.org/ontology/timescale/gts"><span>gts</span></a></li></ul><div id="d4e659" class="entity"><a name="http://resource.geosciml.org/ontology/timescale/gts"></a><h3>gts<sup title="named individual" class="type-ni">ni</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a></span></h3><p><strong>IRI:</strong> http://resource.geosciml.org/ontology/timescale/gts</p><dl class="description"><dt>belongs to</dt><dd><span class="dotted" title="http://purl.org/vocommons/voaf#Vocabulary">vocabulary</span></dd></dl></div></div><div id="namespacedeclarations"><h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2><dl><dt><em>default namespace</em></dt><dd>http://resource.geosciml.org/ontology/timescale/gts#</dd><dt>10-1130</dt><dd>http://dx.doi.org/10.1130/</dd><dt>24d302bf3f0fa315c1dddc2c734b84f52299cd02</dt><dd>https://github.com/GeoscienceAustralia/geosciml.org/commit/24d302bf3f0fa315c1dddc2c734b84f52299cd02#</dd><dt>dc</dt><dd>http://purl.org/dc/elements/1.1/</dd><dt>error</dt><dd>http://org.semanticweb.owlapi/error#</dd><dt>geologictimescale</dt><dd>https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/</dd><dt>metadata</dt><dd>http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#</dd><dt>owl</dt><dd>http://www.w3.org/2002/07/owl#</dd><dt>rdf</dt><dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd><dt>rdfs</dt><dd>http://www.w3.org/2000/01/rdf-schema#</dd><dt>skos</dt><dd>http://www.w3.org/2004/02/skos/core#</dd><dt>terms</dt><dd>http://purl.org/dc/terms/</dd><dt>thors</dt><dd>http://resource.geosciml.org/ontology/timescale/thors#</dd><dt>timescale</dt><dd>http://resource.geosciml.org/ontology/timescale/</dd><dt>vann</dt><dd>http://purl.org/vocab/vann/</dd><dt>voaf</dt><dd>http://purl.org/vocommons/voaf#</dd><dt>xsd</dt><dd>http://www.w3.org/2001/XMLSchema#</dd></dl></div><p class="endnote">This HTML document was obtained by processing the OWL ontology source code through <a href="http://www.essepuntato.it/lode">LODE</a>, <em>Live OWL Documentation Environment</em>, developed by <a href="http://www.essepuntato.it">Silvio Peroni</a>.</p></body></html>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Geologic Timescale model</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <style>
+        #pylode {
+            position: fixed;
+            top: 80px;
+            left: -60px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+        dt {
+            font-weight: bold;
+            padding: 5px 0 5px 0;
+        }
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+        .entity table th {
+            text-align: left;
+        }
+        section#overview img {
+            max-width: 1000px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 3px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: justify;
+        }
+        section {
+            max-width: 1500px;
+        }
+        .figure {
+            margin-bottom: 20px;
+        }
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-cp,
+        .sup-cl {
+            cursor:help;
+            margin-left: 3px;
+        }
+        .sup-c {
+            color:orange;
+        }
+        .sup-op {
+            color:navy;
+        }
+        .sup-fp {
+            color:lightskyblue;
+        }
+        .sup-dp {
+            color:green;
+        }
+        .sup-ap {
+            color:darkred;
+        }
+        .sup-p {
+            color:black;
+        }
+        .sup-ni {
+            color:brown;
+        }
+        .sup-cp {
+            color:orange;
+        }
+        .sup-cl {
+            color:darkred;
+        }
+        code {
+            font-size: large;
+            color: darkred;
+        }
+    </style>
+    
+    <script type="application/ld+json">
+      [
+  {
+    "@id": "http://resource.geosciml.org/ontology/timescale/gts",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/codeRepository": [
+      {
+        "@id": "https://github.com/CGI-IUGS/timescale-ont"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "<p>This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119�137.</p>\n<p>The permitted nesting relationships between eras of different ranks are axiomatized as local constraints using interval relationships from OWL-Time. </p>"
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Geologic Timescale model"
+      }
+    ],
+    "https://schema.org/rights": [
+      {
+        "@value": "&copy; 2012-2020 CSIRO"
+      }
+    ]
+  }
+]
+    </script>
+</head>
+<body>
+<div id="pylode">made by <a href="http://github.com/rdflib/pyLODE"><span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a></div>
+<h1>Geologic Timescale model</h1>
+<section id="metadata">
+    <h2 style="display:none;">Metadata</h2>
+    <dl>
+        <dt>IRI</dt>
+        <dd><code>http://resource.geosciml.org/ontology/timescale/gts</code></dd>
+        <dt>Creator(s)</dt>
+        <dd>
+            
+    <a href="https://orcid.org/0000-0002-3884-3420">Simon J D Cox</a>
+    <a href="https://orcid.org/0000-0002-3884-3420"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Orcid logo</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero" transform="translate(-924.000000, -72.000000)" fill-rule="nonzero">
+            <g id="Group-4">
+                <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+                    <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" id="Path" fill="#A6CE39"></path>
+                    <g id="Group" transform="translate(18.868966, 12.910345)" fill="#FFFFFF">
+                        <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878"></polygon>
+                        <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape"></path>
+                        <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+    (<a href="mailto:simon.cox@csiro.au">simon.cox@csiro.au</a>) of 
+    <a href="http://catalogue.linked.data.gov.au/org/csiro">CSIRO</a><br/>
+        </dd>
+        <dt>Contributors(s)</dt>
+        <dd>
+            
+    <a href="https://orcid.org/0000-0001-6041-5302">Stepehen M Richard</a>
+    <a href="https://orcid.org/0000-0001-6041-5302"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Orcid logo</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero" transform="translate(-924.000000, -72.000000)" fill-rule="nonzero">
+            <g id="Group-4">
+                <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+                    <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" id="Path" fill="#A6CE39"></path>
+                    <g id="Group" transform="translate(18.868966, 12.910345)" fill="#FFFFFF">
+                        <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878"></polygon>
+                        <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape"></path>
+                        <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+    (<a href="mailto:smrTucson@gmail.com">smrTucson@gmail.com</a>)<br/>
+        </dd>
+        <dt>Created</dt>
+        <dd>2011-01-01</dd>
+        <dt>Modified</dt>
+        <dd>2020-05-31</dd>
+        <dt>Imports</dt>
+        <dd>
+            <a href="http://resource.geosciml.org/ontology/timescale/thors">http://resource.geosciml.org/ontology/timescale/thors</a><br/>
+            <a href="http://www.w3.org/ns/sosa/">sosa:</a><br/>
+        </dd>
+        <dt>License &amp; Rights</dt>
+        <dd>
+            <a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a><br />
+            &copy; 2012-2020 CSIRO
+        </dd>
+        <dt>Source</dt>
+        <dd>Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119�137.</dd>
+        <dt>Ontology RDF</dt>
+        <dd><a href="gts.ttl">RDF (turtle)</a></dd>
+        <dt>Code Repository</dt>
+        <dd><a href="https://github.com/CGI-IUGS/timescale-ont">https://github.com/CGI-IUGS/timescale-ont</a></dd>
+    </dl>
+    <h2>Description</h2>
+    <div id="description">
+        <p>This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119�137.</p>
+<p>The permitted nesting relationships between eras of different ranks are axiomatized as local constraints using interval relationships from OWL-Time. </p>
+    </div>
+</section>
+<section id="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#objectproperties">Object Properties</a></li>
+        <li><a href="#datatypeproperties">Datatype Properties</a></li>
+        <li><a href="#namedindividuals">Named Individuals</a></li>
+        <li><a href="#namespaces">Namespaces</a></li>
+        <li><a href="#legend">Legend</a></li>
+    </ol>
+</section>
+<section id="overview">
+    <h2>Overview</h2>
+    <div class="figure">
+        <div style="width:500px; text-align:center;"><img alt='Class diagram - GTS' src='../images/gts+thors+owl-time.png'></div>
+        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
+    </div>
+</section>
+<section id="classes">
+    <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#Age">Age</a></li>
+        <li><a href="#Eon">Eon</a></li>
+        <li><a href="#Epoch">Epoch</a></li>
+        <li><a href="#Era">Era</a></li>
+        <li><a href="#GeochronologicBoundary">Geochronologic Boundary</a></li>
+        <li><a href="#GeochronologicEra">Geochronologic Era</a></li>
+        <li><a href="#GeochronologicEraRank">Geochronologic Era Rank</a></li>
+        <li><a href="#GeologicTimescale">Geologic Timescale</a></li>
+        <li><a href="#NumericEraBoundary">Numeric Era Boundary</a></li>
+        <li><a href="#Period">Period</a></li>
+        <li><a href="#StratigraphicEvent">Stratigraphic Event</a></li>
+        <li><a href="#StratigraphicPoint">Stratigraphic Point</a></li>
+        <li><a href="#StratigraphicSection">Stratigraphic Section</a></li>
+        <li><a href="#Sub-Period">Sub-Period</a></li>
+        <li><a href="#Super-Eon">Super-Eon</a></li>
+    </ul>
+    <div class="entity class" id="Age">
+        <h3>Age<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#Age</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geochronologic era of rank 'Age'</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+isc:Calabrian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  gts:rank rank:Age ;
+  rdfs:comment "older bound -1.80 Ma"@en ;
+  rdfs:comment "younger bound -0.781 Ma"@en ;
+  rdfs:label "Calabrian Age"@en ;
+  skos:notation "a1.1.1.1.2.3"^^gts:EraCode ;
+  skos:prefLabel "Calabr"@cs ;
+  skos:prefLabel "Calabrian"@en ;
+  time:hasBeginning isc:BaseCalabrian ;
+  time:hasEnd isc:BaseMiddlePleistocene ;
+  time:intervalDuring isc:Pleistocene ;
+  time:intervalIn isc:Pleistocene ;
+  time:intervalMeets isc:MiddlePleistocene ;
+  time:intervalMetBy isc:Gelasian ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 0 (gts:Epoch
+                    or gts:Age
+                    or gts:Sub-Period
+                    or gts:Period
+                    or gts:Era
+                    or gts:Eon
+                    or gts:Super-Eon)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalIn">time:intervalIn</a> <span class="cardinality">exactly</span> 1 <a href="#Epoch">gts:Epoch</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">exactly</span> 0 (gts:Epoch
+                    or gts:Age
+                    or gts:Sub-Period
+                    or gts:Period
+                    or gts:Era
+                    or gts:Eon
+                    or gts:Super-Eon)<br/>
+                    <a href="#Geochronologicerarank">gts:rank</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">value</span> <a href="http://resource.geosciml.org/ontology/timescale/rank/Age">rank:Age</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 0 (gts:Epoch
+                    or gts:Age
+                    or gts:Sub-Period
+                    or gts:Period
+                    or gts:Era
+                    or gts:Eon
+                    or gts:Super-Eon)<br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Eon">
+        <h3>Eon<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#Eon</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geochronologic era of rank 'Eon'</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+isc:Proterozoic
+  rdf:type gts:Eon ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  gts:rank rank:Eon ;
+  rdfs:comment "older bound -2500 Ma"@en ;
+  rdfs:comment "younger bound -541.0 +|-1.0 Ma"@en ;
+  rdfs:label "Proterozoic Eon"@en ;
+  skos:notation "a2.1"^^gts:EraCode ;
+  skos:prefLabel "Proterosoikum"@et ;
+  skos:prefLabel "Proterozoic"@en ;
+  time:hasBeginning isc:BaseProterozoic ;
+  time:hasEnd isc:BasePhanerozoic ;
+  time:intervalContains isc:Mesoproterozoic ;
+  time:intervalFinishedBy isc:Neoproterozoic ;
+  time:intervalFinishes isc:Precambrian ;
+  time:intervalIn isc:Precambrian ;
+  time:intervalMeets isc:Cambrian ;
+  time:intervalMeets isc:Fortunian ;
+  time:intervalMeets isc:Paleozoic ;
+  time:intervalMeets isc:Phanerozoic ;
+  time:intervalMeets isc:Terreneuvian ;
+  time:intervalMetBy isc:Archean ;
+  time:intervalMetBy isc:Neoarchean ;
+  time:intervalStartedBy isc:Paleoproterozoic ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 0 (gts:Eon
+                    or gts:Super-Eon)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 0 (gts:Eon
+                    or gts:Super-Eon)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalIn">time:intervalIn</a> <span class="cardinality">max</span> 1 <a href="#Super-Eon">gts:Super-Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">exactly</span> 0 (gts:Eon
+                    or gts:Super-Eon)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">some</span> <a href="#Era">gts:Era</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Geochronologicerarank">gts:rank</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">value</span> <a href="http://resource.geosciml.org/ontology/timescale/rank/Eon">rank:Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Era">gts:Era</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Era">gts:Era</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Epoch">
+        <h3>Epoch<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#Epoch</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geochronologic era of rank 'Epoch'</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:Cisuralian
+  rdf:type gts:Epoch ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  gts:rank rank:Epoch ;
+  rdfs:comment "older bound -298.9 +|-0.15 Ma"@en ;
+  rdfs:comment "younger bound -272.95 +|-0.11 Ma"@en ;
+  rdfs:label "Cisuralian Epoch"@en ;
+  skos:notation "a1.1.3.1.3"^^gts:EraCode ;
+  skos:prefLabel "Cisural"@cs ;
+  skos:prefLabel "Cisuralian"@en ;
+  skos:prefLabel "Kisuralis"@lt ;
+  time:hasBeginning isc:BasePermian ;
+  time:hasEnd isc:BaseGuadalupian ;
+  time:intervalContains isc:Artinskian ;
+  time:intervalContains isc:Sakmarian ;
+  time:intervalFinishedBy isc:Kungurian ;
+  time:intervalIn isc:Permian ;
+  time:intervalMeets isc:Guadalupian ;
+  time:intervalMeets isc:Roadian ;
+  time:intervalMetBy isc:Carboniferous ;
+  time:intervalMetBy isc:Gzhelian ;
+  time:intervalMetBy isc:Pennsylvanian ;
+  time:intervalMetBy isc:UpperMississippian ;
+  time:intervalMetBy isc:UpperPennsylvanian ;
+  time:intervalStartedBy isc:Asselian ;
+  time:intervalStarts isc:Permian ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#Geochronologicerarank">gts:rank</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">value</span> <a href="http://resource.geosciml.org/ontology/timescale/rank/Epoch">rank:Epoch</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">exactly</span> 0 (gts:Eon
+                    or gts:Era
+                    or gts:Epoch
+                    or gts:Period
+                    or gts:Sub-Period
+                    or gts:Super-Eon)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 0 (gts:Eon
+                    or gts:Era
+                    or gts:Epoch
+                    or gts:Period
+                    or gts:Sub-Period
+                    or gts:Super-Eon)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Age">gts:Age</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Age">gts:Age</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalIn">time:intervalIn</a> <span class="cardinality">exactly</span> 1 (gts:Period
+                    or gts:Sub-Period)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 0 (gts:Eon
+                    or gts:Era
+                    or gts:Epoch
+                    or gts:Period
+                    or gts:Sub-Period
+                    or gts:Super-Eon)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">some</span> <a href="#Age">gts:Age</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Era">
+        <h3>Era<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#Era</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geochronologic era of rank 'Era'</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:Mesoproterozoic
+  rdf:type gts:Era ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  gts:rank rank:Era ;
+  rdfs:comment "older bound -1600 Ma"@en ;
+  rdfs:comment "younger bound -1000 Ma"@en ;
+  rdfs:label "Mesoproterozoic Era"@en ;
+  skos:notation "a2.1.2"^^gts:EraCode ;
+  skos:prefLabel "Mesoproterozoic"@en ;
+  skos:prefLabel "Mesoproterozoico"@es ;
+  time:hasBeginning isc:BaseMesoproterozoic ;
+  time:hasEnd isc:BaseNeoproterozoic ;
+  time:intervalContains isc:Ectasian ;
+  time:intervalDuring isc:Proterozoic ;
+  time:intervalFinishedBy isc:Stenian ;
+  time:intervalIn isc:Proterozoic ;
+  time:intervalMeets isc:Neoproterozoic ;
+  time:intervalMeets isc:Tonian ;
+  time:intervalMetBy isc:Paleoproterozoic ;
+  time:intervalMetBy isc:Statherian ;
+  time:intervalStartedBy isc:Calymmian ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 0 (gts:Super-Eon
+                    or gts:Eon
+                    or gts:Era)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalIn">time:intervalIn</a> <span class="cardinality">exactly</span> 1 <a href="#Eon">gts:Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Geochronologicerarank">gts:rank</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">value</span> <a href="http://resource.geosciml.org/ontology/timescale/rank/Era">rank:Era</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Period">gts:Period</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">some</span> <a href="#Period">gts:Period</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">exactly</span> 0 (gts:Super-Eon
+                    or gts:Eon
+                    or gts:Era)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 0 (gts:Super-Eon
+                    or gts:Eon
+                    or gts:Era)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Period">gts:Period</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="GeochronologicBoundary">
+        <h3>Geochronologic Boundary<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Boundary between geochronologic eras, defined with reference to an agreed stratigraphic point. Typically denoted as the 'base of' the succeeding era</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:BaseJurassic
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  gts:stratotype isc:BaseJurassicSP ;
+  rdfs:label "Base of Jurassic"@en ;
+  skos:altLabel "Base of Hettangian"@en ;
+  skos:altLabel "Base of Lower Jurassic"@en ;
+  skos:prefLabel "Base of Jurassic"@en ;
+  time:inTemporalPosition isc:BaseJurassicTime ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://resource.geosciml.org/ontology/timescale/thors#EraBoundary">thors:EraBoundary</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#stratotype">gts:stratotype</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StratigraphicPoint">gts:StratigraphicPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#geochronologicboundary">gts:boundary</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="GeochronologicEra">
+        <h3>Geochronologic Era<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Named interval within the geologic timescale, of any rank</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:Mesozoic
+  rdf:type gts:Era ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Mesozoic Era"@en ;
+  skos:notation "a1.1.2"^^gts:EraCode ;
+  skos:prefLabel "Mesosoikum"@et ;
+  skos:prefLabel "Mesozoic"@en ;
+  time:hasBeginning isc:BaseMesozoic ;
+  time:hasEnd isc:BaseCenozoic ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://resource.geosciml.org/ontology/timescale/thors#Era">thors:Era</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a> <span class="cardinality">some</span> <a href="http://resource.geosciml.org/ontology/timescale/gts#EraCode">gts:EraCode</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Geochronologicerarank">gts:rank</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#stratotype">gts:stratotype</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StratigraphicSection">gts:StratigraphicSection</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#Era">gts:Era</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Period">gts:Period</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Age">gts:Age</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Eon">gts:Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Epoch">gts:Epoch</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Sub-Period">gts:Sub-Period</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Super-Eon">gts:Super-Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#Geochronologicerarank">gts:rank</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#geochronologicera">gts:era</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="GeochronologicEraRank">
+        <h3>Geochronologic Era Rank<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Rank of geologic era within the standard hierarchy: Eon, Era, Period, Epoch, Age</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+rank:Period
+  rdf:type gts:GeochronologicEraRank ;
+  rdf:type skos:Concept ;
+  rdfs:label "Period" ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#Geochronologicerarank">gts:rank</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="GeologicTimescale">
+        <h3>Geologic Timescale<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The hierarchical ordinal/nominal reference system known as the Geologic Timescale</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+ts:gts2019
+  rdf:type gts:GeologicTimescale ;
+  rdf:type skos:ConceptScheme ;
+  rdf:type time:TRS ;
+  thors:component isc:Phanerozoic ;
+  thors:component isc:Precambrian ;
+  thors:referencePoint isc:BasePhanerozoic ;
+  thors:referencePoint isc:FormationOfEarth ;
+  thors:referencePoint isc:Present ;
+  rdfs:label "Geologic Time Scale (2019)"@en ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem">thors:ReferenceSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="http://resource.geosciml.org/ontology/timescale/thors#component">thors:component</a> <span class="cardinality">only</span> <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://resource.geosciml.org/ontology/timescale/thors#referencePoint">thors:referencePoint</a> <span class="cardinality">only</span> (<a href="#GeochronologicBoundary">gts:GeochronologicBoundary</a><sup class="sup-c" title="class">c</sup> or <a href="#NumericEraBoundary">gts:NumericEraBoundary</a><sup class="sup-c" title="class">c</sup>)<br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="NumericEraBoundary">
+        <h3>Numeric Era Boundary<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Boundary between geochronologic eras, defined by an agreed chronometric position (i.e. numeric age). Typically denoted as the 'base of' the succeeding era</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:BaseProterozoic
+  rdf:type gts:NumericEraBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  gts:ratifiedGSSP true ;
+  rdfs:label "Base of Proterozoic"@en ;
+  skos:prefLabel "Base of Proterozoic"@en ;
+  time:inTemporalPosition isc:BaseProterozoicTime ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://resource.geosciml.org/ontology/timescale/thors#EraBoundary">thors:EraBoundary</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#status">gts:status</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Period">
+        <h3>Period<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#Period</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geochronologic era of rank 'Period'</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:Stenian
+  rdf:type gts:GeochronologicEra ;
+  rdf:type gts:Period ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  gts:rank rank:Period ;
+  rdfs:comment "older bound -1200 Ma"@en ;
+  rdfs:comment "younger bound -1000 Ma"@en ;
+  rdfs:label "Stenian Period"@en ;
+  skos:notation "a2.1.2.1"^^gts:EraCode ;
+  skos:prefLabel "Esteniense"@es ;
+  skos:prefLabel "Stenian"@en ;
+  time:hasBeginning isc:BaseStenian ;
+  time:hasEnd isc:BaseNeoproterozoic ;
+  time:intervalFinishes isc:Mesoproterozoic ;
+  time:intervalIn isc:Mesoproterozoic ;
+  time:intervalMeets isc:Neoproterozoic ;
+  time:intervalMeets isc:Tonian ;
+  time:intervalMetBy isc:Ectasian ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="http://www.w3.org/2006/time#intervalIn">time:intervalIn</a> <span class="cardinality">exactly</span> 1 <a href="#Era">gts:Era</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">some</span> <a href="#Epoch">gts:Epoch</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 0 (gts:Super-Eon
+                    or gts:Eon
+                    or gts:Era
+                    or gts:Period)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 0 (gts:Super-Eon
+                    or gts:Eon
+                    or gts:Era
+                    or gts:Period)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Epoch">gts:Epoch</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Epoch">gts:Epoch</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Geochronologicerarank">gts:rank</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">value</span> <a href="http://resource.geosciml.org/ontology/timescale/rank/Period">rank:Period</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">exactly</span> 0 (gts:Super-Eon
+                    or gts:Eon
+                    or gts:Era
+                    or gts:Period)<br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="StratigraphicEvent">
+        <h3>Stratigraphic Event<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geologic event correlated with a specified stratotype. </p>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#stratigraphicevent">gts:event</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="StratigraphicPoint">
+        <h3>Stratigraphic Point<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A specified position within an agreed stratigraphic section, used to calibrate the temporal position (age) of a boundary within the geologic timescale. </p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:BaseJurassicSP
+  rdf:type gts:StratigraphicPoint ;
+  dct:source "Episodes 36/3, p. 162-198, 2013"@en ;
+  gts:boundaryLevel "5.80 m above top of Koessen Formation"@en ;
+  gts:correlationEvent "FO of ammonite Psiloceras spelae tirolicum, FO of aragonitic foraminifer Praegubkinella turgescens"@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 2010"@en ;
+  geo:hasGeometry isc:BaseJurassic-location ;
+  rdfs:comment "Kuhjoch section,Tyrol, Austria "@en ;
+  rdfs:label "Stratotype Point Base of Jurassic"@en ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Hettangian.pdf> ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
+  skos:prefLabel "Stratotype Point Base of Jurassic"@en ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#correlationevent">gts:correlationEvent</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#status">gts:status</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#ratified">gts:ratifiedGSSP</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">max</span> 1<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#correlationevent">gts:correlationEvent</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#boundarylevel">gts:boundaryLevel</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#geochronologicboundary">gts:boundary</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="StratigraphicSection">
+        <h3>Stratigraphic Section<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>An agreed stratigraphic section, which hosts a stratigrpahic point that is used to calibrate the temporal position (age) of a boundary within the geologic timescale. </p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#geologicdescription">gts:geologicDescription</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#geologicsetting">gts:geologicSetting</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#geochronologicera">gts:era</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#geologicsetting">gts:geologicSetting</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#geologicdescription">gts:geologicDescription</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Sub-Period">
+        <h3>Sub-Period<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#Sub-Period</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geochronologic era of rank 'Sub-Period'</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:Mississippian
+  rdf:type gts:GeochronologicEra ;
+  rdf:type gts:Sub-Period ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  gts:rank rank:Sub-Period ;
+  rdfs:comment "older bound -358.9 +|-0.4 Ma"@en ;
+  rdfs:comment "younger bound -323.2 +|-0.4 Ma"@en ;
+  rdfs:label "Mississippian Sub-period"@en ;
+  skos:notation "a1.1.3.2.2"^^gts:EraCode ;
+  skos:prefLabel "Misisipis"@lt ;
+  skos:prefLabel "Mississippian"@en ;
+  time:hasBeginning isc:BaseCarboniferous ;
+  time:hasEnd isc:BasePennsylvanian ;
+  time:intervalContains isc:MiddleMississippian ;
+  time:intervalFinishedBy isc:UpperMississippian ;
+  time:intervalIn isc:Carboniferous ;
+  time:intervalMeets isc:Bashkirian ;
+  time:intervalMeets isc:LowerPennsylvanian ;
+  time:intervalMeets isc:Pennsylvanian ;
+  time:intervalMetBy isc:Devonian ;
+  time:intervalMetBy isc:Famennian ;
+  time:intervalMetBy isc:UpperDevonian ;
+  time:intervalStartedBy isc:LowerMississippian ;
+  time:intervalStarts isc:Carboniferous ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Epoch">gts:Epoch</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">exactly</span> 0 (gts:Super-Eon
+                    or gts:Eon
+                    or gts:Era
+                    or gts:Period
+                    or gts:Sub-Period)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 0 (gts:Super-Eon
+                    or gts:Eon
+                    or gts:Era
+                    or gts:Period
+                    or gts:Sub-Period)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 0 (gts:Super-Eon
+                    or gts:Eon
+                    or gts:Era
+                    or gts:Period
+                    or gts:Sub-Period)<br/>
+                    <a href="http://www.w3.org/2006/time#intervalIn">time:intervalIn</a> <span class="cardinality">exactly</span> 1 <a href="#Period">gts:Period</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">some</span> <a href="#Epoch">gts:Epoch</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Epoch">gts:Epoch</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Geochronologicerarank">gts:rank</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">value</span> <a href="http://resource.geosciml.org/ontology/timescale/rank/Sub-Period">rank:Sub-Period</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Super-Eon">
+        <h3>Super-Eon<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#Super-Eon</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geochronologic era of rank 'Super-Eon'</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:Precambrian
+  rdf:type gts:GeochronologicEra ;
+  rdf:type gts:Super-Eon ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  gts:rank rank:Super-Eon ;
+  rdfs:comment "older bound -4567 +|-1 Ma"@en ;
+  rdfs:comment "younger bound -541.0 +|-1.0 Ma"@en ;
+  rdfs:label "Precambrian Supereon"@en ;
+  skos:notation "a2"^^gts:EraCode ;
+  skos:prefLabel "Precambrian"@en ;
+  skos:prefLabel "Pr�cambrien"@fr ;
+  time:hasBeginning isc:FormationOfEarth ;
+  time:hasEnd isc:BasePhanerozoic ;
+  time:intervalContains isc:Archean ;
+  time:intervalFinishedBy isc:Proterozoic ;
+  time:intervalMeets isc:Cambrian ;
+  time:intervalMeets isc:Fortunian ;
+  time:intervalMeets isc:Paleozoic ;
+  time:intervalMeets isc:Phanerozoic ;
+  time:intervalMeets isc:Terreneuvian ;
+  time:intervalStartedBy isc:Hadean ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Eon">gts:Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalStartedBy">time:intervalStartedBy</a> <span class="cardinality">exactly</span> 0 <a href="#Super-Eon">gts:Super-Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">some</span> <a href="#Eon">gts:Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalContains">time:intervalContains</a> <span class="cardinality">exactly</span> 0 <a href="#Super-Eon">gts:Super-Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 1 <a href="#Eon">gts:Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/2006/time#intervalFinishedBy">time:intervalFinishedBy</a> <span class="cardinality">exactly</span> 0 <a href="#Super-Eon">gts:Super-Eon</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="objectproperties">
+    <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#geochronologicboundary">geochronologic boundary</a></li>
+        <li><a href="#correlatingboundaryorera">correlating boundary or era</a></li>
+        <li><a href="#geochronologicera">geochronologic era</a></li>
+        <li><a href="#stratigraphicevent">stratigraphic event</a></li>
+        <li><a href="#geologicmanifestation">geologic manifestation</a></li>
+        <li><a href="#timepositionuncertainty">time position uncertainty</a></li>
+        <li><a href="#Geochronologicerarank">Geochronologic era rank</a></li>
+        <li><a href="#stratotype">stratotype</a></li>
+    </ul>
+    <div class="entity property" id="geochronologicboundary">
+        <h3>geochronologic boundary<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#boundary</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    geochronologic boundary corresponding with this stratigraphic point
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#StratigraphicPoint">gts:StratigraphicPoint</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#GeochronologicBoundary">gts:GeochronologicBoundary</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="correlatingboundaryorera">
+        <h3>correlating boundary or era<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#correlatesWith</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    This property points from a geologic feature or event to a geochronologic element
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#GeochronologicBoundary">gts:GeochronologicBoundary</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="geochronologicera">
+        <h3>geochronologic era<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#era</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    geochronologic era corresponding with this stratigraphic section
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#StratigraphicSection">gts:StratigraphicSection</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="stratigraphicevent">
+        <h3>stratigraphic event<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#event</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    stratigraphic event corresponding with this boundary or point
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    (<a href="#GeochronologicBoundary">gts:GeochronologicBoundary</a><sup class="sup-c" title="class">c</sup> or <a href="#StratigraphicPoint">gts:StratigraphicPoint</a><sup class="sup-c" title="class">c</sup>)
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#StratigraphicEvent">gts:StratigraphicEvent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="geologicmanifestation">
+        <h3>geologic manifestation<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#manifestedBy</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    This property points from a geochronologic element to a geologic feature which shows characteristics associated with the event associated with the boundary or era
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#correlatingboundaryorera">gts:correlatesWith</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    (<a href="#GeochronologicBoundary">gts:GeochronologicBoundary</a><sup class="sup-c" title="class">c</sup> or <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup>)
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="timepositionuncertainty">
+        <h3>time position uncertainty<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#positionalUncertainty</code></td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:BaseAeronianTime
+  a time:TimePosition ;
+  gts:positionalUncertainty isc:BaseAeronianUncertainty ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition 440.8 ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2006/time#TemporalPosition">time:TemporalPosition</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2006/time#TemporalDuration">time:TemporalDuration</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Geochronologicerarank">
+        <h3>Geochronologic era rank<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#rank</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Elements of all ranks are included in the class 'gts:GeochronologicEra'. 
+The rank may be indicated by membership of a sub-class, or is indicated using the 'gts:rank' property.
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:Aalenian
+  a gts:Age ;
+  a gts:GeochronologicEra ;
+  a skos:Concept ;
+  a time:ProperInterval ;
+  gts:rank rank:Age ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#GeochronologicEraRank">gts:GeochronologicEraRank</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="stratotype">
+        <h3>stratotype<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#stratotype</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    the characteristic stratigraphic point or section corresponding with a geochronologic concept
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:BaseAeronian
+  a gts:GeochronologicBoundary ;
+  a thors:EraBoundary ;
+  a skos:Concept ;
+  a time:Instant ;
+  gts:stratotype isc:BaseAeronianSP ;
+  rdfs:label "Base of Aeronian"@en ;
+  skos:prefLabel "Base of Aeronian"@en ;
+  time:inTemporalPosition isc:BaseAeronianTime ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    (<a href="#GeochronologicBoundary">gts:GeochronologicBoundary</a><sup class="sup-c" title="class">c</sup> or <a href="#GeochronologicEra">gts:GeochronologicEra</a><sup class="sup-c" title="class">c</sup>)
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#StratigraphicPoint">gts:StratigraphicPoint</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#StratigraphicSection">gts:StratigraphicSection</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="datatypeproperties">
+    <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#boundarylevel">boundary level</a></li>
+        <li><a href="#correlationevent">correlation event</a></li>
+        <li><a href="#geologicdescription">geologic description</a></li>
+        <li><a href="#geologicsetting">geologic setting</a></li>
+        <li><a href="#ratified">ratified</a></li>
+        <li><a href="#status">status</a></li>
+    </ul>
+    <div class="entity property" id="boundarylevel">
+        <h3>boundary level<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    the level within the section of the point characterizing the boundary
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:BaseBathonianSP
+  a gts:StratigraphicPoint ;
+  gts:boundaryLevel "Base of limestone bed RB07 "@en ;
+  gts:correlationEvent "Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)"@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 2008"@en ;
+  geo:hasGeometry isc:BaseBathonian-location ;
+  rdfs:comment "Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  "@en ;
+  rdfs:label "Stratotype Point Base of Bathonian"@en ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#StratigraphicPoint">gts:StratigraphicPoint</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="correlationevent">
+        <h3>correlation event<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#correlationEvent</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    the stratigraphic event that is intended to be represented by this stratigraphic point
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:BaseBathonianSP
+  a gts:StratigraphicPoint ;
+  gts:boundaryLevel "Base of limestone bed RB07 "@en ;
+  gts:correlationEvent "Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)"@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 2008"@en ;
+  geo:hasGeometry isc:BaseBathonian-location ;
+  rdfs:comment "Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  "@en ;
+  rdfs:label "Stratotype Point Base of Bathonian"@en ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#StratigraphicPoint">gts:StratigraphicPoint</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="geologicdescription">
+        <h3>geologic description<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#geologicDescription</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#StratigraphicSection">gts:StratigraphicSection</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="geologicsetting">
+        <h3>geologic setting<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#geologicSetting</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#StratigraphicSection">gts:StratigraphicSection</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="ratified">
+        <h3>ratified<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    flag to indicate the status of the calibration details of a geochronologic boundary - 'true' if ratified by ICS
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:BaseBathonianSP
+  a gts:StratigraphicPoint ;
+  gts:boundaryLevel "Base of limestone bed RB07 "@en ;
+  gts:correlationEvent "Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)"@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 2008"@en ;
+  geo:hasGeometry isc:BaseBathonian-location ;
+  rdfs:comment "Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  "@en ;
+  rdfs:label "Stratotype Point Base of Bathonian"@en ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    (<a href="#StratigraphicPoint">gts:StratigraphicPoint</a><sup class="sup-c" title="class">c</sup> or <a href="#GeochronologicBoundary">gts:GeochronologicBoundary</a><sup class="sup-c" title="class">c</sup> or <a href="#NumericEraBoundary">gts:NumericEraBoundary</a><sup class="sup-c" title="class">c</sup>)
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="status">
+        <h3>status<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://resource.geosciml.org/ontology/timescale/gts#status</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://resource.geosciml.org/ontology/timescale/gts
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    formal ICS status of this boundary and point
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+isc:BaseBathonianSP
+  a gts:StratigraphicPoint ;
+  gts:boundaryLevel "Base of limestone bed RB07 "@en ;
+  gts:correlationEvent "Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)"@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 2008"@en ;
+  geo:hasGeometry isc:BaseBathonian-location ;
+  rdfs:comment "Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  "@en ;
+  rdfs:label "Stratotype Point Base of Bathonian"@en ;
+.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    (<a href="#NumericEraBoundary">gts:NumericEraBoundary</a><sup class="sup-c" title="class">c</sup> or <a href="#StratigraphicPoint">gts:StratigraphicPoint</a><sup class="sup-c" title="class">c</sup>)
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="namedindividuals">
+    <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#0000-0001-6041-5302">0000-0001-6041-5302</a></li>
+        <li><a href="#0000-0002-3884-3420">0000-0002-3884-3420</a></li>
+    </ul>
+    <div class="entity named_individual" id="0000-0001-6041-5302">
+        <h3>0000-0001-6041-5302<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://orcid.org/0000-0001-6041-5302
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://schema.org/Person">sdo:Person</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="0000-0002-3884-3420">
+        <h3>0000-0002-3884-3420<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://orcid.org/0000-0002-3884-3420
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://schema.org/Person">sdo:Person</a><br/>
+            </dd>
+        </table>
+    </div>
+</section>
+<section id="namespaces">
+    <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <dl>
+        <dt><em>default (:)</em></dt>
+        <dd><code>http://resource.geosciml.org/ontology/timescale/gts#</code></dd>
+        <dt>dc</dt>
+        <dd><code>http://purl.org/dc/elements/1.1/</code></dd>
+        <dt>dcterms</dt>
+        <dd><code>http://purl.org/dc/terms/</code></dd>
+        <dt>gts</dt>
+        <dd><code>http://resource.geosciml.org/ontology/timescale/gts#</code></dd>
+        <dt>owl</dt>
+        <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
+        <dt>prov</dt>
+        <dd><code>http://www.w3.org/ns/prov#</code></dd>
+        <dt>rank</dt>
+        <dd><code>http://resource.geosciml.org/ontology/timescale/rank/</code></dd>
+        <dt>rdf</dt>
+        <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
+        <dt>rdfs</dt>
+        <dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
+        <dt>sdo</dt>
+        <dd><code>https://schema.org/</code></dd>
+        <dt>skos</dt>
+        <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
+        <dt>sosa</dt>
+        <dd><code>http://www.w3.org/ns/sosa/</code></dd>
+        <dt>thors</dt>
+        <dd><code>http://resource.geosciml.org/ontology/timescale/thors#</code></dd>
+        <dt>time</dt>
+        <dd><code>http://www.w3.org/2006/time#</code></dd>
+        <dt>vann</dt>
+        <dd><code>http://purl.org/vocab/vann/</code></dd>
+        <dt>voaf</dt>
+        <dd><code>http://purl.org/vocommons/voaf#</code></dd>
+        <dt>xml</dt>
+        <dd><code>http://www.w3.org/XML/1998/namespace</code></dd>
+        <dt>xsd</dt>
+        <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
+    </dl>
+</section>
+<section id="legend">
+    <h2>Legend</h2>
+    <table class="entity">
+        <tr><td><sup class="sup-c" title="Classes">c</sup></td><td>Classes</td></tr>
+        <tr><td><sup class="sup-op" title="Object Properties">op</sup></td><td>Object Properties</td></tr>
+        <tr><td><sup class="sup-fp" title="Functional Properties">fp</sup></td><td>Functional Properties</td></tr>
+        <tr><td><sup class="sup-dp" title="Data Properties">dp</sup></td><td>Data Properties</td></tr>
+        <tr><td><sup class="sup-ap" title="Annotation Properties">dp</sup></td><td>Annotation Properties</td></tr>
+        <tr><td><sup class="sup-p" title="Properties">p</sup></td><td>Properties</td></tr>
+        <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
+    </table>
+</section>
+</body>
+</html>

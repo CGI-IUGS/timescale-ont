@@ -331,7 +331,7 @@ isc:Cisuralian
   skos:notation \"a1.1.3.1.3\"^^gts:EraCode ;
   skos:prefLabel \"Cisural\"@cs ;
   skos:prefLabel \"Cisuralian\"@en ;
-  skos:prefLabel \"乌拉尔世\"@zh ;
+  skos:prefLabel \"Kisuralis\"@lt ;
   time:hasBeginning isc:BasePermian ;
   time:hasEnd isc:BaseGuadalupian ;
   time:intervalContains isc:Artinskian ;
@@ -916,7 +916,7 @@ isc:Precambrian
   rdfs:label \"Precambrian Supereon\"@en ;
   skos:notation \"a2\"^^gts:EraCode ;
   skos:prefLabel \"Precambrian\"@en ;
-  skos:prefLabel \"前寒武纪\"@zh ;
+  skos:prefLabel \"Précambrien\"@fr ;
   time:hasBeginning isc:FormationOfEarth ;
   time:hasEnd isc:BasePhanerozoic ;
   time:intervalContains isc:Archean ;
