@@ -1,0 +1,1070 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b10",
+    "@type" : "owl:Restriction",
+    "hasValue" : "rank:Period",
+    "onProperty" : "gts:rank"
+  }, {
+    "@id" : "_:b103",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:GeochronologicBoundary", "gts:NumericEraBoundary" ]
+    }
+  }, {
+    "@id" : "_:b104",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:GeochronologicBoundary", "gts:GeochronologicEra" ]
+    }
+  }, {
+    "@id" : "_:b108",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era" ]
+    }
+  }, {
+    "@id" : "_:b109",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Epoch",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b11",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b167",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b110",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:StratigraphicPoint", "gts:StratigraphicSection" ]
+    }
+  }, {
+    "@id" : "_:b114",
+    "@type" : "owl:Restriction",
+    "hasValue" : "rank:Sub-Period",
+    "onProperty" : "gts:rank"
+  }, {
+    "@id" : "_:b116",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:GeochronologicBoundary", "gts:GeochronologicEra" ]
+    }
+  }, {
+    "@id" : "_:b117",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Period",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b118",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period" ]
+    }
+  }, {
+    "@id" : "_:b12",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b118",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b123",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period" ]
+    }
+  }, {
+    "@id" : "_:b125",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:NumericEraBoundary", "gts:StratigraphicPoint" ]
+    }
+  }, {
+    "@id" : "_:b126",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period" ]
+    }
+  }, {
+    "@id" : "_:b13",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Epoch",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b130",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:GeochronologicBoundary", "gts:StratigraphicPoint" ]
+    }
+  }, {
+    "@id" : "_:b131",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b132",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b132",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Eon", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b137",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:GeochronologicBoundary", "gts:GeochronologicEra" ]
+    }
+  }, {
+    "@id" : "_:b14",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b123",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b145",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "_:b103",
+    "onProperty" : "thors:referencePoint"
+  }, {
+    "@id" : "_:b146",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:StratigraphicPoint", "gts:GeochronologicBoundary", "gts:NumericEraBoundary" ]
+    }
+  }, {
+    "@id" : "_:b147",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Eon", "gts:Era", "gts:Epoch", "gts:Period", "gts:Sub-Period", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b15",
+    "@type" : "owl:Restriction",
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "gts:Era"
+  }, {
+    "@id" : "_:b151",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b152",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b152",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Eon", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b156",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:rank"
+  }, {
+    "@id" : "_:b159",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b160",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b16",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b17",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b160",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Epoch", "gts:Age", "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b162",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Era",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b165",
+    "@type" : "owl:Restriction",
+    "onProperty" : "skos:notation",
+    "someValuesFrom" : "gts:EraCode"
+  }, {
+    "@id" : "_:b166",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "gts:StratigraphicSection",
+    "onProperty" : "gts:stratotype"
+  }, {
+    "@id" : "_:b167",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period" ]
+    }
+  }, {
+    "@id" : "_:b169",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Epoch", "gts:Age", "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b17",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Eon", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b170",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "gts:GeochronologicEra",
+    "onProperty" : "thors:component"
+  }, {
+    "@id" : "_:b173",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Epoch",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b174",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "gts:StratigraphicPoint",
+    "onProperty" : "gts:stratotype"
+  }, {
+    "@id" : "_:b175",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b169",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b176",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era" ]
+    }
+  }, {
+    "@id" : "_:b179",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b126",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b180",
+    "@type" : "owl:Restriction",
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "gts:Epoch"
+  }, {
+    "@id" : "_:b181",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b147",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b184",
+    "identifier" : "http://catalogue.linked.data.gov.au/org/csiro",
+    "name" : "CSIRO"
+  }, {
+    "@id" : "_:b186",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "gts:Super-Eon",
+    "onProperty" : "time:intervalIn"
+  }, {
+    "@id" : "_:b187",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:correlationEvent"
+  }, {
+    "@id" : "_:b188",
+    "@type" : "owl:Restriction",
+    "maxCardinality" : "1",
+    "onProperty" : "gts:ratifiedGSSP"
+  }, {
+    "@id" : "_:b189",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b193",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b190",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b45",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b191",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b192",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b192",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Period", "gts:Sub-Period" ]
+    }
+  }, {
+    "@id" : "_:b193",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Epoch", "gts:Age", "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b20",
+    "@type" : "owl:Restriction",
+    "hasValue" : "rank:Epoch",
+    "onProperty" : "gts:rank"
+  }, {
+    "@id" : "_:b23",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:status"
+  }, {
+    "@id" : "_:b24",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Age",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b25",
+    "@type" : "owl:Restriction",
+    "hasValue" : "rank:Eon",
+    "onProperty" : "gts:rank"
+  }, {
+    "@id" : "_:b26",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Period",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b27",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Age",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b28",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Super-Eon",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b29",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Eon",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b30",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Super-Eon",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b31",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Eon",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b32",
+    "@type" : "owl:Restriction",
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "gts:Eon"
+  }, {
+    "@id" : "_:b33",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Super-Eon",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b34",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:geologicDescription"
+  }, {
+    "@id" : "_:b35",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period" ]
+    }
+  }, {
+    "@id" : "_:b45",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Eon", "gts:Era", "gts:Epoch", "gts:Period", "gts:Sub-Period", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b5",
+    "@type" : "owl:Restriction",
+    "hasValue" : "rank:Age",
+    "onProperty" : "gts:rank"
+  }, {
+    "@id" : "_:b51",
+    "@type" : "owl:Restriction",
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "gts:Age"
+  }, {
+    "@id" : "_:b54",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:geologicSetting"
+  }, {
+    "@id" : "_:b56",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b35",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b59",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "gts:status"
+  }, {
+    "@id" : "_:b7",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Era",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b73",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b81" ]
+    }
+  }, {
+    "@id" : "_:b77",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b78",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b78",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period" ]
+    }
+  }, {
+    "@id" : "_:b8",
+    "@type" : "owl:Restriction",
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "gts:Epoch"
+  }, {
+    "@id" : "_:b81",
+    "pattern" : "[ax][12](.[1-9])*"
+  }, {
+    "@id" : "_:b85",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b86",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b86",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Eon", "gts:Era", "gts:Epoch", "gts:Period", "gts:Sub-Period", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b87",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era" ]
+    }
+  }, {
+    "@id" : "_:b9",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Epoch",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b90",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Era",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b91",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Epoch",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b92",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b176",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b93",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Eon",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b94",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b87",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b95",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b108",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b96",
+    "@type" : "owl:Restriction",
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "gts:Period"
+  }, {
+    "@id" : "_:b97",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Period",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b98",
+    "@type" : "owl:Restriction",
+    "hasValue" : "rank:Era",
+    "onProperty" : "gts:rank"
+  }, {
+    "@id" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "@type" : [ "owl:Ontology", "voaf:Vocabulary" ],
+    "contributor" : "https://orcid.org/0000-0001-6041-5302",
+    "created" : "2011-01-01",
+    "creator" : "https://orcid.org/0000-0002-3884-3420",
+    "description" : "This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.\r\n\r\nThe permitted nesting relationships between eras of different ranks are axiomatized as local constraints using interval relationships from OWL-Time. ",
+    "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modified" : "2020-05-31",
+    "rights" : "Copyright 2012-2020 CSIRO",
+    "source" : "Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.",
+    "title" : "Geologic Timescale model",
+    "preferredNamespacePrefix" : "gts",
+    "preferredNamespaceUri" : "http://resource.geosciml.org/ontology/timescale/gts#",
+    "seeAlso" : [ "http://dx.doi.org/10.1130/GES00022.1", "doi:10.1130/GES00022.1", "http://www.geosciml.org", "http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1" ],
+    "imports" : [ "http://www.w3.org/ns/sosa/", "http://resource.geosciml.org/ontology/timescale/thors" ],
+    "changeNote" : "2017-04-28 - removed imports ISO ontologies",
+    "codeRepository" : "https://github.com/CGI-IUGS/timescale-ont"
+  }, {
+    "@id" : "gts:Age",
+    "@type" : "owl:Class",
+    "label" : "Age",
+    "subClassOf" : [ "_:b175", "_:b159", "_:b91", "_:b189", "gts:GeochronologicEra", "_:b5" ],
+    "definition" : "Geochronologic era of rank 'Age'",
+    "example" : "\r\nisc:Calabrian\r\n  rdf:type gts:Age ;\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Age ;\r\n  rdfs:comment \"older bound -1.80 Ma\"@en ;\r\n  rdfs:comment \"younger bound -0.781 Ma\"@en ;\r\n  rdfs:label \"Calabrian Age\"@en ;\r\n  skos:notation \"a1.1.1.1.2.3\"^^gts:EraCode ;\r\n  skos:prefLabel \"Calabr\"@cs ;\r\n  skos:prefLabel \"Calabrian\"@en ;\r\n  time:hasBeginning isc:BaseCalabrian ;\r\n  time:hasEnd isc:BaseMiddlePleistocene ;\r\n  time:intervalDuring isc:Pleistocene ;\r\n  time:intervalIn isc:Pleistocene ;\r\n  time:intervalMeets isc:MiddlePleistocene ;\r\n  time:intervalMetBy isc:Gelasian ;\r\n.\r\n"
+  }, {
+    "@id" : "gts:Eon",
+    "@type" : "owl:Class",
+    "label" : "Eon",
+    "subClassOf" : [ "_:b131", "_:b162", "_:b90", "_:b151", "_:b25", "_:b16", "_:b15", "_:b186", "gts:GeochronologicEra" ],
+    "definition" : "Geochronologic era of rank 'Eon'",
+    "example" : "\r\nisc:Proterozoic\r\n  rdf:type gts:Eon ;\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Eon ;\r\n  rdfs:comment \"older bound -2500 Ma\"@en ;\r\n  rdfs:comment \"younger bound -541.0 +|-1.0 Ma\"@en ;\r\n  rdfs:label \"Proterozoic Eon\"@en ;\r\n  skos:notation \"a2.1\"^^gts:EraCode ;\r\n  skos:prefLabel \"Proterosoikum\"@et ;\r\n  skos:prefLabel \"Proterozoic\"@en ;\r\n  time:hasBeginning isc:BaseProterozoic ;\r\n  time:hasEnd isc:BasePhanerozoic ;\r\n  time:intervalContains isc:Mesoproterozoic ;\r\n  time:intervalFinishedBy isc:Neoproterozoic ;\r\n  time:intervalFinishes isc:Precambrian ;\r\n  time:intervalIn isc:Precambrian ;\r\n  time:intervalMeets isc:Cambrian ;\r\n  time:intervalMeets isc:Fortunian ;\r\n  time:intervalMeets isc:Paleozoic ;\r\n  time:intervalMeets isc:Phanerozoic ;\r\n  time:intervalMeets isc:Terreneuvian ;\r\n  time:intervalMetBy isc:Archean ;\r\n  time:intervalMetBy isc:Neoarchean ;\r\n  time:intervalStartedBy isc:Paleoproterozoic ;\r\n."
+  }, {
+    "@id" : "gts:Epoch",
+    "@type" : "owl:Class",
+    "label" : "Epoch",
+    "subClassOf" : [ "_:b190", "_:b51", "_:b27", "_:b85", "_:b20", "gts:GeochronologicEra", "_:b181", "_:b24", "_:b191" ],
+    "definition" : "Geochronologic era of rank 'Epoch'",
+    "example" : "\r\nisc:Cisuralian\r\n  rdf:type gts:Epoch ;\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Epoch ;\r\n  rdfs:comment \"older bound -298.9 +|-0.15 Ma\"@en ;\r\n  rdfs:comment \"younger bound -272.95 +|-0.11 Ma\"@en ;\r\n  rdfs:label \"Cisuralian Epoch\"@en ;\r\n  skos:notation \"a1.1.3.1.3\"^^gts:EraCode ;\r\n  skos:prefLabel \"Cisural\"@cs ;\r\n  skos:prefLabel \"Cisuralian\"@en ;\r\n  skos:prefLabel \"Kisuralis\"@lt ;\r\n  time:hasBeginning isc:BasePermian ;\r\n  time:hasEnd isc:BaseGuadalupian ;\r\n  time:intervalContains isc:Artinskian ;\r\n  time:intervalContains isc:Sakmarian ;\r\n  time:intervalFinishedBy isc:Kungurian ;\r\n  time:intervalIn isc:Permian ;\r\n  time:intervalMeets isc:Guadalupian ;\r\n  time:intervalMeets isc:Roadian ;\r\n  time:intervalMetBy isc:Carboniferous ;\r\n  time:intervalMetBy isc:Gzhelian ;\r\n  time:intervalMetBy isc:Pennsylvanian ;\r\n  time:intervalMetBy isc:UpperMississippian ;\r\n  time:intervalMetBy isc:UpperPennsylvanian ;\r\n  time:intervalStartedBy isc:Asselian ;\r\n  time:intervalStarts isc:Permian ;\r\n.\r\n"
+  }, {
+    "@id" : "gts:Era",
+    "@type" : "owl:Class",
+    "label" : "Era",
+    "subClassOf" : [ "_:b92", "_:b93", "_:b26", "_:b94", "_:b95", "gts:GeochronologicEra", "_:b96", "_:b97", "_:b98" ],
+    "definition" : "Geochronologic era of rank 'Era'",
+    "example" : "\r\nisc:Mesoproterozoic\r\n  rdf:type gts:Era ;\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Era ;\r\n  rdfs:comment \"older bound -1600 Ma\"@en ;\r\n  rdfs:comment \"younger bound -1000 Ma\"@en ;\r\n  rdfs:label \"Mesoproterozoic Era\"@en ;\r\n  skos:notation \"a2.1.2\"^^gts:EraCode ;\r\n  skos:prefLabel \"Mesoproterozoic\"@en ;\r\n  skos:prefLabel \"Mesoproterozoico\"@es ;\r\n  time:hasBeginning isc:BaseMesoproterozoic ;\r\n  time:hasEnd isc:BaseNeoproterozoic ;\r\n  time:intervalContains isc:Ectasian ;\r\n  time:intervalDuring isc:Proterozoic ;\r\n  time:intervalFinishedBy isc:Stenian ;\r\n  time:intervalIn isc:Proterozoic ;\r\n  time:intervalMeets isc:Neoproterozoic ;\r\n  time:intervalMeets isc:Tonian ;\r\n  time:intervalMetBy isc:Paleoproterozoic ;\r\n  time:intervalMetBy isc:Statherian ;\r\n  time:intervalStartedBy isc:Calymmian ;\r\n.\r\n"
+  }, {
+    "@id" : "gts:EraCode",
+    "@type" : "rdfs:Datatype",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "Era code",
+    "equivalentClass" : "_:b73",
+    "example" : "\r\nisc:Calabrian  skos:notation \"a1.1.1.1.2.3\"^^gts:EraCode ."
+  }, {
+    "@id" : "gts:GeochronologicBoundary",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Geochronologic Boundary"
+    },
+    "subClassOf" : [ "_:b174", "thors:EraBoundary" ],
+    "disjointWith" : "gts:NumericEraBoundary",
+    "definition" : "Boundary between geochronologic eras, defined with reference to an agreed stratigraphic point. Typically denoted as the 'base of' the succeeding era",
+    "example" : "\r\nisc:BaseJurassic\r\n  rdf:type gts:GeochronologicBoundary ;\r\n  rdf:type thors:EraBoundary ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:Instant ;\r\n  gts:stratotype isc:BaseJurassicSP ;\r\n  rdfs:label \"Base of Jurassic\"@en ;\r\n  skos:altLabel \"Base of Hettangian\"@en ;\r\n  skos:altLabel \"Base of Lower Jurassic\"@en ;\r\n  skos:prefLabel \"Base of Jurassic\"@en ;\r\n  time:inTemporalPosition isc:BaseJurassicTime ;\r\n."
+  }, {
+    "@id" : "gts:GeochronologicEra",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Geochronologic Era"
+    },
+    "subClassOf" : [ "_:b165", "_:b156", "_:b166", "thors:Era" ],
+    "definition" : "Named interval within the geologic timescale, of any rank",
+    "example" : "\r\nisc:Mesozoic\r\n  rdf:type gts:Era ;\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  rdfs:label \"Mesozoic Era\"@en ;\r\n  skos:notation \"a1.1.2\"^^gts:EraCode ;\r\n  skos:prefLabel \"Mesosoikum\"@et ;\r\n  skos:prefLabel \"Mesozoic\"@en ;\r\n  time:hasBeginning isc:BaseMesozoic ;\r\n  time:hasEnd isc:BaseCenozoic ;\r\n.\r\n"
+  }, {
+    "@id" : "gts:GeochronologicEraRank",
+    "@type" : "rdfs:Class",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Geochronologic Era Rank"
+    },
+    "subClassOf" : "skos:Concept",
+    "definition" : "Rank of geologic era within the standard hierarchy: Eon, Era, Period, Epoch, Age",
+    "example" : "\r\nrank:Period\r\n  rdf:type gts:GeochronologicEraRank ;\r\n  rdf:type skos:Concept ;\r\n  rdfs:label \"Period\" ;\r\n."
+  }, {
+    "@id" : "gts:GeologicTimescale",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Geologic Timescale"
+    },
+    "subClassOf" : [ "_:b145", "_:b170", "thors:ReferenceSystem" ],
+    "definition" : "The hierarchical ordinal/nominal reference system known as the Geologic Timescale",
+    "example" : "\r\nts:gts2019\r\n  rdf:type gts:GeologicTimescale ;\r\n  rdf:type skos:ConceptScheme ;\r\n  rdf:type time:TRS ;\r\n  thors:component isc:Phanerozoic ;\r\n  thors:component isc:Precambrian ;\r\n  thors:referencePoint isc:BasePhanerozoic ;\r\n  thors:referencePoint isc:FormationOfEarth ;\r\n  thors:referencePoint isc:Present ;\r\n  rdfs:label \"Geologic Time Scale (2019)\"@en ;\r\n.\r\n"
+  }, {
+    "@id" : "gts:NumericEraBoundary",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Numeric Era Boundary"
+    },
+    "subClassOf" : [ "_:b59", "thors:EraBoundary" ],
+    "disjointWith" : "gts:GeochronologicBoundary",
+    "definition" : "Boundary between geochronologic eras, defined by an agreed chronometric position (i.e. numeric age). Typically denoted as the 'base of' the succeeding era",
+    "example" : "\r\nisc:BaseProterozoic\r\n  rdf:type gts:NumericEraBoundary ;\r\n  rdf:type thors:EraBoundary ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:Instant ;\r\n  gts:ratifiedGSSP true ;\r\n  rdfs:label \"Base of Proterozoic\"@en ;\r\n  skos:prefLabel \"Base of Proterozoic\"@en ;\r\n  time:inTemporalPosition isc:BaseProterozoicTime ;\r\n."
+  }, {
+    "@id" : "gts:Period",
+    "@type" : "owl:Class",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Period"
+    },
+    "subClassOf" : [ "_:b7", "_:b8", "_:b9", "_:b10", "_:b11", "_:b12", "_:b13", "gts:GeochronologicEra", "_:b14" ],
+    "definition" : "Geochronologic era of rank 'Period'",
+    "example" : "\r\nisc:Stenian\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type gts:Period ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Period ;\r\n  rdfs:comment \"older bound -1200 Ma\"@en ;\r\n  rdfs:comment \"younger bound -1000 Ma\"@en ;\r\n  rdfs:label \"Stenian Period\"@en ;\r\n  skos:notation \"a2.1.2.1\"^^gts:EraCode ;\r\n  skos:prefLabel \"Esteniense\"@es ;\r\n  skos:prefLabel \"Stenian\"@en ;\r\n  time:hasBeginning isc:BaseStenian ;\r\n  time:hasEnd isc:BaseNeoproterozoic ;\r\n  time:intervalFinishes isc:Mesoproterozoic ;\r\n  time:intervalIn isc:Mesoproterozoic ;\r\n  time:intervalMeets isc:Neoproterozoic ;\r\n  time:intervalMeets isc:Tonian ;\r\n  time:intervalMetBy isc:Ectasian ;\r\n."
+  }, {
+    "@id" : "gts:StratigraphicEvent",
+    "@type" : "owl:Class",
+    "comment" : "A subclass of Geologic Event (placeholder) ",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Stratigraphic Event"
+    },
+    "definition" : "Geologic event correlated with a specified stratotype. "
+  }, {
+    "@id" : "gts:StratigraphicPoint",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Stratigraphic Point"
+    },
+    "subClassOf" : [ "_:b188", "_:b23", "_:b187", "sosa:Sample" ],
+    "definition" : "A specified position within an agreed stratigraphic section, used to calibrate the temporal position (age) of a boundary within the geologic timescale. ",
+    "example" : "\r\nisc:BaseJurassicSP\r\n  rdf:type gts:StratigraphicPoint ;\r\n  dct:source \"Episodes 36/3, p. 162-198, 2013\"@en ;\r\n  gts:boundaryLevel \"5.80 m above top of Koessen Formation\"@en ;\r\n  gts:correlationEvent \"FO of ammonite Psiloceras spelae tirolicum, FO of aragonitic foraminifer Praegubkinella turgescens\"@en ;\r\n  gts:ratifiedGSSP true ;\r\n  gts:status \"Ratified 2010\"@en ;\r\n  geo:hasGeometry isc:BaseJurassic-location ;\r\n  rdfs:comment \"Kuhjoch section,Tyrol, Austria \"@en ;\r\n  rdfs:label \"Stratotype Point Base of Jurassic\"@en ;\r\n  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Hettangian.pdf> ;\r\n  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;\r\n  skos:prefLabel \"Stratotype Point Base of Jurassic\"@en ;\r\n."
+  }, {
+    "@id" : "gts:StratigraphicSection",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Stratigraphic Section"
+    },
+    "subClassOf" : [ "_:b54", "_:b34", "sosa:Sample" ],
+    "definition" : "An agreed stratigraphic section, which hosts a stratigrpahic point that is used to calibrate the temporal position (age) of a boundary within the geologic timescale. "
+  }, {
+    "@id" : "gts:Sub-Period",
+    "@type" : "owl:Class",
+    "label" : "Sub-Period",
+    "subClassOf" : [ "_:b179", "_:b109", "_:b56", "_:b180", "gts:GeochronologicEra", "_:b173", "_:b77", "_:b114", "_:b117" ],
+    "definition" : "Geochronologic era of rank 'Sub-Period'",
+    "example" : "\r\nisc:Mississippian\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type gts:Sub-Period ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Sub-Period ;\r\n  rdfs:comment \"older bound -358.9 +|-0.4 Ma\"@en ;\r\n  rdfs:comment \"younger bound -323.2 +|-0.4 Ma\"@en ;\r\n  rdfs:label \"Mississippian Sub-period\"@en ;\r\n  skos:notation \"a1.1.3.2.2\"^^gts:EraCode ;\r\n  skos:prefLabel \"Misisipis\"@lt ;\r\n  skos:prefLabel \"Mississippian\"@en ;\r\n  time:hasBeginning isc:BaseCarboniferous ;\r\n  time:hasEnd isc:BasePennsylvanian ;\r\n  time:intervalContains isc:MiddleMississippian ;\r\n  time:intervalFinishedBy isc:UpperMississippian ;\r\n  time:intervalIn isc:Carboniferous ;\r\n  time:intervalMeets isc:Bashkirian ;\r\n  time:intervalMeets isc:LowerPennsylvanian ;\r\n  time:intervalMeets isc:Pennsylvanian ;\r\n  time:intervalMetBy isc:Devonian ;\r\n  time:intervalMetBy isc:Famennian ;\r\n  time:intervalMetBy isc:UpperDevonian ;\r\n  time:intervalStartedBy isc:LowerMississippian ;\r\n  time:intervalStarts isc:Carboniferous ;\r\n."
+  }, {
+    "@id" : "gts:Super-Eon",
+    "@type" : "owl:Class",
+    "label" : "Super-Eon",
+    "subClassOf" : [ "_:b28", "_:b29", "_:b30", "_:b31", "_:b32", "_:b33", "gts:GeochronologicEra" ],
+    "definition" : "Geochronologic era of rank 'Super-Eon'",
+    "example" : "\r\nisc:Precambrian\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type gts:Super-Eon ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Super-Eon ;\r\n  rdfs:comment \"older bound -4567 +|-1 Ma\"@en ;\r\n  rdfs:comment \"younger bound -541.0 +|-1.0 Ma\"@en ;\r\n  rdfs:label \"Precambrian Supereon\"@en ;\r\n  skos:notation \"a2\"^^gts:EraCode ;\r\n  skos:prefLabel \"Precambrian\"@en ;\r\n  skos:prefLabel \"Précambrien\"@fr ;\r\n  time:hasBeginning isc:FormationOfEarth ;\r\n  time:hasEnd isc:BasePhanerozoic ;\r\n  time:intervalContains isc:Archean ;\r\n  time:intervalFinishedBy isc:Proterozoic ;\r\n  time:intervalMeets isc:Cambrian ;\r\n  time:intervalMeets isc:Fortunian ;\r\n  time:intervalMeets isc:Paleozoic ;\r\n  time:intervalMeets isc:Phanerozoic ;\r\n  time:intervalMeets isc:Terreneuvian ;\r\n  time:intervalStartedBy isc:Hadean ;\r\n."
+  }, {
+    "@id" : "gts:boundary",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "geochronologic boundary corresponding with this stratigraphic point",
+    "domain" : "gts:StratigraphicPoint",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "geochronologic boundary",
+    "range" : "gts:GeochronologicBoundary"
+  }, {
+    "@id" : "gts:boundaryLevel",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "the level within the section of the point characterizing the boundary",
+    "domain" : "gts:StratigraphicPoint",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "boundary level",
+    "example" : "\r\nisc:BaseBathonianSP\r\n  a gts:StratigraphicPoint ;\r\n  gts:boundaryLevel \"Base of limestone bed RB07 \"@en ;\r\n  gts:correlationEvent \"Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)\"@en ;\r\n  gts:ratifiedGSSP true ;\r\n  gts:status \"Ratified 2008\"@en ;\r\n  geo:hasGeometry isc:BaseBathonian-location ;\r\n  rdfs:comment \"Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  \"@en ;\r\n  rdfs:label \"Stratotype Point Base of Bathonian\"@en ;\r\n."
+  }, {
+    "@id" : "gts:correlatesWith",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "This property points from a geologic feature or event to a geochronologic element",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "correlating boundary or era",
+    "range" : "_:b116"
+  }, {
+    "@id" : "gts:correlationEvent",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "the stratigraphic event that is intended to be represented by this stratigraphic point",
+    "domain" : "gts:StratigraphicPoint",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "correlation event",
+    "example" : "\r\nisc:BaseBathonianSP\r\n  a gts:StratigraphicPoint ;\r\n  gts:boundaryLevel \"Base of limestone bed RB07 \"@en ;\r\n  gts:correlationEvent \"Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)\"@en ;\r\n  gts:ratifiedGSSP true ;\r\n  gts:status \"Ratified 2008\"@en ;\r\n  geo:hasGeometry isc:BaseBathonian-location ;\r\n  rdfs:comment \"Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  \"@en ;\r\n  rdfs:label \"Stratotype Point Base of Bathonian\"@en ;\r\n."
+  }, {
+    "@id" : "gts:era",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "geochronologic era corresponding with this stratigraphic section",
+    "domain" : "gts:StratigraphicSection",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "geochronologic era",
+    "range" : "gts:GeochronologicEra"
+  }, {
+    "@id" : "gts:event",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "stratigraphic event corresponding with this boundary or point",
+    "domain" : "_:b130",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "stratigraphic event",
+    "range" : "gts:StratigraphicEvent"
+  }, {
+    "@id" : "gts:geologicDescription",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "gts:StratigraphicSection",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "geologic description",
+    "definition" : "geologic description of the stratigraphic section"
+  }, {
+    "@id" : "gts:geologicSetting",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "gts:StratigraphicSection",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "geologic setting",
+    "definition" : "geologic setting of the stratigraphic section"
+  }, {
+    "@id" : "gts:manifestedBy",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "This property points from a geochronologic element to a geologic feature which shows characteristics associated with the event associated with the boundary or era",
+    "domain" : "_:b137",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "geologic manifestation",
+    "inverseOf" : "gts:correlatesWith"
+  }, {
+    "@id" : "gts:positionalUncertainty",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "time:TemporalPosition",
+    "label" : "time position uncertainty",
+    "range" : "time:TemporalDuration",
+    "definition" : "Uncertainty in a time position",
+    "example" : "\r\nisc:BaseAeronianTime\r\n  a time:TimePosition ;\r\n  gts:positionalUncertainty isc:BaseAeronianUncertainty ;\r\n  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;\r\n  time:numericPosition 440.8 ;\r\n."
+  }, {
+    "@id" : "gts:rank",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Elements of all ranks are included in the class 'gts:GeochronologicEra'. \r\nThe rank may be indicated by membership of a sub-class, or is indicated using the 'gts:rank' property.",
+    "domain" : "gts:GeochronologicEra",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "Geochronologic era rank",
+    "range" : "gts:GeochronologicEraRank",
+    "example" : "\r\nisc:Aalenian\r\n  a gts:Age ;\r\n  a gts:GeochronologicEra ;\r\n  a skos:Concept ;\r\n  a time:ProperInterval ;\r\n  gts:rank rank:Age ;\r\n."
+  }, {
+    "@id" : "gts:ratifiedGSSP",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "flag to indicate the status of the calibration details of a geochronologic boundary - 'true' if ratified by ICS",
+    "domain" : "_:b146",
+    "label" : "ratified",
+    "range" : "xsd:boolean",
+    "example" : "\r\nisc:BaseBathonianSP\r\n  a gts:StratigraphicPoint ;\r\n  gts:boundaryLevel \"Base of limestone bed RB07 \"@en ;\r\n  gts:correlationEvent \"Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)\"@en ;\r\n  gts:ratifiedGSSP true ;\r\n  gts:status \"Ratified 2008\"@en ;\r\n  geo:hasGeometry isc:BaseBathonian-location ;\r\n  rdfs:comment \"Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  \"@en ;\r\n  rdfs:label \"Stratotype Point Base of Bathonian\"@en ;\r\n."
+  }, {
+    "@id" : "gts:status",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "formal ICS status of this boundary and point",
+    "domain" : "_:b125",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "status",
+    "definition" : "Description of the formal ICS status of this boundary and point",
+    "example" : "\r\nisc:BaseBathonianSP\r\n  a gts:StratigraphicPoint ;\r\n  gts:boundaryLevel \"Base of limestone bed RB07 \"@en ;\r\n  gts:correlationEvent \"Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)\"@en ;\r\n  gts:ratifiedGSSP true ;\r\n  gts:status \"Ratified 2008\"@en ;\r\n  geo:hasGeometry isc:BaseBathonian-location ;\r\n  rdfs:comment \"Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  \"@en ;\r\n  rdfs:label \"Stratotype Point Base of Bathonian\"@en ;\r\n."
+  }, {
+    "@id" : "gts:stratotype",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "the characteristic stratigraphic point or section corresponding with a geochronologic concept",
+    "domain" : "_:b104",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/gts",
+    "label" : "stratotype",
+    "range" : "_:b110",
+    "example" : "\r\nisc:BaseAeronian\r\n  a gts:GeochronologicBoundary ;\r\n  a thors:EraBoundary ;\r\n  a skos:Concept ;\r\n  a time:Instant ;\r\n  gts:stratotype isc:BaseAeronianSP ;\r\n  rdfs:label \"Base of Aeronian\"@en ;\r\n  skos:prefLabel \"Base of Aeronian\"@en ;\r\n  time:inTemporalPosition isc:BaseAeronianTime ;\r\n."
+  }, {
+    "@id" : "http://resource.geosciml.org/ontology/timescale/rank/",
+    "member" : [ "rank:Super-Eon", "rank:Sub-Period", "rank:Period", "rank:Era", "rank:Epoch", "rank:Eon", "rank:Age" ]
+  }, {
+    "@id" : "rank:Age",
+    "@type" : "skos:Concept",
+    "rdf:type" : {
+      "@id" : "gts:GeochronologicEraRank"
+    },
+    "label" : "Age"
+  }, {
+    "@id" : "rank:Eon",
+    "@type" : "skos:Concept",
+    "rdf:type" : {
+      "@id" : "gts:GeochronologicEraRank"
+    },
+    "label" : "Eon"
+  }, {
+    "@id" : "rank:Epoch",
+    "@type" : "skos:Concept",
+    "rdf:type" : {
+      "@id" : "gts:GeochronologicEraRank"
+    },
+    "label" : "Epoch"
+  }, {
+    "@id" : "rank:Era",
+    "@type" : "skos:Concept",
+    "rdf:type" : {
+      "@id" : "gts:GeochronologicEraRank"
+    },
+    "label" : "Era"
+  }, {
+    "@id" : "rank:Period",
+    "@type" : "skos:Concept",
+    "rdf:type" : {
+      "@id" : "gts:GeochronologicEraRank"
+    },
+    "label" : "Period"
+  }, {
+    "@id" : "rank:Sub-Period",
+    "@type" : "skos:Concept",
+    "rdf:type" : {
+      "@id" : "gts:GeochronologicEraRank"
+    },
+    "label" : "Sub-Period"
+  }, {
+    "@id" : "rank:Super-Eon",
+    "@type" : "skos:Concept",
+    "rdf:type" : {
+      "@id" : "gts:GeochronologicEraRank"
+    },
+    "label" : "Super-Eon"
+  }, {
+    "@id" : "https://orcid.org/0000-0001-6041-5302",
+    "@type" : [ "sdo:Person", "owl:NamedIndividual" ],
+    "email" : "mailto:smrTucson@gmail.com",
+    "identifier" : "https://orcid.org/0000-0001-6041-5302",
+    "name" : {
+      "@language" : "en",
+      "@value" : "Stepehen M Richard"
+    }
+  }, {
+    "@id" : "https://orcid.org/0000-0002-3884-3420",
+    "@type" : [ "sdo:Person", "owl:NamedIndividual" ],
+    "affiliation" : "_:b184",
+    "email" : "mailto:simon.cox@csiro.au",
+    "identifier" : "https://orcid.org/0000-0002-3884-3420",
+    "name" : {
+      "@language" : "en",
+      "@value" : "Simon J D Cox"
+    }
+  } ],
+  "@context" : {
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "hasValue" : {
+      "@id" : "http://www.w3.org/2002/07/owl#hasValue",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "someValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
+      "@type" : "@id"
+    },
+    "qualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "onClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onClass",
+      "@type" : "@id"
+    },
+    "cardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#cardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
+    },
+    "disjointWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#disjointWith",
+      "@type" : "@id"
+    },
+    "equivalentClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#equivalentClass",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "https://schema.org/name"
+    },
+    "identifier" : {
+      "@id" : "https://schema.org/identifier",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "email" : {
+      "@id" : "https://schema.org/email",
+      "@type" : "@id"
+    },
+    "pattern" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#pattern"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member",
+      "@type" : "@id"
+    },
+    "inverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
+      "@type" : "@id"
+    },
+    "allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
+    "withRestrictions" : {
+      "@id" : "http://www.w3.org/2002/07/owl#withRestrictions",
+      "@type" : "@id"
+    },
+    "onDatatype" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onDatatype",
+      "@type" : "@id"
+    },
+    "affiliation" : {
+      "@id" : "https://schema.org/affiliation",
+      "@type" : "@id"
+    },
+    "maxQualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#maxQualifiedCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "maxCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#maxCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "codeRepository" : {
+      "@id" : "https://schema.org/codeRepository",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "gts" : "http://resource.geosciml.org/ontology/timescale/gts#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "voaf" : "http://purl.org/vocommons/voaf#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "thors" : "http://resource.geosciml.org/ontology/timescale/thors#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rank" : "http://resource.geosciml.org/ontology/timescale/rank/",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "time" : "http://www.w3.org/2006/time#",
+    "vann" : "http://purl.org/vocab/vann/",
+    "sosa" : "http://www.w3.org/ns/sosa/",
+    "sdo" : "https://schema.org/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

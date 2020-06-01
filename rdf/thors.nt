@@ -1,0 +1,173 @@
+# baseURI: http://resource.geosciml.org/ontology/timescale/thors
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://www.w3.org/2006/time
+# prefix: thors
+
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/2004/02/skos/core#changeNote> "2020-05-31 - add OWL-Time alignment to primary graph; add inline examples for documentation" .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.geosciml.org> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/vocab/vann/preferredNamespacePrefix> "thors" .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/dc/terms/title> "Temporal Hierarchical Ordinal Reference System model" .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/dc/terms/created> "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://resource.geosciml.org/ontology/timescale/thors> <https://schema.org/codeRepository> <https://github.com/CGI-IUGS/timescale-ont> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://resource.geosciml.org/ontology/timescale/thors#> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dx.doi.org/10.1130/GES00022.1> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/2004/02/skos/core#changeNote> "2017-04-28 - removed imports of ISO ontologies " .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-6041-5302> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/dc/terms/description> "An OWL representation of the model for Temporal Hierarchical Ordinal Reference Systems defined in GeoSciML v3, and modeled after ISO 19108. \r\n  \r\n  The THORS ontology introduces the classes thors:Era and thors:eraBoundary which are elements in a thors:ReferenceSystem. \r\n\r\n  The temporal positions of boundaries, and topological relationships between Eras are aligned to the Allen temporal algebra, as impl;emented in <a href='https://www.w3.org/TR/owl-time/'>OWL-Time</a>.\r\n  " .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/time> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/2004/02/skos/core#note> "This model is related to the model for TORS in ISO 19108:2002, except that boundaries between eras are first class objects, supporting multiple properties, rather than being just time coordinates. It is also linked to the ISO 19108 Temporal Topology model. " .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-3884-3420> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <doi:10.1130/GES00022.1> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/dc/terms/modified> "2020-05-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/dc/elements/1.1/> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/dc/terms/source> "Simon J.D. Cox and Stephen M. Richard, A formal model for the geologic time scale and global stratotype section and point, compatible with geospatial information transfer standards, Geosphere, 1, 119-137 (2005)" .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://purl.org/dc/terms/rights> "Copyright 2012-2020 CSIRO" .
+<http://resource.geosciml.org/ontology/timescale/thors> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1> .
+_:B8bf99a0bff6a27669e4d37f286b8d12f <https://schema.org/name> "CSIRO" .
+_:B8bf99a0bff6a27669e4d37f286b8d12f <https://schema.org/identifier> "http://catalogue.linked.data.gov.au/org/csiro"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:B75052f1cX2D65cfX2D425eX2D9888X2D78eafc2f7e99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B75052f1cX2D65cfX2D425eX2D9888X2D78eafc2f7e99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/thors#previousEra> .
+<http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Be4bc1e34c315796094dffc45c70919de .
+<http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B522070d8092d26394a8e2367d8a418b6 .
+<http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#Instant> .
+<http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "Time Ordinal Era Boundary" .
+<http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> <http://purl.org/dc/terms/description> "A temporal era boundary starts or ends a named or identified interval from a temporal ordinal reference system" .
+<http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B522070d8092d26394a8e2367d8a418b6 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/thors#nextEra> .
+_:B522070d8092d26394a8e2367d8a418b6 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B522070d8092d26394a8e2367d8a418b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/2002/07/owl#equivalentProperty> _:B2d259e640eb4bd353d3f9ea3445a02f6 .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#narrower> .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/thors#Era> .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/2000/01/rdf-schema#label> "era member / sub-era"@en .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/thors#Era> .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+_:B6efdd182X2Dcb59X2D4b1aX2D9a7fX2Dbb24a9119e57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B75052f1cX2D65cfX2D425eX2D9888X2D78eafc2f7e99 .
+_:B6efdd182X2Dcb59X2D4b1aX2D9a7fX2Dbb24a9119e57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/thors#begin> .
+_:B68d53ba6X2D277cX2D4fdbX2D8242X2Dbbc062f9e01c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B68d53ba6X2D277cX2D4fdbX2D8242X2Dbbc062f9e01c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/thors#nextEra> .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/2002/07/owl#inverseOf> <http://resource.geosciml.org/ontology/timescale/thors#component> .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#topConceptOf> .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/2000/01/rdf-schema#label> "system"@en .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/thors#Era> .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/2000/01/rdf-schema#comment> "reference system that this era belongs to" .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Be4bc1e34c315796094dffc45c70919de <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/thors#previousEra> .
+_:Be4bc1e34c315796094dffc45c70919de <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Be4bc1e34c315796094dffc45c70919de <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/thors#referencePoint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#hasTopConcept> .
+<http://resource.geosciml.org/ontology/timescale/thors#referencePoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> .
+<http://resource.geosciml.org/ontology/timescale/thors#referencePoint> <http://www.w3.org/2000/01/rdf-schema#label> "reference point in timescale" .
+<http://resource.geosciml.org/ontology/timescale/thors#referencePoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#referencePoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> .
+<http://resource.geosciml.org/ontology/timescale/thors#referencePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B2c472707bb1f2b39eece2f21abf30d37 .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B138cda40eb3918c05708647065bd5d0a .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TRS> .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Hierarchical Time Ordinal Reference System" .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://purl.org/dc/terms/description> "A temporal ordinal reference system is a constrained temporal topological complex, in which the edges are called 'eras'. \r\n\r\nEach era may be subdivided into one set of eras of the next finer rank. This constraint is required to establish a mono-hierarchy, so that a set of temporal positions defined relative to the reference system may be uniquely ordered." .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B2c472707bb1f2b39eece2f21abf30d37 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/thors#referencePoint> .
+_:B2c472707bb1f2b39eece2f21abf30d37 <http://www.w3.org/2002/07/owl#minCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B2c472707bb1f2b39eece2f21abf30d37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2006/time#hasEnd> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#semanticRelation> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/thors#Era> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/2000/01/rdf-schema#label> "era end"@en .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/2002/07/owl#inverseOf> <http://resource.geosciml.org/ontology/timescale/thors#previousEra> .
+_:B138cda40eb3918c05708647065bd5d0a <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/thors#component> .
+_:B138cda40eb3918c05708647065bd5d0a <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B138cda40eb3918c05708647065bd5d0a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/2006/time#intervalStartedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://resource.geosciml.org/ontology/timescale/thors#member> .
+_:B7487b082X2Dd181X2D4b9aX2D96a4X2Df909c8751066 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B68d53ba6X2D277cX2D4fdbX2D8242X2Dbbc062f9e01c .
+_:B7487b082X2Dd181X2D4b9aX2D96a4X2Df909c8751066 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/thors#end> .
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra> <http://www.w3.org/2002/07/owl#inverseOf> <http://resource.geosciml.org/ontology/timescale/thors#begin> .
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> _:B892d78daa1e7fef231bd570b9d4ebb35 .
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#semanticRelation> .
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/thors#Era> .
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra> <http://www.w3.org/2000/01/rdf-schema#label> "next era"@en .
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> .
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Bca3dfecebc12b56a378f99d917499034 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/thors#end> .
+_:Bca3dfecebc12b56a378f99d917499034 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bca3dfecebc12b56a378f99d917499034 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://orcid.org/0000-0002-3884-3420> <https://schema.org/name> "Simon J D Cox"@en .
+<https://orcid.org/0000-0002-3884-3420> <https://schema.org/identifier> "https://orcid.org/0000-0002-3884-3420"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://orcid.org/0000-0002-3884-3420> <https://schema.org/email> <mailto:simon.cox@csiro.au> .
+<https://orcid.org/0000-0002-3884-3420> <https://schema.org/affiliation> _:B8bf99a0bff6a27669e4d37f286b8d12f .
+<https://orcid.org/0000-0002-3884-3420> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://orcid.org/0000-0002-3884-3420> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:B892d78daa1e7fef231bd570b9d4ebb35 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/2006/time#hasBeginning> .
+_:B892d78daa1e7fef231bd570b9d4ebb35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Bd558f94c61879f052d766458932467fb <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/2006/time#hasEnd> .
+_:Bd558f94c61879f052d766458932467fb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://orcid.org/0000-0001-6041-5302> <https://schema.org/name> "Stepehen M Richard"@en .
+<https://orcid.org/0000-0001-6041-5302> <https://schema.org/identifier> "https://orcid.org/0000-0001-6041-5302"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://orcid.org/0000-0001-6041-5302> <https://schema.org/email> <mailto:smrTucson@gmail.com> .
+<https://orcid.org/0000-0001-6041-5302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://orcid.org/0000-0001-6041-5302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/2002/07/owl#inverseOf> <http://resource.geosciml.org/ontology/timescale/thors#nextEra> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/thors#Era> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2006/time#hasBeginning> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/2000/01/rdf-schema#label> "era beginning"@en .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#semanticRelation> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> .
+<http://www.w3.org/2006/time#intervalFinishedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://resource.geosciml.org/ontology/timescale/thors#member> .
+_:B2d259e640eb4bd353d3f9ea3445a02f6 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/2006/time#intervalIn> .
+_:B2d259e640eb4bd353d3f9ea3445a02f6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Duration> .
+<http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty> <http://www.w3.org/2000/01/rdf-schema#label> "uncertainty in temporal position"@en .
+<http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#TimePosition> .
+<http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/time#intervalMetBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:B6efdd182X2Dcb59X2D4b1aX2D9a7fX2Dbb24a9119e57 .
+<http://www.w3.org/2006/time#intervalMeets> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:B7487b082X2Dd181X2D4b9aX2D96a4X2Df909c8751066 .
+<http://resource.geosciml.org/ontology/timescale/thors#component> <http://www.w3.org/2002/07/owl#inverseOf> <http://resource.geosciml.org/ontology/timescale/thors#system> .
+<http://resource.geosciml.org/ontology/timescale/thors#component> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#hasTopConcept> .
+<http://resource.geosciml.org/ontology/timescale/thors#component> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/thors#Era> .
+<http://resource.geosciml.org/ontology/timescale/thors#component> <http://www.w3.org/2000/01/rdf-schema#label> "temporal reference system component"@en .
+<http://resource.geosciml.org/ontology/timescale/thors#component> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#component> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> .
+<http://resource.geosciml.org/ontology/timescale/thors#component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bca3dfecebc12b56a378f99d917499034 .
+<http://resource.geosciml.org/ontology/timescale/thors#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B5c4bd906e356d26e266e1c4997795587 .
+<http://resource.geosciml.org/ontology/timescale/thors#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#ProperInterval> .
+<http://resource.geosciml.org/ontology/timescale/thors#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://resource.geosciml.org/ontology/timescale/thors#Era> <http://www.w3.org/2000/01/rdf-schema#label> "Time Ordinal Era or Interval" .
+<http://resource.geosciml.org/ontology/timescale/thors#Era> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#Era> <http://purl.org/dc/terms/description> "A temporal era is a named or identified interval from a temporal ordinal reference system" .
+<http://resource.geosciml.org/ontology/timescale/thors#Era> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#intervalContains> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://resource.geosciml.org/ontology/timescale/thors#member> .
+_:B5c4bd906e356d26e266e1c4997795587 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/thors#begin> .
+_:B5c4bd906e356d26e266e1c4997795587 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B5c4bd906e356d26e266e1c4997795587 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra> <http://www.w3.org/2002/07/owl#inverseOf> <http://resource.geosciml.org/ontology/timescale/thors#end> .
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> _:Bd558f94c61879f052d766458932467fb .
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#semanticRelation> .
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/thors#Era> .
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra> <http://www.w3.org/2000/01/rdf-schema#label> "previous era"@en .
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> .
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

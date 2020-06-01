@@ -1,0 +1,790 @@
+# baseURI: http://resource.geosciml.org/ontology/timescale/gts
+# imports: http://resource.geosciml.org/ontology/timescale/thors
+# imports: http://www.w3.org/ns/sosa/
+# prefix: gts
+
+_:B179dc90fX2Db0aaX2D4e18X2Db9e1X2D05bf69f3a4a4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B6cfed8d6X2D82daX2D4703X2D9980X2D4cf29cb21bee .
+_:B179dc90fX2Db0aaX2D4e18X2Db9e1X2D05bf69f3a4a4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> .
+<http://resource.geosciml.org/ontology/timescale/gts#era> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+<http://resource.geosciml.org/ontology/timescale/gts#era> <http://www.w3.org/2000/01/rdf-schema#label> "geochronologic era" .
+<http://resource.geosciml.org/ontology/timescale/gts#era> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#era> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> .
+<http://resource.geosciml.org/ontology/timescale/gts#era> <http://www.w3.org/2000/01/rdf-schema#comment> "geochronologic era corresponding with this stratigraphic section" .
+<http://resource.geosciml.org/ontology/timescale/gts#era> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:B981a0187X2D0100X2D460dX2Dab08X2D507b2ded3e2d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B981a0187X2D0100X2D460dX2Dab08X2D507b2ded3e2d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:B4d613126X2D267aX2D40dbX2Dbd1aX2D9b523eaf83e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B14edeaaeX2D7ff9X2D475dX2Db646X2Daea73c34cf16 .
+_:B4d613126X2D267aX2D40dbX2Dbd1aX2D9b523eaf83e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Age> .
+_:B2424de9d1eb45be4cf4b4254a4b5d5e4 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#rank> .
+_:B2424de9d1eb45be4cf4b4254a4b5d5e4 <http://www.w3.org/2002/07/owl#hasValue> <http://resource.geosciml.org/ontology/timescale/rank/Age> .
+_:B2424de9d1eb45be4cf4b4254a4b5d5e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Ba8e1a196X2D64b0X2D4aa1X2Dbc7fX2Dd196145fbba9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ba8e1a196X2D64b0X2D4aa1X2Dbc7fX2Dd196145fbba9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2004/02/skos/core#definition> "Geochronologic era of rank 'Period'" .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bde03a09768e32853ccd23bea270bb162 .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:Stenian\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type gts:Period ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Period ;\r\n  rdfs:comment \"older bound -1200 Ma\"@en ;\r\n  rdfs:comment \"younger bound -1000 Ma\"@en ;\r\n  rdfs:label \"Stenian Period\"@en ;\r\n  skos:notation \"a2.1.2.1\"^^gts:EraCode ;\r\n  skos:prefLabel \"Esteniense\"@es ;\r\n  skos:prefLabel \"Stenian\"@en ;\r\n  time:hasBeginning isc:BaseStenian ;\r\n  time:hasEnd isc:BaseNeoproterozoic ;\r\n  time:intervalFinishes isc:Mesoproterozoic ;\r\n  time:intervalIn isc:Mesoproterozoic ;\r\n  time:intervalMeets isc:Neoproterozoic ;\r\n  time:intervalMeets isc:Tonian ;\r\n  time:intervalMetBy isc:Ectasian ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bfa567de5f778203fabed4f3df8cbdc8e .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B70d1a80ccea1915a75bba30c1d885c2b .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B656816751fc24e681ec93716fcc47f50 .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bdc4829248151cf0a3c9ec1f13e5e2378 .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B3497c911869d792950144ee9cb32f80f .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B194c8b71db3bd45d2d15a2fd1c689080 .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B8df94b0ebf89bbd6a5265d1fab74c331 .
+<http://resource.geosciml.org/ontology/timescale/gts#Period> <http://www.w3.org/2000/01/rdf-schema#label> "Period"@en .
+_:B7214014e14a4a21ce900fb1fa145bbe3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B7214014e14a4a21ce900fb1fa145bbe3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:B7214014e14a4a21ce900fb1fa145bbe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B9c0ebde3707133ac2e0d56f948de7459 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B9c0ebde3707133ac2e0d56f948de7459 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:B9c0ebde3707133ac2e0d56f948de7459 <http://www.w3.org/2002/07/owl#onClass> _:Bb6764f5930acec612482a25ecc3d3cac .
+_:B9c0ebde3707133ac2e0d56f948de7459 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bfa05f00eX2D6aa3X2D4e26X2Db072X2De409f7d666af <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B422a3888X2Db183X2D4dcfX2D8f31X2D5b3ad7655266 .
+_:Bfa05f00eX2D6aa3X2D4e26X2Db072X2De409f7d666af <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> .
+<http://resource.geosciml.org/ontology/timescale/rank/Era> <http://www.w3.org/2000/01/rdf-schema#label> "Era" .
+<http://resource.geosciml.org/ontology/timescale/rank/Era> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://resource.geosciml.org/ontology/timescale/rank/Era> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> .
+_:B40e82a321829805e47b1cd3a7cfadf06 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#rank> .
+_:B40e82a321829805e47b1cd3a7cfadf06 <http://www.w3.org/2002/07/owl#hasValue> <http://resource.geosciml.org/ontology/timescale/rank/Epoch> .
+_:B40e82a321829805e47b1cd3a7cfadf06 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B9a8bb1e8X2D5637X2D495dX2D9fa4X2D80e38e61ec02 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bfbf52e44X2D1495X2D40c7X2Dbc46X2D937371a0f75b .
+_:B9a8bb1e8X2D5637X2D495dX2D9fa4X2D80e38e61ec02 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Be364cfcb56962825bacf58a9fedfab4c <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#status> .
+_:Be364cfcb56962825bacf58a9fedfab4c <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Be364cfcb56962825bacf58a9fedfab4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B18cff43f9b8d9b1902b33407eba4c5f7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B18cff43f9b8d9b1902b33407eba4c5f7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:B18cff43f9b8d9b1902b33407eba4c5f7 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Age> .
+_:B18cff43f9b8d9b1902b33407eba4c5f7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bd7e9ef6bf771a649cd07cd5521ec32b9 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#rank> .
+_:Bd7e9ef6bf771a649cd07cd5521ec32b9 <http://www.w3.org/2002/07/owl#hasValue> <http://resource.geosciml.org/ontology/timescale/rank/Eon> .
+_:Bd7e9ef6bf771a649cd07cd5521ec32b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B997cf1738fa063d7c5f709d208d98a08 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B997cf1738fa063d7c5f709d208d98a08 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:B997cf1738fa063d7c5f709d208d98a08 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:B997cf1738fa063d7c5f709d208d98a08 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/gts#geologicSetting> <http://www.w3.org/2004/02/skos/core#definition> "geologic setting of the stratigraphic section" .
+<http://resource.geosciml.org/ontology/timescale/gts#geologicSetting> <http://www.w3.org/2000/01/rdf-schema#label> "geologic setting" .
+<http://resource.geosciml.org/ontology/timescale/gts#geologicSetting> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#geologicSetting> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> .
+<http://resource.geosciml.org/ontology/timescale/gts#geologicSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:B4e121a5a859a7d9cce30de8bfa5a9732 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B4e121a5a859a7d9cce30de8bfa5a9732 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:B4e121a5a859a7d9cce30de8bfa5a9732 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Age> .
+_:B4e121a5a859a7d9cce30de8bfa5a9732 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Be010e136834ef8b055f03048fbb52035 .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B9254b24687b6186a82eb8801179871c7 .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bccdcd86498b4df0846520c83bacf577d .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B6604f3f8777bcf51ee3787132b0a99b7 .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/2004/02/skos/core#definition> "Geochronologic era of rank 'Super-Eon'" .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:Precambrian\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type gts:Super-Eon ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Super-Eon ;\r\n  rdfs:comment \"older bound -4567 +|-1 Ma\"@en ;\r\n  rdfs:comment \"younger bound -541.0 +|-1.0 Ma\"@en ;\r\n  rdfs:label \"Precambrian Supereon\"@en ;\r\n  skos:notation \"a2\"^^gts:EraCode ;\r\n  skos:prefLabel \"Precambrian\"@en ;\r\n  skos:prefLabel \"Précambrien\"@fr ;\r\n  time:hasBeginning isc:FormationOfEarth ;\r\n  time:hasEnd isc:BasePhanerozoic ;\r\n  time:intervalContains isc:Archean ;\r\n  time:intervalFinishedBy isc:Proterozoic ;\r\n  time:intervalMeets isc:Cambrian ;\r\n  time:intervalMeets isc:Fortunian ;\r\n  time:intervalMeets isc:Paleozoic ;\r\n  time:intervalMeets isc:Phanerozoic ;\r\n  time:intervalMeets isc:Terreneuvian ;\r\n  time:intervalStartedBy isc:Hadean ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/2000/01/rdf-schema#label> "Super-Eon" .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Be40c599b041e3ab6cab8d2c581035d93 .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Ba896d42e93760934cc47ebc68d384466 .
+<http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+_:B0b7695395689d933e636a860761a631f <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#geologicDescription> .
+_:B0b7695395689d933e636a860761a631f <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B0b7695395689d933e636a860761a631f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B50c31d27526279a9c9ee2f65a8663eec <http://www.w3.org/2002/07/owl#unionOf> _:B6a43a08fX2D8278X2D45b5X2Db7ddX2D64baa81fdbfb .
+_:B50c31d27526279a9c9ee2f65a8663eec <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B70d1a80ccea1915a75bba30c1d885c2b <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B70d1a80ccea1915a75bba30c1d885c2b <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:B70d1a80ccea1915a75bba30c1d885c2b <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:B70d1a80ccea1915a75bba30c1d885c2b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B56795e94X2D21edX2D4c42X2Da52fX2D95b63bce137f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B25e2264aX2D89a7X2D4c57X2D9e95X2Db71112bd9b07 .
+_:B56795e94X2D21edX2D4c42X2Da52fX2D95b63bce137f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:B60e198baX2Dcb02X2D4424X2Da0bbX2Dec33b775ffe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B3530c218X2Da16fX2D4c21X2D98dcX2D98fdc1c6516d .
+_:B60e198baX2Dcb02X2D4424X2Da0bbX2Dec33b775ffe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:B0633bdfbX2DdcbcX2D424eX2Db384X2D92d17beef997 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B47340f7fX2D4413X2D4c55X2Db824X2Dc07fb1dacca4 .
+_:B0633bdfbX2DdcbcX2D424eX2Db384X2D92d17beef997 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> .
+<http://resource.geosciml.org/ontology/timescale/rank/Sub-Period> <http://www.w3.org/2000/01/rdf-schema#label> "Sub-Period" .
+<http://resource.geosciml.org/ontology/timescale/rank/Sub-Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://resource.geosciml.org/ontology/timescale/rank/Sub-Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> .
+<http://resource.geosciml.org/ontology/timescale/rank/Super-Eon> <http://www.w3.org/2000/01/rdf-schema#label> "Super-Eon" .
+<http://resource.geosciml.org/ontology/timescale/rank/Super-Eon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://resource.geosciml.org/ontology/timescale/rank/Super-Eon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> .
+_:B29ca5ea1X2D7354X2D482bX2Db8d8X2Da2f7d755145b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B9ca0de02X2Db82dX2D4f7bX2D8105X2D64d705f6a430 .
+_:B29ca5ea1X2D7354X2D482bX2Db8d8X2Da2f7d755145b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:Ba3724ca8f9b330489424600b12a08712 <http://www.w3.org/2002/07/owl#unionOf> _:B9e44648dX2Db775X2D4c7bX2D8718X2De75d520693bc .
+_:Ba3724ca8f9b330489424600b12a08712 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ba901816bX2D53b0X2D4ca3X2Da93fX2D65d70e4351a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ba901816bX2D53b0X2D4ca3X2Da93fX2D65d70e4351a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+_:B4457b819X2D2db4X2D44fcX2DbabdX2D8917949fc3c4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bf77ce27fX2D78f2X2D4d66X2Da67cX2D3c2325c8cf86 .
+_:B4457b819X2D2db4X2D44fcX2DbabdX2D8917949fc3c4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Bfbf52e44X2D1495X2D40c7X2Dbc46X2D937371a0f75b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bad6ef93aX2Dab0cX2D4525X2D886fX2D6f6ebcd59f0e .
+_:Bfbf52e44X2D1495X2D40c7X2Dbc46X2D937371a0f75b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:Bffe6ebc8d50825907c06ba0fccf243a8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://resource.geosciml.org/ontology/timescale/gts#Age> .
+_:Bffe6ebc8d50825907c06ba0fccf243a8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:Bffe6ebc8d50825907c06ba0fccf243a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B298dc089X2Df7b5X2D4814X2Db746X2D7b1f375e0767 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Be977a398X2D8a02X2D48a0X2Db12eX2D0e19ceb8f64c .
+_:B298dc089X2Df7b5X2D4814X2Db746X2D7b1f375e0767 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> <http://www.w3.org/2004/02/skos/core#definition> "An agreed stratigraphic section, which hosts a stratigrpahic point that is used to calibrate the temporal position (age) of a boundary within the geologic timescale. " .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bd1be9c0175463323884b79dc9262c0f4 .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B0b7695395689d933e636a860761a631f .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sample> .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> <http://www.w3.org/2000/01/rdf-schema#label> "Stratigraphic Section"@en .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B3530c218X2Da16fX2D4c21X2D98dcX2D98fdc1c6516d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B883f0de2X2Dce4eX2D432aX2Db315X2D37e16c089c1d .
+_:B3530c218X2Da16fX2D4c21X2D98dcX2D98fdc1c6516d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B5e98638316afc60af86f98a9d38428a5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B5e98638316afc60af86f98a9d38428a5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:B5e98638316afc60af86f98a9d38428a5 <http://www.w3.org/2002/07/owl#onClass> _:B50c31d27526279a9c9ee2f65a8663eec .
+_:B5e98638316afc60af86f98a9d38428a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bc7c9f072X2Df888X2D40a2X2D8a91X2D25014a07a742 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B8d8136d8X2Db754X2D44c8X2D8890X2D757ae067a37b .
+_:Bc7c9f072X2Df888X2D40a2X2D8a91X2D25014a07a742 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+<http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:BaseProterozoic\r\n  rdf:type gts:NumericEraBoundary ;\r\n  rdf:type thors:EraBoundary ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:Instant ;\r\n  gts:ratifiedGSSP true ;\r\n  rdfs:label \"Base of Proterozoic\"@en ;\r\n  skos:prefLabel \"Base of Proterozoic\"@en ;\r\n  time:inTemporalPosition isc:BaseProterozoicTime ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> <http://www.w3.org/2004/02/skos/core#definition> "Boundary between geochronologic eras, defined by an agreed chronometric position (i.e. numeric age). Typically denoted as the 'base of' the succeeding era" .
+<http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> <http://www.w3.org/2002/07/owl#disjointWith> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> .
+<http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bbdcb8ae5242909b29a0705b14ec54b71 .
+<http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> .
+<http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "Numeric Era Boundary"@en .
+<http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bf838a04cX2Dc7bdX2D4621X2D9f1cX2D00073aba4c8d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Befe78700X2Dcdb1X2D424eX2D89d1X2D02e94b2ed422 .
+_:Bf838a04cX2Dc7bdX2D4621X2D9f1cX2D00073aba4c8d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Ba5861893X2Dec40X2D4da5X2D876dX2D32bd76cf6b1d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ba5861893X2Dec40X2D4da5X2D876dX2D32bd76cf6b1d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Bbaf7b46eX2D5f24X2D447bX2D934eX2D538ba1090be3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ba1963d3bX2D58eaX2D41d9X2DabbdX2D51b3c593e2b3 .
+_:Bbaf7b46eX2D5f24X2D447bX2D934eX2D538ba1090be3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:Bd0a31228X2D620eX2D47d0X2Da9b6X2D0200b468780d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B636a4d4bX2D0cd7X2D4a5dX2Da313X2D7b4528750ecf .
+_:Bd0a31228X2D620eX2D47d0X2Da9b6X2D0200b468780d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B5f8fb6faX2D1513X2D403aX2Da9b2X2D08ba6443fa7c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B5f8fb6faX2D1513X2D403aX2Da9b2X2D08ba6443fa7c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> .
+_:Be1de7d12X2D1985X2D4566X2Da376X2D50965acd19ea <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B9f5c8f19X2Dd084X2D4710X2D8231X2D899d985bc69c .
+_:Be1de7d12X2D1985X2D4566X2Da376X2D50965acd19ea <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B2bedadb6X2D0882X2D4efbX2D8f09X2D6f2af68a137b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B14c84e12X2Dd72dX2D4a95X2D993aX2Dc5ed111e4625 .
+_:B2bedadb6X2D0882X2D4efbX2D8f09X2D6f2af68a137b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B76203ef3X2DfedaX2D4a9dX2D99f9X2D62ef19e4d7b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B981a0187X2D0100X2D460dX2Dab08X2D507b2ded3e2d .
+_:B76203ef3X2DfedaX2D4a9dX2D99f9X2D62ef19e4d7b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+<http://resource.geosciml.org/ontology/timescale/gts#EraCode> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:Calabrian  skos:notation \"a1.1.1.1.2.3\"^^gts:EraCode ." .
+<http://resource.geosciml.org/ontology/timescale/gts#EraCode> <http://www.w3.org/2002/07/owl#equivalentClass> _:B4b42bb4e7c4a0ac30225380ee2499111 .
+<http://resource.geosciml.org/ontology/timescale/gts#EraCode> <http://www.w3.org/2000/01/rdf-schema#label> "Era code" .
+<http://resource.geosciml.org/ontology/timescale/gts#EraCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#EraCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:B3d5447ceX2D7b68X2D4bb4X2D8825X2Ddd5132876a08 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bcb877237X2Db9a4X2D4f93X2Dba46X2Dea0133cef39e .
+_:B3d5447ceX2D7b68X2D4bb4X2D8825X2Ddd5132876a08 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> .
+_:Beecc2d92X2D67d5X2D4e03X2D888fX2Daef3b569930d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Beecc2d92X2D67d5X2D4e03X2D888fX2Daef3b569930d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Bda12c0462495950516f9588634fedb25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bda12c0462495950516f9588634fedb25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:Bda12c0462495950516f9588634fedb25 <http://www.w3.org/2002/07/owl#onClass> _:Bc5dd37359b52315ce31e4de23198c33b .
+_:Bda12c0462495950516f9588634fedb25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B9254b24687b6186a82eb8801179871c7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B9254b24687b6186a82eb8801179871c7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:B9254b24687b6186a82eb8801179871c7 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B9254b24687b6186a82eb8801179871c7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://orcid.org/0000-0001-6041-5302> <https://schema.org/name> "Stepehen M Richard"@en .
+<https://orcid.org/0000-0001-6041-5302> <https://schema.org/identifier> "https://orcid.org/0000-0001-6041-5302"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://orcid.org/0000-0001-6041-5302> <https://schema.org/email> <mailto:smrTucson@gmail.com> .
+<https://orcid.org/0000-0001-6041-5302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://orcid.org/0000-0001-6041-5302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Bdf7a6c9eX2D5e15X2D4913X2Dba07X2D51489c2784f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B45b6ece9X2D3a30X2D44c6X2D83e0X2D4095d621d091 .
+_:Bdf7a6c9eX2D5e15X2D4913X2Dba07X2D51489c2784f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:Bed6104d05ec984b1a580f56d1012a079 <http://www.w3.org/2001/XMLSchema#pattern> "[ax][12](.[1-9])*" .
+_:B2a6e0990X2D357cX2D4d49X2Db864X2Da216d5ba34fc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B47f8983bX2De9a1X2D47a0X2Db965X2D779029bb9414 .
+_:B2a6e0990X2D357cX2D4d49X2Db864X2Da216d5ba34fc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B636a4d4bX2D0cd7X2D4a5dX2Da313X2D7b4528750ecf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B0cb2744eX2Dc5fbX2D4b41X2D8442X2Db986ddd3a339 .
+_:B636a4d4bX2D0cd7X2D4a5dX2Da313X2D7b4528750ecf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+<http://resource.geosciml.org/ontology/timescale/rank/> <http://www.w3.org/2004/02/skos/core#member> <http://resource.geosciml.org/ontology/timescale/rank/Super-Eon> .
+<http://resource.geosciml.org/ontology/timescale/rank/> <http://www.w3.org/2004/02/skos/core#member> <http://resource.geosciml.org/ontology/timescale/rank/Sub-Period> .
+<http://resource.geosciml.org/ontology/timescale/rank/> <http://www.w3.org/2004/02/skos/core#member> <http://resource.geosciml.org/ontology/timescale/rank/Period> .
+<http://resource.geosciml.org/ontology/timescale/rank/> <http://www.w3.org/2004/02/skos/core#member> <http://resource.geosciml.org/ontology/timescale/rank/Era> .
+<http://resource.geosciml.org/ontology/timescale/rank/> <http://www.w3.org/2004/02/skos/core#member> <http://resource.geosciml.org/ontology/timescale/rank/Epoch> .
+<http://resource.geosciml.org/ontology/timescale/rank/> <http://www.w3.org/2004/02/skos/core#member> <http://resource.geosciml.org/ontology/timescale/rank/Eon> .
+<http://resource.geosciml.org/ontology/timescale/rank/> <http://www.w3.org/2004/02/skos/core#member> <http://resource.geosciml.org/ontology/timescale/rank/Age> .
+_:B194c8b71db3bd45d2d15a2fd1c689080 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B194c8b71db3bd45d2d15a2fd1c689080 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:B194c8b71db3bd45d2d15a2fd1c689080 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:B194c8b71db3bd45d2d15a2fd1c689080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B30a141bfdb6469b3eda7d30d2c6563d9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B30a141bfdb6469b3eda7d30d2c6563d9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:B30a141bfdb6469b3eda7d30d2c6563d9 <http://www.w3.org/2002/07/owl#onClass> _:B7bd141279236d5f6e7cfafe1597d59ea .
+_:B30a141bfdb6469b3eda7d30d2c6563d9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/gts#geologicDescription> <http://www.w3.org/2004/02/skos/core#definition> "geologic description of the stratigraphic section" .
+<http://resource.geosciml.org/ontology/timescale/gts#geologicDescription> <http://www.w3.org/2000/01/rdf-schema#label> "geologic description" .
+<http://resource.geosciml.org/ontology/timescale/gts#geologicDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#geologicDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> .
+<http://resource.geosciml.org/ontology/timescale/gts#geologicDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:B617f4b5a8416b2908c4a38130ccdc4ab <http://www.w3.org/2002/07/owl#unionOf> _:Bd07662c8X2D3f29X2D4480X2Da526X2Dcd3bbde9ad25 .
+_:B617f4b5a8416b2908c4a38130ccdc4ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bbdcb8ae5242909b29a0705b14ec54b71 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#status> .
+_:Bbdcb8ae5242909b29a0705b14ec54b71 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bbdcb8ae5242909b29a0705b14ec54b71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Befe78700X2Dcdb1X2D424eX2D89d1X2D02e94b2ed422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B4805edf8X2Db3dfX2D4283X2Da8c7X2D9f6ec485327d .
+_:Befe78700X2Dcdb1X2D424eX2D89d1X2D02e94b2ed422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B0be2de7d27629a70c9d441de3058914d <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B0be2de7d27629a70c9d441de3058914d <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:B0be2de7d27629a70c9d441de3058914d <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B0be2de7d27629a70c9d441de3058914d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B2e5b1e5aa1020c36869d8ac8d4370ee2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B2e5b1e5aa1020c36869d8ac8d4370ee2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalIn> .
+_:B2e5b1e5aa1020c36869d8ac8d4370ee2 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:B2e5b1e5aa1020c36869d8ac8d4370ee2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2000/01/rdf-schema#label> "Era" .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B3725ac587883b6512d5cbb3213d5d132 .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B618975805287b59b7c588248e845a07c .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B997cf1738fa063d7c5f709d208d98a08 .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B69b0e0756decf04f3733c372f637a6fb .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B9180a30895d202440cf0d1d0db60792a .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Baca324a47cf86b34925d337d2124846d .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2004/02/skos/core#definition> "Geochronologic era of rank 'Era'" .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bc9dfafbf7f23747a84ca0c5ab5f6dff9 .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:Mesoproterozoic\r\n  rdf:type gts:Era ;\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Era ;\r\n  rdfs:comment \"older bound -1600 Ma\"@en ;\r\n  rdfs:comment \"younger bound -1000 Ma\"@en ;\r\n  rdfs:label \"Mesoproterozoic Era\"@en ;\r\n  skos:notation \"a2.1.2\"^^gts:EraCode ;\r\n  skos:prefLabel \"Mesoproterozoic\"@en ;\r\n  skos:prefLabel \"Mesoproterozoico\"@es ;\r\n  time:hasBeginning isc:BaseMesoproterozoic ;\r\n  time:hasEnd isc:BaseNeoproterozoic ;\r\n  time:intervalContains isc:Ectasian ;\r\n  time:intervalDuring isc:Proterozoic ;\r\n  time:intervalFinishedBy isc:Stenian ;\r\n  time:intervalIn isc:Proterozoic ;\r\n  time:intervalMeets isc:Neoproterozoic ;\r\n  time:intervalMeets isc:Tonian ;\r\n  time:intervalMetBy isc:Paleoproterozoic ;\r\n  time:intervalMetBy isc:Statherian ;\r\n  time:intervalStartedBy isc:Calymmian ;\r\n.\r\n" .
+<http://resource.geosciml.org/ontology/timescale/gts#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B0cc44b02d012b7589bcc349375c4ef35 .
+_:B7bd141279236d5f6e7cfafe1597d59ea <http://www.w3.org/2002/07/owl#unionOf> _:B9988100aX2Dc434X2D4950X2D9b50X2D714166226c98 .
+_:B7bd141279236d5f6e7cfafe1597d59ea <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B14edeaaeX2D7ff9X2D475dX2Db646X2Daea73c34cf16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B003c0bb8X2Dd784X2D4e1eX2D84a5X2D0c5c4e621735 .
+_:B14edeaaeX2D7ff9X2D475dX2Db646X2Daea73c34cf16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> .
+_:B01469ea2X2D0be0X2D48c9X2D920cX2D4a57879e47d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B930d9587X2D84c1X2D459dX2Da0c9X2D3dd6ca85b97c .
+_:B01469ea2X2D0be0X2D48c9X2D920cX2D4a57879e47d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B65ef3f70f0678d5d784c63fc1f9a4611 <http://www.w3.org/2002/07/owl#unionOf> _:Bfa05f00eX2D6aa3X2D4e26X2Db072X2De409f7d666af .
+_:B65ef3f70f0678d5d784c63fc1f9a4611 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B461e70476c9ab4c9d5b7c2a5b00dea47 <http://www.w3.org/2002/07/owl#unionOf> _:B4db07c21X2D7994X2D4385X2D9247X2D9fdc598dec47 .
+_:B461e70476c9ab4c9d5b7c2a5b00dea47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bb3142752X2Dc53aX2D4882X2D9aa8X2D3fc1d78d361d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Beaed69d7X2Db5a5X2D4008X2D93dcX2Dd3e06b3d9cdf .
+_:Bb3142752X2Dc53aX2D4882X2D9aa8X2D3fc1d78d361d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> .
+_:B9180a30895d202440cf0d1d0db60792a <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B9180a30895d202440cf0d1d0db60792a <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:B9180a30895d202440cf0d1d0db60792a <http://www.w3.org/2002/07/owl#onClass> _:Be4099ea20cea9499c3b4af105e69e3e5 .
+_:B9180a30895d202440cf0d1d0db60792a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bc104d02d553e6776d0d224fe5ca9a647 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bc104d02d553e6776d0d224fe5ca9a647 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:Bc104d02d553e6776d0d224fe5ca9a647 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:Bc104d02d553e6776d0d224fe5ca9a647 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/gts#stratotype> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:BaseAeronian\r\n  a gts:GeochronologicBoundary ;\r\n  a thors:EraBoundary ;\r\n  a skos:Concept ;\r\n  a time:Instant ;\r\n  gts:stratotype isc:BaseAeronianSP ;\r\n  rdfs:label \"Base of Aeronian\"@en ;\r\n  skos:prefLabel \"Base of Aeronian\"@en ;\r\n  time:inTemporalPosition isc:BaseAeronianTime ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#stratotype> <http://www.w3.org/2000/01/rdf-schema#range> _:B3a61c90592d6302e93dadef15525f0bc .
+<http://resource.geosciml.org/ontology/timescale/gts#stratotype> <http://www.w3.org/2000/01/rdf-schema#label> "stratotype" .
+<http://resource.geosciml.org/ontology/timescale/gts#stratotype> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#stratotype> <http://www.w3.org/2000/01/rdf-schema#domain> _:B461e70476c9ab4c9d5b7c2a5b00dea47 .
+<http://resource.geosciml.org/ontology/timescale/gts#stratotype> <http://www.w3.org/2000/01/rdf-schema#comment> "the characteristic stratigraphic point or section corresponding with a geochronologic concept" .
+<http://resource.geosciml.org/ontology/timescale/gts#stratotype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:B1a055dffX2Df1d5X2D4448X2Dbcf7X2D1cc32e532b2a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ba23407faX2Da42bX2D4f60X2D8063X2D74df84c4febd .
+_:B1a055dffX2Df1d5X2D4448X2Dbcf7X2D1cc32e532b2a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B883f0de2X2Dce4eX2D432aX2Db315X2D37e16c089c1d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B34ae822dX2De146X2D4177X2D9912X2D5cd554846e93 .
+_:B883f0de2X2Dce4eX2D432aX2Db315X2D37e16c089c1d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B4abccc46b2c4c41e79d758082c252042 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#rank> .
+_:B4abccc46b2c4c41e79d758082c252042 <http://www.w3.org/2002/07/owl#hasValue> <http://resource.geosciml.org/ontology/timescale/rank/Sub-Period> .
+_:B4abccc46b2c4c41e79d758082c252042 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B717aa771X2Dd3cfX2D4331X2D810cX2Dbfc5fcc4c76f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B717aa771X2Dd3cfX2D4331X2D810cX2Dbfc5fcc4c76f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+_:B930d9587X2D84c1X2D459dX2Da0c9X2D3dd6ca85b97c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ba5861893X2Dec40X2D4da5X2D876dX2D32bd76cf6b1d .
+_:B930d9587X2D84c1X2D459dX2Da0c9X2D3dd6ca85b97c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+<http://resource.geosciml.org/ontology/timescale/gts#rank> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:Aalenian\r\n  a gts:Age ;\r\n  a gts:GeochronologicEra ;\r\n  a skos:Concept ;\r\n  a time:ProperInterval ;\r\n  gts:rank rank:Age ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#rank> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> .
+<http://resource.geosciml.org/ontology/timescale/gts#rank> <http://www.w3.org/2000/01/rdf-schema#label> "Geochronologic era rank" .
+<http://resource.geosciml.org/ontology/timescale/gts#rank> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#rank> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+<http://resource.geosciml.org/ontology/timescale/gts#rank> <http://www.w3.org/2000/01/rdf-schema#comment> "Elements of all ranks are included in the class 'gts:GeochronologicEra'. \r\nThe rank may be indicated by membership of a sub-class, or is indicated using the 'gts:rank' property." .
+<http://resource.geosciml.org/ontology/timescale/gts#rank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:B543e6b82082a370e8b6fd6f583944418 <http://www.w3.org/2002/07/owl#unionOf> _:Bb3142752X2Dc53aX2D4882X2D9aa8X2D3fc1d78d361d .
+_:B543e6b82082a370e8b6fd6f583944418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ba896d42e93760934cc47ebc68d384466 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Ba896d42e93760934cc47ebc68d384466 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:Ba896d42e93760934cc47ebc68d384466 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Ba896d42e93760934cc47ebc68d384466 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B9bf71a69bf6c150debb1633aea3d8cef <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B9bf71a69bf6c150debb1633aea3d8cef <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalIn> .
+_:B9bf71a69bf6c150debb1633aea3d8cef <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:B9bf71a69bf6c150debb1633aea3d8cef <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B06033d823b6cf36a73b8d69668c76407 <http://www.w3.org/2002/07/owl#unionOf> _:Bf838a04cX2Dc7bdX2D4621X2D9f1cX2D00073aba4c8d .
+_:B06033d823b6cf36a73b8d69668c76407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Baf1c0b44X2D2bb6X2D43beX2D8f89X2Ddd0344b63d24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Baf1c0b44X2D2bb6X2D43beX2D8f89X2Ddd0344b63d24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Bdbfb4252X2D4e2aX2D4ee3X2D80c7X2Db380bfdbc989 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Bdbfb4252X2D4e2aX2D4ee3X2D80c7X2Db380bfdbc989 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> .
+_:B396c6b28X2D2e58X2D4c97X2Db1f2X2D3e6862834373 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B5e2a8336X2Df653X2D4ccbX2Dab70X2D390d3be9a071 .
+_:B396c6b28X2D2e58X2D4c97X2Db1f2X2D3e6862834373 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> .
+_:B0cb2744eX2Dc5fbX2D4b41X2D8442X2Db986ddd3a339 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B0cb2744eX2Dc5fbX2D4b41X2D8442X2Db986ddd3a339 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> .
+<http://resource.geosciml.org/ontology/timescale/rank/Period> <http://www.w3.org/2000/01/rdf-schema#label> "Period" .
+<http://resource.geosciml.org/ontology/timescale/rank/Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://resource.geosciml.org/ontology/timescale/rank/Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> .
+_:B6be92424388adb235507849fec094e1f <http://www.w3.org/2002/07/owl#unionOf> _:B4457b819X2D2db4X2D44fcX2DbabdX2D8917949fc3c4 .
+_:B6be92424388adb235507849fec094e1f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:BaseBathonianSP\r\n  a gts:StratigraphicPoint ;\r\n  gts:boundaryLevel \"Base of limestone bed RB07 \"@en ;\r\n  gts:correlationEvent \"Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)\"@en ;\r\n  gts:ratifiedGSSP true ;\r\n  gts:status \"Ratified 2008\"@en ;\r\n  geo:hasGeometry isc:BaseBathonian-location ;\r\n  rdfs:comment \"Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  \"@en ;\r\n  rdfs:label \"Stratotype Point Base of Bathonian\"@en ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel> <http://www.w3.org/2000/01/rdf-schema#label> "boundary level" .
+<http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> .
+<http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "the level within the section of the point characterizing the boundary" .
+<http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Bccdcd86498b4df0846520c83bacf577d <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bccdcd86498b4df0846520c83bacf577d <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:Bccdcd86498b4df0846520c83bacf577d <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Bccdcd86498b4df0846520c83bacf577d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B5b8fe09bX2D390bX2D4f77X2D8b4aX2D6028d18fdc34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B2a6e0990X2D357cX2D4d49X2Db864X2Da216d5ba34fc .
+_:B5b8fe09bX2D390bX2D4f77X2D8b4aX2D6028d18fdc34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+<http://resource.geosciml.org/ontology/timescale/gts#status> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:BaseBathonianSP\r\n  a gts:StratigraphicPoint ;\r\n  gts:boundaryLevel \"Base of limestone bed RB07 \"@en ;\r\n  gts:correlationEvent \"Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)\"@en ;\r\n  gts:ratifiedGSSP true ;\r\n  gts:status \"Ratified 2008\"@en ;\r\n  geo:hasGeometry isc:BaseBathonian-location ;\r\n  rdfs:comment \"Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  \"@en ;\r\n  rdfs:label \"Stratotype Point Base of Bathonian\"@en ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#status> <http://www.w3.org/2004/02/skos/core#definition> "Description of the formal ICS status of this boundary and point" .
+<http://resource.geosciml.org/ontology/timescale/gts#status> <http://www.w3.org/2000/01/rdf-schema#label> "status" .
+<http://resource.geosciml.org/ontology/timescale/gts#status> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#status> <http://www.w3.org/2000/01/rdf-schema#domain> _:B9ede044a7196d46802197fc07f0da3b6 .
+<http://resource.geosciml.org/ontology/timescale/gts#status> <http://www.w3.org/2000/01/rdf-schema#comment> "formal ICS status of this boundary and point" .
+<http://resource.geosciml.org/ontology/timescale/gts#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:B5fc39faf1bb6f14fb89fdf6249ba22fe <http://www.w3.org/2002/07/owl#unionOf> _:B833b1aa0X2D10beX2D4fdfX2D900bX2D1dabb7548f0e .
+_:B5fc39faf1bb6f14fb89fdf6249ba22fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B6cfed8d6X2D82daX2D4703X2D9980X2D4cf29cb21bee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B6cfed8d6X2D82daX2D4703X2D9980X2D4cf29cb21bee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> .
+_:Bce8b9952X2Dc6baX2D4700X2Da4cbX2D3af33d4439bb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B41ef272aX2D42a5X2D4775X2D9cc6X2D98b85cc38afc .
+_:Bce8b9952X2Dc6baX2D4700X2Da4cbX2D3af33d4439bb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:B8a02d554fbeee49f5bfd44084b18d2db <http://www.w3.org/2002/07/owl#unionOf> _:B179dc90fX2Db0aaX2D4e18X2Db9e1X2D05bf69f3a4a4 .
+_:B8a02d554fbeee49f5bfd44084b18d2db <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B44f710077a145354b761a36df980a95a <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B44f710077a145354b761a36df980a95a <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:B44f710077a145354b761a36df980a95a <http://www.w3.org/2002/07/owl#onClass> _:Bf4c894f48a478fbb1f500b1176203705 .
+_:B44f710077a145354b761a36df980a95a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B84c02446X2Ddea9X2D4793X2Db660X2D4ad1381b9c43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Befe88ed9X2D8a39X2D491fX2D8868X2D702e8d5d967f .
+_:B84c02446X2Ddea9X2D4793X2Db660X2D4ad1381b9c43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> .
+_:B14c84e12X2Dd72dX2D4a95X2D993aX2Dc5ed111e4625 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B75867fe7X2Dcdb6X2D4641X2D8e51X2D7970deb04460 .
+_:B14c84e12X2Dd72dX2D4a95X2D993aX2Dc5ed111e4625 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B8fb8dd17X2D4f41X2D4983X2D979cX2Df8c4d2f54064 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B8fb8dd17X2D4f41X2D4983X2D979cX2Df8c4d2f54064 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Befe88ed9X2D8a39X2D491fX2D8868X2D702e8d5d967f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Befe88ed9X2D8a39X2D491fX2D8868X2D702e8d5d967f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+<http://resource.geosciml.org/ontology/timescale/gts#manifestedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://resource.geosciml.org/ontology/timescale/gts#correlatesWith> .
+<http://resource.geosciml.org/ontology/timescale/gts#manifestedBy> <http://www.w3.org/2000/01/rdf-schema#label> "geologic manifestation" .
+<http://resource.geosciml.org/ontology/timescale/gts#manifestedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#manifestedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:B574d5c03702cde8f69edbae3e6df2cc9 .
+<http://resource.geosciml.org/ontology/timescale/gts#manifestedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points from a geochronologic element to a geologic feature which shows characteristics associated with the event associated with the boundary or era" .
+<http://resource.geosciml.org/ontology/timescale/gts#manifestedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:B676381c0X2D5119X2D403eX2Daf25X2Def9bb74605fd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B3288203eX2Db246X2D45e1X2DaabfX2Dcfebd46dbbd7 .
+_:B676381c0X2D5119X2D403eX2Daf25X2Def9bb74605fd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:B66dbcb22X2Db0aaX2D493eX2Db3b6X2D5215154df49a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bb75995f7X2D2e4dX2D476eX2Db864X2Dc141a6269272 .
+_:B66dbcb22X2Db0aaX2D493eX2Db3b6X2D5215154df49a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:Befc3b72cX2Dd804X2D49eaX2Da0a1X2D0606f62fd177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B0c1c39cfX2De33dX2D4fe4X2Da273X2D781d299db325 .
+_:Befc3b72cX2Dd804X2D49eaX2Da0a1X2D0606f62fd177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B9988100aX2Dc434X2D4950X2D9b50X2D714166226c98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ba96105b7X2D4f2cX2D4e9dX2Da0ddX2Db81416096061 .
+_:B9988100aX2Dc434X2D4950X2D9b50X2D714166226c98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B0cc44b02d012b7589bcc349375c4ef35 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#rank> .
+_:B0cc44b02d012b7589bcc349375c4ef35 <http://www.w3.org/2002/07/owl#hasValue> <http://resource.geosciml.org/ontology/timescale/rank/Era> .
+_:B0cc44b02d012b7589bcc349375c4ef35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> <http://www.w3.org/2004/02/skos/core#example> "\r\nrank:Period\r\n  rdf:type gts:GeochronologicEraRank ;\r\n  rdf:type skos:Concept ;\r\n  rdfs:label \"Period\" ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> <http://www.w3.org/2004/02/skos/core#definition> "Rank of geologic era within the standard hierarchy: Eon, Era, Period, Epoch, Age" .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> <http://www.w3.org/2000/01/rdf-schema#label> "Geochronologic Era Rank"@en .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:Bc9dfafbf7f23747a84ca0c5ab5f6dff9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bc9dfafbf7f23747a84ca0c5ab5f6dff9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:Bc9dfafbf7f23747a84ca0c5ab5f6dff9 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:Bc9dfafbf7f23747a84ca0c5ab5f6dff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bcb877237X2Db9a4X2D4f93X2Dba46X2Dea0133cef39e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Bcb877237X2Db9a4X2D4f93X2Dba46X2Dea0133cef39e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> .
+_:Bde03a09768e32853ccd23bea270bb162 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bde03a09768e32853ccd23bea270bb162 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalIn> .
+_:Bde03a09768e32853ccd23bea270bb162 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:Bde03a09768e32853ccd23bea270bb162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B5fc5eb780de114b954583bcf68ede45a <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/thors#referencePoint> .
+_:B5fc5eb780de114b954583bcf68ede45a <http://www.w3.org/2002/07/owl#allValuesFrom> _:B65ef3f70f0678d5d784c63fc1f9a4611 .
+_:B5fc5eb780de114b954583bcf68ede45a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:BaseBathonianSP\r\n  a gts:StratigraphicPoint ;\r\n  gts:boundaryLevel \"Base of limestone bed RB07 \"@en ;\r\n  gts:correlationEvent \"Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)\"@en ;\r\n  gts:ratifiedGSSP true ;\r\n  gts:status \"Ratified 2008\"@en ;\r\n  geo:hasGeometry isc:BaseBathonian-location ;\r\n  rdfs:comment \"Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  \"@en ;\r\n  rdfs:label \"Stratotype Point Base of Bathonian\"@en ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> <http://www.w3.org/2000/01/rdf-schema#label> "ratified" .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> <http://www.w3.org/2000/01/rdf-schema#domain> _:B919dbf7e8174dbad14da5924a66abab1 .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> <http://www.w3.org/2000/01/rdf-schema#comment> "flag to indicate the status of the calibration details of a geochronologic boundary - 'true' if ratified by ICS" .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Bae7ab0e97dd10b3a1c4bcfcb31c59fdf <http://www.w3.org/2002/07/owl#unionOf> _:Bc7c9f072X2Df888X2D40a2X2D8a91X2D25014a07a742 .
+_:Bae7ab0e97dd10b3a1c4bcfcb31c59fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B618975805287b59b7c588248e845a07c <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B618975805287b59b7c588248e845a07c <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalIn> .
+_:B618975805287b59b7c588248e845a07c <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B618975805287b59b7c588248e845a07c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B18dbbf9aX2D475eX2D47cdX2Db152X2D0a6bf333aa3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Beecc2d92X2D67d5X2D4e03X2D888fX2Daef3b569930d .
+_:B18dbbf9aX2D475eX2D47cdX2Db152X2D0a6bf333aa3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B1d9d50c4X2D1229X2D497fX2Dbbe8X2D72249624cce9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B45b2d250X2D1123X2D4d8dX2D87fdX2De261ccbd6e0b .
+_:B1d9d50c4X2D1229X2D497fX2Dbbe8X2D72249624cce9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:Ba1ef194cac8d9f0dd69bc655f9568dbf <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Ba1ef194cac8d9f0dd69bc655f9568dbf <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:Ba1ef194cac8d9f0dd69bc655f9568dbf <http://www.w3.org/2002/07/owl#onClass> _:Bcc7dc2ac9aa77fb28c2fe4c0edb3d641 .
+_:Ba1ef194cac8d9f0dd69bc655f9568dbf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Ba96105b7X2D4f2cX2D4e9dX2Da0ddX2Db81416096061 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B66dbcb22X2Db0aaX2D493eX2Db3b6X2D5215154df49a .
+_:Ba96105b7X2D4f2cX2D4e9dX2Da0ddX2Db81416096061 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:Bf4c894f48a478fbb1f500b1176203705 <http://www.w3.org/2002/07/owl#unionOf> _:B8a57d9bdX2D85caX2D4d11X2D8ef8X2D63c80440bd4f .
+_:Bf4c894f48a478fbb1f500b1176203705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bcc7dc2ac9aa77fb28c2fe4c0edb3d641 <http://www.w3.org/2002/07/owl#unionOf> _:Bdf7a6c9eX2D5e15X2D4913X2Dba07X2D51489c2784f4 .
+_:Bcc7dc2ac9aa77fb28c2fe4c0edb3d641 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B34ae822dX2De146X2D4177X2D9912X2D5cd554846e93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B8eb80b55X2Dd3d7X2D4eb8X2Da551X2D319274f442cf .
+_:B34ae822dX2De146X2D4177X2D9912X2D5cd554846e93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:Be4099ea20cea9499c3b4af105e69e3e5 <http://www.w3.org/2002/07/owl#unionOf> _:B676381c0X2D5119X2D403eX2Daf25X2Def9bb74605fd .
+_:Be4099ea20cea9499c3b4af105e69e3e5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B4db07c21X2D7994X2D4385X2D9247X2D9fdc598dec47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B717aa771X2Dd3cfX2D4331X2D810cX2Dbfc5fcc4c76f .
+_:B4db07c21X2D7994X2D4385X2D9247X2D9fdc598dec47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> .
+_:B9f5c8f19X2Dd084X2D4710X2D8231X2D899d985bc69c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bf740c7faX2Dc3e8X2D44d1X2D9df2X2D665d7b1fb296 .
+_:B9f5c8f19X2Dd084X2D4710X2D8231X2D899d985bc69c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:Ba1963d3bX2D58eaX2D41d9X2DabbdX2D51b3c593e2b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B396c6b28X2D2e58X2D4c97X2Db1f2X2D3e6862834373 .
+_:Ba1963d3bX2D58eaX2D41d9X2DabbdX2D51b3c593e2b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:B4cca7a189045b36705b5172a984c8338 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#rank> .
+_:B4cca7a189045b36705b5172a984c8338 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B4cca7a189045b36705b5172a984c8338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B47f8983bX2De9a1X2D47a0X2Db965X2D779029bb9414 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B47f8983bX2De9a1X2D47a0X2Db965X2D779029bb9414 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:B9e44648dX2Db775X2D4c7bX2D8718X2De75d520693bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Be1de7d12X2D1985X2D4566X2Da376X2D50965acd19ea .
+_:B9e44648dX2Db775X2D4c7bX2D8718X2De75d520693bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B30447594X2Ddb2bX2D4410X2D948bX2Da33b2e141272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B4d613126X2D267aX2D40dbX2Dbd1aX2D9b523eaf83e4 .
+_:B30447594X2Ddb2bX2D4410X2D948bX2Da33b2e141272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+<http://resource.geosciml.org/ontology/timescale/rank/Eon> <http://www.w3.org/2000/01/rdf-schema#label> "Eon" .
+<http://resource.geosciml.org/ontology/timescale/rank/Eon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://resource.geosciml.org/ontology/timescale/rank/Eon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> .
+_:Bea390a49X2D4596X2D4e99X2D8aa2X2Def858b233921 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bd0a31228X2D620eX2D47d0X2Da9b6X2D0200b468780d .
+_:Bea390a49X2D4596X2D4e99X2D8aa2X2Def858b233921 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:Bb75995f7X2D2e4dX2D476eX2Db864X2Dc141a6269272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B84c02446X2Ddea9X2D4793X2Db660X2D4ad1381b9c43 .
+_:Bb75995f7X2D2e4dX2D476eX2Db864X2Dc141a6269272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent> <http://www.w3.org/2004/02/skos/core#definition> "Geologic event correlated with a specified stratotype. " .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Stratigraphic Event"@en .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of Geologic Event (placeholder) " .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bc5069fca8ab55ab8ab1423884a1e6fe4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bc5069fca8ab55ab8ab1423884a1e6fe4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:Bc5069fca8ab55ab8ab1423884a1e6fe4 <http://www.w3.org/2002/07/owl#onClass> _:B014f04defe9b0137ad035e72de8f6f4d .
+_:Bc5069fca8ab55ab8ab1423884a1e6fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B833b1aa0X2D10beX2D4fdfX2D900bX2D1dabb7548f0e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bea390a49X2D4596X2D4e99X2D8aa2X2Def858b233921 .
+_:B833b1aa0X2D10beX2D4fdfX2D900bX2D1dabb7548f0e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:B64264844X2Dba10X2D43cdX2Daa0fX2D8e90764bad96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B56795e94X2D21edX2D4c42X2Da52fX2D95b63bce137f .
+_:B64264844X2Dba10X2D43cdX2Daa0fX2D8e90764bad96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> .
+<http://resource.geosciml.org/ontology/timescale/rank/Age> <http://www.w3.org/2000/01/rdf-schema#label> "Age" .
+<http://resource.geosciml.org/ontology/timescale/rank/Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://resource.geosciml.org/ontology/timescale/rank/Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> .
+_:Bf77ce27fX2D78f2X2D4d66X2Da67cX2D3c2325c8cf86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B1a055dffX2Df1d5X2D4448X2Dbcf7X2D1cc32e532b2a .
+_:Bf77ce27fX2D78f2X2D4d66X2Da67cX2D3c2325c8cf86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:Bb7446ad6d773b9f8772d1f0e4ff2a3d8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bb7446ad6d773b9f8772d1f0e4ff2a3d8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:Bb7446ad6d773b9f8772d1f0e4ff2a3d8 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:Bb7446ad6d773b9f8772d1f0e4ff2a3d8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B03f33b25X2De3bdX2D4f8bX2D8d25X2D9fc123f832e0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Baaf60eb9X2D6c45X2D4c94X2D8a91X2Db47247d5bebf .
+_:B03f33b25X2De3bdX2D4f8bX2D8d25X2D9fc123f832e0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Age> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:Mesozoic\r\n  rdf:type gts:Era ;\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  rdfs:label \"Mesozoic Era\"@en ;\r\n  skos:notation \"a1.1.2\"^^gts:EraCode ;\r\n  skos:prefLabel \"Mesosoikum\"@et ;\r\n  skos:prefLabel \"Mesozoic\"@en ;\r\n  time:hasBeginning isc:BaseMesozoic ;\r\n  time:hasEnd isc:BaseCenozoic ;\r\n.\r\n" .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> <http://www.w3.org/2004/02/skos/core#definition> "Named interval within the geologic timescale, of any rank" .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B1145530d697f612f856be4099ee5228d .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B4cca7a189045b36705b5172a984c8338 .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B739875b6eb2fb372d175113e71de4be9 .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/thors#Era> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> <http://www.w3.org/2000/01/rdf-schema#label> "Geochronologic Era"@en .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B5e2a8336X2Df653X2D4ccbX2Dab70X2D390d3be9a071 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B5e2a8336X2Df653X2D4ccbX2Dab70X2D390d3be9a071 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Bad6ef93aX2Dab0cX2D4525X2D886fX2D6f6ebcd59f0e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Bad6ef93aX2Dab0cX2D4525X2D886fX2D6f6ebcd59f0e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+<http://resource.geosciml.org/ontology/timescale/rank/Epoch> <http://www.w3.org/2000/01/rdf-schema#label> "Epoch" .
+<http://resource.geosciml.org/ontology/timescale/rank/Epoch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://resource.geosciml.org/ontology/timescale/rank/Epoch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank> .
+_:Ba23407faX2Da42bX2D4f60X2D8063X2D74df84c4febd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ba23407faX2Da42bX2D4f60X2D8063X2D74df84c4febd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:Bdc4829248151cf0a3c9ec1f13e5e2378 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bdc4829248151cf0a3c9ec1f13e5e2378 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:Bdc4829248151cf0a3c9ec1f13e5e2378 <http://www.w3.org/2002/07/owl#onClass> _:Bddd3b2bb5016bfc5177e206f3d3cf100 .
+_:Bdc4829248151cf0a3c9ec1f13e5e2378 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B739875b6eb2fb372d175113e71de4be9 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#stratotype> .
+_:B739875b6eb2fb372d175113e71de4be9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> .
+_:B739875b6eb2fb372d175113e71de4be9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Be010e136834ef8b055f03048fbb52035 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Be010e136834ef8b055f03048fbb52035 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:Be010e136834ef8b055f03048fbb52035 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Be010e136834ef8b055f03048fbb52035 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bddd3b2bb5016bfc5177e206f3d3cf100 <http://www.w3.org/2002/07/owl#unionOf> _:B38b879b5X2Dcb32X2D417aX2D8950X2Dfe14cf829858 .
+_:Bddd3b2bb5016bfc5177e206f3d3cf100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B5be3df0fbb2221b9e818539b58d59a2a <http://www.w3.org/2002/07/owl#unionOf> _:B30447594X2Ddb2bX2D4410X2D948bX2Da33b2e141272 .
+_:B5be3df0fbb2221b9e818539b58d59a2a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B25e2264aX2D89a7X2D4c57X2D9e95X2Db71112bd9b07 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B18dbbf9aX2D475eX2D47cdX2Db152X2D0a6bf333aa3c .
+_:B25e2264aX2D89a7X2D4c57X2D9e95X2Db71112bd9b07 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B8a57d9bdX2D85caX2D4d11X2D8ef8X2D63c80440bd4f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Baf1c0b44X2D2bb6X2D43beX2D8f89X2Ddd0344b63d24 .
+_:B8a57d9bdX2D85caX2D4d11X2D8ef8X2D63c80440bd4f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B6a43a08fX2D8278X2D45b5X2Db7ddX2D64baa81fdbfb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B2bedadb6X2D0882X2D4efbX2D8f09X2D6f2af68a137b .
+_:B6a43a08fX2D8278X2D45b5X2Db7ddX2D64baa81fdbfb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Bb6764f5930acec612482a25ecc3d3cac <http://www.w3.org/2002/07/owl#unionOf> _:B1d9d50c4X2D1229X2D497fX2Dbbe8X2D72249624cce9 .
+_:Bb6764f5930acec612482a25ecc3d3cac <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B8eb80b55X2Dd3d7X2D4eb8X2Da551X2D319274f442cf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B8eb80b55X2Dd3d7X2D4eb8X2Da551X2D319274f442cf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> .
+_:B656816751fc24e681ec93716fcc47f50 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#rank> .
+_:B656816751fc24e681ec93716fcc47f50 <http://www.w3.org/2002/07/owl#hasValue> <http://resource.geosciml.org/ontology/timescale/rank/Period> .
+_:B656816751fc24e681ec93716fcc47f50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B41ef272aX2D42a5X2D4775X2D9cc6X2D98b85cc38afc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B64264844X2Dba10X2D43cdX2Daa0fX2D8e90764bad96 .
+_:B41ef272aX2D42a5X2D4775X2D9cc6X2D98b85cc38afc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Age> .
+<http://resource.geosciml.org/ontology/timescale/gts#correlatesWith> <http://www.w3.org/2000/01/rdf-schema#range> _:B543e6b82082a370e8b6fd6f583944418 .
+<http://resource.geosciml.org/ontology/timescale/gts#correlatesWith> <http://www.w3.org/2000/01/rdf-schema#label> "correlating boundary or era" .
+<http://resource.geosciml.org/ontology/timescale/gts#correlatesWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#correlatesWith> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points from a geologic feature or event to a geochronologic element" .
+<http://resource.geosciml.org/ontology/timescale/gts#correlatesWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:B9ca0de02X2Db82dX2D4f7bX2D8105X2D64d705f6a430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B76203ef3X2DfedaX2D4a9dX2D99f9X2D62ef19e4d7b3 .
+_:B9ca0de02X2Db82dX2D4f7bX2D8105X2D64d705f6a430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B241f439e7d9fc41a451dc7333a839a30 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/thors#component> .
+_:B241f439e7d9fc41a451dc7333a839a30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+_:B241f439e7d9fc41a451dc7333a839a30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B4a691b42X2D8eeeX2D4e37X2Da60aX2D6052fdb123e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bdbfb4252X2D4e2aX2D4ee3X2D80c7X2Db380bfdbc989 .
+_:B4a691b42X2D8eeeX2D4e37X2Da60aX2D6052fdb123e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:B2f3ad037X2Dcd4dX2D490bX2Da634X2De2978897ce65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B8fb8dd17X2D4f41X2D4983X2D979cX2Df8c4d2f54064 .
+_:B2f3ad037X2Dcd4dX2D490bX2Da634X2De2978897ce65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> .
+<http://resource.geosciml.org/ontology/timescale/gts#event> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent> .
+<http://resource.geosciml.org/ontology/timescale/gts#event> <http://www.w3.org/2000/01/rdf-schema#label> "stratigraphic event" .
+<http://resource.geosciml.org/ontology/timescale/gts#event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#event> <http://www.w3.org/2000/01/rdf-schema#domain> _:B8a02d554fbeee49f5bfd44084b18d2db .
+<http://resource.geosciml.org/ontology/timescale/gts#event> <http://www.w3.org/2000/01/rdf-schema#comment> "stratigraphic event corresponding with this boundary or point" .
+<http://resource.geosciml.org/ontology/timescale/gts#event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:B6c22daab2df58ea877331c983ed94f1b <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B6c22daab2df58ea877331c983ed94f1b <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:B6c22daab2df58ea877331c983ed94f1b <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:B6c22daab2df58ea877331c983ed94f1b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B69b0e0756decf04f3733c372f637a6fb <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B69b0e0756decf04f3733c372f637a6fb <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:B69b0e0756decf04f3733c372f637a6fb <http://www.w3.org/2002/07/owl#onClass> _:B617f4b5a8416b2908c4a38130ccdc4ab .
+_:B69b0e0756decf04f3733c372f637a6fb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B6604f3f8777bcf51ee3787132b0a99b7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B6604f3f8777bcf51ee3787132b0a99b7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:B6604f3f8777bcf51ee3787132b0a99b7 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:B6604f3f8777bcf51ee3787132b0a99b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bd07662c8X2D3f29X2D4480X2Da526X2Dcd3bbde9ad25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Befc3b72cX2Dd804X2D49eaX2Da0a1X2D0606f62fd177 .
+_:Bd07662c8X2D3f29X2D4480X2Da526X2Dcd3bbde9ad25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:B3497c911869d792950144ee9cb32f80f <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B3497c911869d792950144ee9cb32f80f <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:B3497c911869d792950144ee9cb32f80f <http://www.w3.org/2002/07/owl#onClass> _:B06033d823b6cf36a73b8d69668c76407 .
+_:B3497c911869d792950144ee9cb32f80f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:BaseJurassic\r\n  rdf:type gts:GeochronologicBoundary ;\r\n  rdf:type thors:EraBoundary ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:Instant ;\r\n  gts:stratotype isc:BaseJurassicSP ;\r\n  rdfs:label \"Base of Jurassic\"@en ;\r\n  skos:altLabel \"Base of Hettangian\"@en ;\r\n  skos:altLabel \"Base of Lower Jurassic\"@en ;\r\n  skos:prefLabel \"Base of Jurassic\"@en ;\r\n  time:inTemporalPosition isc:BaseJurassicTime ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> <http://www.w3.org/2004/02/skos/core#definition> "Boundary between geochronologic eras, defined with reference to an agreed stratigraphic point. Typically denoted as the 'base of' the succeeding era" .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> <http://www.w3.org/2002/07/owl#disjointWith> <http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B8581afd7e45b66c9ee3780aeb27e8f01 .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "Geochronologic Boundary"@en .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B5597d2d0e09db05cfef5e07de2c7c530 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B5597d2d0e09db05cfef5e07de2c7c530 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:B5597d2d0e09db05cfef5e07de2c7c530 <http://www.w3.org/2002/07/owl#onClass> _:B5be3df0fbb2221b9e818539b58d59a2a .
+_:B5597d2d0e09db05cfef5e07de2c7c530 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B0c1c39cfX2De33dX2D4fe4X2Da273X2D781d299db325 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B0c1c39cfX2De33dX2D4fe4X2Da273X2D781d299db325 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B3725ac587883b6512d5cbb3213d5d132 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B3725ac587883b6512d5cbb3213d5d132 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:B3725ac587883b6512d5cbb3213d5d132 <http://www.w3.org/2002/07/owl#onClass> _:B02eef69a6ffcf42689e18b6087d9fcea .
+_:B3725ac587883b6512d5cbb3213d5d132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B4b42bb4e7c4a0ac30225380ee2499111 <http://www.w3.org/2002/07/owl#withRestrictions> _:Bc55fa194X2D4bf1X2D419fX2D8a90X2D7d73b125b4a2 .
+_:B4b42bb4e7c4a0ac30225380ee2499111 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:B4b42bb4e7c4a0ac30225380ee2499111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale> <http://www.w3.org/2004/02/skos/core#example> "\r\nts:gts2019\r\n  rdf:type gts:GeologicTimescale ;\r\n  rdf:type skos:ConceptScheme ;\r\n  rdf:type time:TRS ;\r\n  thors:component isc:Phanerozoic ;\r\n  thors:component isc:Precambrian ;\r\n  thors:referencePoint isc:BasePhanerozoic ;\r\n  thors:referencePoint isc:FormationOfEarth ;\r\n  thors:referencePoint isc:Present ;\r\n  rdfs:label \"Geologic Time Scale (2019)\"@en ;\r\n.\r\n" .
+<http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale> <http://www.w3.org/2004/02/skos/core#definition> "The hierarchical ordinal/nominal reference system known as the Geologic Timescale" .
+<http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B5fc5eb780de114b954583bcf68ede45a .
+<http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B241f439e7d9fc41a451dc7333a839a30 .
+<http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale> <http://www.w3.org/2000/01/rdf-schema#label> "Geologic Timescale"@en .
+<http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B574d5c03702cde8f69edbae3e6df2cc9 <http://www.w3.org/2002/07/owl#unionOf> _:Be2e319b1X2Da5abX2D4b25X2Db252X2D291d4d94f9ae .
+_:B574d5c03702cde8f69edbae3e6df2cc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2004/02/skos/core#definition> "Geochronologic era of rank 'Sub-Period'" .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B0138631b4c767f782f94c00b0271ef21 .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:Mississippian\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type gts:Sub-Period ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Sub-Period ;\r\n  rdfs:comment \"older bound -358.9 +|-0.4 Ma\"@en ;\r\n  rdfs:comment \"younger bound -323.2 +|-0.4 Ma\"@en ;\r\n  rdfs:label \"Mississippian Sub-period\"@en ;\r\n  skos:notation \"a1.1.3.2.2\"^^gts:EraCode ;\r\n  skos:prefLabel \"Misisipis\"@lt ;\r\n  skos:prefLabel \"Mississippian\"@en ;\r\n  time:hasBeginning isc:BaseCarboniferous ;\r\n  time:hasEnd isc:BasePennsylvanian ;\r\n  time:intervalContains isc:MiddleMississippian ;\r\n  time:intervalFinishedBy isc:UpperMississippian ;\r\n  time:intervalIn isc:Carboniferous ;\r\n  time:intervalMeets isc:Bashkirian ;\r\n  time:intervalMeets isc:LowerPennsylvanian ;\r\n  time:intervalMeets isc:Pennsylvanian ;\r\n  time:intervalMetBy isc:Devonian ;\r\n  time:intervalMetBy isc:Famennian ;\r\n  time:intervalMetBy isc:UpperDevonian ;\r\n  time:intervalStartedBy isc:LowerMississippian ;\r\n  time:intervalStarts isc:Carboniferous ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bc104d02d553e6776d0d224fe5ca9a647 .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B5e98638316afc60af86f98a9d38428a5 .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B553b0ca8ec81c3a3714783dd982c9e55 .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B6c22daab2df58ea877331c983ed94f1b .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bda12c0462495950516f9588634fedb25 .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2000/01/rdf-schema#label> "Sub-Period" .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B4abccc46b2c4c41e79d758082c252042 .
+<http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B9bf71a69bf6c150debb1633aea3d8cef .
+_:B4805edf8X2Db3dfX2D4283X2Da8c7X2D9f6ec485327d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ba8e1a196X2D64b0X2D4aa1X2Dbc7fX2Dd196145fbba9 .
+_:B4805edf8X2Db3dfX2D4283X2Da8c7X2D9f6ec485327d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B9995846a7a3a9137da6bafc0453cd69d <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B9995846a7a3a9137da6bafc0453cd69d <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:B9995846a7a3a9137da6bafc0453cd69d <http://www.w3.org/2002/07/owl#onClass> _:Bae7ab0e97dd10b3a1c4bcfcb31c59fdf .
+_:B9995846a7a3a9137da6bafc0453cd69d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B014f04defe9b0137ad035e72de8f6f4d <http://www.w3.org/2002/07/owl#unionOf> _:Bb47664fbX2D5e3aX2D4f18X2Da731X2D30ac57704714 .
+_:B014f04defe9b0137ad035e72de8f6f4d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B1145530d697f612f856be4099ee5228d <http://www.w3.org/2002/07/owl#someValuesFrom> <http://resource.geosciml.org/ontology/timescale/gts#EraCode> .
+_:B1145530d697f612f856be4099ee5228d <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#notation> .
+_:B1145530d697f612f856be4099ee5228d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B47340f7fX2D4413X2D4c55X2Db824X2Dc07fb1dacca4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B47340f7fX2D4413X2D4c55X2Db824X2Dc07fb1dacca4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> .
+_:Bd09858bcX2Dca6eX2D4463X2Da538X2Dadb1fd50415e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B0633bdfbX2DdcbcX2D424eX2Db384X2D92d17beef997 .
+_:Bd09858bcX2Dca6eX2D4463X2Da538X2Dadb1fd50415e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> .
+_:B8581afd7e45b66c9ee3780aeb27e8f01 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#stratotype> .
+_:B8581afd7e45b66c9ee3780aeb27e8f01 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> .
+_:B8581afd7e45b66c9ee3780aeb27e8f01 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B8d8136d8X2Db754X2D44c8X2D8890X2D757ae067a37b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bbaf7b46eX2D5f24X2D447bX2D934eX2D538ba1090be3 .
+_:B8d8136d8X2Db754X2D44c8X2D8890X2D757ae067a37b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:B553b0ca8ec81c3a3714783dd982c9e55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:B553b0ca8ec81c3a3714783dd982c9e55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:B553b0ca8ec81c3a3714783dd982c9e55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://orcid.org/0000-0002-3884-3420> <https://schema.org/name> "Simon J D Cox"@en .
+<https://orcid.org/0000-0002-3884-3420> <https://schema.org/identifier> "https://orcid.org/0000-0002-3884-3420"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://orcid.org/0000-0002-3884-3420> <https://schema.org/email> <mailto:simon.cox@csiro.au> .
+<https://orcid.org/0000-0002-3884-3420> <https://schema.org/affiliation> _:B78eaffb9011f7bf642a65c115c7219af .
+<https://orcid.org/0000-0002-3884-3420> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://orcid.org/0000-0002-3884-3420> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:B422a3888X2Db183X2D4dcfX2D8f31X2D5b3ad7655266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B422a3888X2Db183X2D4dcfX2D8f31X2D5b3ad7655266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary> .
+_:B3288203eX2Db246X2D45e1X2DaabfX2Dcfebd46dbbd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bb2390203X2Dc676X2D4a39X2Dbd34X2D8d496f57d453 .
+_:B3288203eX2Db246X2D45e1X2DaabfX2Dcfebd46dbbd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+<http://resource.geosciml.org/ontology/timescale/gts#positionalUncertainty> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:BaseAeronianTime\r\n  a time:TimePosition ;\r\n  gts:positionalUncertainty isc:BaseAeronianUncertainty ;\r\n  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;\r\n  time:numericPosition 440.8 ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#positionalUncertainty> <http://www.w3.org/2004/02/skos/core#definition> "Uncertainty in a time position" .
+<http://resource.geosciml.org/ontology/timescale/gts#positionalUncertainty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalDuration> .
+<http://resource.geosciml.org/ontology/timescale/gts#positionalUncertainty> <http://www.w3.org/2000/01/rdf-schema#label> "time position uncertainty" .
+<http://resource.geosciml.org/ontology/timescale/gts#positionalUncertainty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#TemporalPosition> .
+<http://resource.geosciml.org/ontology/timescale/gts#positionalUncertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Baca324a47cf86b34925d337d2124846d <http://www.w3.org/2002/07/owl#someValuesFrom> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:Baca324a47cf86b34925d337d2124846d <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:Baca324a47cf86b34925d337d2124846d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B44f710077a145354b761a36df980a95a .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bb7446ad6d773b9f8772d1f0e4ff2a3d8 .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B0be2de7d27629a70c9d441de3058914d .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2004/02/skos/core#definition> "Geochronologic era of rank 'Eon'" .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Ba1ef194cac8d9f0dd69bc655f9568dbf .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:Proterozoic\r\n  rdf:type gts:Eon ;\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Eon ;\r\n  rdfs:comment \"older bound -2500 Ma\"@en ;\r\n  rdfs:comment \"younger bound -541.0 +|-1.0 Ma\"@en ;\r\n  rdfs:label \"Proterozoic Eon\"@en ;\r\n  skos:notation \"a2.1\"^^gts:EraCode ;\r\n  skos:prefLabel \"Proterosoikum\"@et ;\r\n  skos:prefLabel \"Proterozoic\"@en ;\r\n  time:hasBeginning isc:BaseProterozoic ;\r\n  time:hasEnd isc:BasePhanerozoic ;\r\n  time:intervalContains isc:Mesoproterozoic ;\r\n  time:intervalFinishedBy isc:Neoproterozoic ;\r\n  time:intervalFinishes isc:Precambrian ;\r\n  time:intervalIn isc:Precambrian ;\r\n  time:intervalMeets isc:Cambrian ;\r\n  time:intervalMeets isc:Fortunian ;\r\n  time:intervalMeets isc:Paleozoic ;\r\n  time:intervalMeets isc:Phanerozoic ;\r\n  time:intervalMeets isc:Terreneuvian ;\r\n  time:intervalMetBy isc:Archean ;\r\n  time:intervalMetBy isc:Neoarchean ;\r\n  time:intervalStartedBy isc:Paleoproterozoic ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bd7e9ef6bf771a649cd07cd5521ec32b9 .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B9c0ebde3707133ac2e0d56f948de7459 .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B7214014e14a4a21ce900fb1fa145bbe3 .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bf352cb1e4e2fb6d6b81875f1c150cd8d .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2000/01/rdf-schema#label> "Eon" .
+<http://resource.geosciml.org/ontology/timescale/gts#Eon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+_:Bf352cb1e4e2fb6d6b81875f1c150cd8d <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalIn> .
+_:Bf352cb1e4e2fb6d6b81875f1c150cd8d <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:Bf352cb1e4e2fb6d6b81875f1c150cd8d <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bf352cb1e4e2fb6d6b81875f1c150cd8d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Be40c599b041e3ab6cab8d2c581035d93 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
+_:Be40c599b041e3ab6cab8d2c581035d93 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:Be40c599b041e3ab6cab8d2c581035d93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B003c0bb8X2Dd784X2D4e1eX2D84a5X2D0c5c4e621735 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B01469ea2X2D0be0X2D48c9X2D920cX2D4a57879e47d2 .
+_:B003c0bb8X2Dd784X2D4e1eX2D84a5X2D0c5c4e621735 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:Bd1be9c0175463323884b79dc9262c0f4 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#geologicSetting> .
+_:Bd1be9c0175463323884b79dc9262c0f4 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bd1be9c0175463323884b79dc9262c0f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bb2390203X2Dc676X2D4a39X2Dbd34X2D8d496f57d453 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Bb2390203X2Dc676X2D4a39X2Dbd34X2D8d496f57d453 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Era> .
+_:Bc25b1571cf0e1273388089f831b45d7e <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#correlationEvent> .
+_:Bc25b1571cf0e1273388089f831b45d7e <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bc25b1571cf0e1273388089f831b45d7e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B45b2d250X2D1123X2D4d8dX2D87fdX2De261ccbd6e0b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B45b2d250X2D1123X2D4d8dX2D87fdX2De261ccbd6e0b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:B38b879b5X2Dcb32X2D417aX2D8950X2Dfe14cf829858 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B5b8fe09bX2D390bX2D4f77X2D8b4aX2D6028d18fdc34 .
+_:B38b879b5X2Dcb32X2D417aX2D8950X2Dfe14cf829858 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+_:B54f86cfa1501272f12e57c461b41c5e8 <http://www.w3.org/2002/07/owl#onProperty> <http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> .
+_:B54f86cfa1501272f12e57c461b41c5e8 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B54f86cfa1501272f12e57c461b41c5e8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B78eaffb9011f7bf642a65c115c7219af <https://schema.org/name> "CSIRO" .
+_:B78eaffb9011f7bf642a65c115c7219af <https://schema.org/identifier> "http://catalogue.linked.data.gov.au/org/csiro"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:B02eef69a6ffcf42689e18b6087d9fcea <http://www.w3.org/2002/07/owl#unionOf> _:B9a8bb1e8X2D5637X2D495dX2D9fa4X2D80e38e61ec02 .
+_:B02eef69a6ffcf42689e18b6087d9fcea <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B3a61c90592d6302e93dadef15525f0bc <http://www.w3.org/2002/07/owl#unionOf> _:B298dc089X2Df7b5X2D4814X2Db746X2D7b1f375e0767 .
+_:B3a61c90592d6302e93dadef15525f0bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://resource.geosciml.org/ontology/timescale/gts#Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://resource.geosciml.org/ontology/timescale/gts#Age> <http://www.w3.org/2004/02/skos/core#definition> "Geochronologic era of rank 'Age'" .
+<http://resource.geosciml.org/ontology/timescale/gts#Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B5597d2d0e09db05cfef5e07de2c7c530 .
+<http://resource.geosciml.org/ontology/timescale/gts#Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bc5069fca8ab55ab8ab1423884a1e6fe4 .
+<http://resource.geosciml.org/ontology/timescale/gts#Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B2e5b1e5aa1020c36869d8ac8d4370ee2 .
+<http://resource.geosciml.org/ontology/timescale/gts#Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bf859a970e282fb80e3d0e8499f390b7e .
+<http://resource.geosciml.org/ontology/timescale/gts#Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+<http://resource.geosciml.org/ontology/timescale/gts#Age> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:Calabrian\r\n  rdf:type gts:Age ;\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Age ;\r\n  rdfs:comment \"older bound -1.80 Ma\"@en ;\r\n  rdfs:comment \"younger bound -0.781 Ma\"@en ;\r\n  rdfs:label \"Calabrian Age\"@en ;\r\n  skos:notation \"a1.1.1.1.2.3\"^^gts:EraCode ;\r\n  skos:prefLabel \"Calabr\"@cs ;\r\n  skos:prefLabel \"Calabrian\"@en ;\r\n  time:hasBeginning isc:BaseCalabrian ;\r\n  time:hasEnd isc:BaseMiddlePleistocene ;\r\n  time:intervalDuring isc:Pleistocene ;\r\n  time:intervalIn isc:Pleistocene ;\r\n  time:intervalMeets isc:MiddlePleistocene ;\r\n  time:intervalMetBy isc:Gelasian ;\r\n.\r\n" .
+<http://resource.geosciml.org/ontology/timescale/gts#Age> <http://www.w3.org/2000/01/rdf-schema#label> "Age" .
+<http://resource.geosciml.org/ontology/timescale/gts#Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B2424de9d1eb45be4cf4b4254a4b5d5e4 .
+_:Baaf60eb9X2D6c45X2D4c94X2D8a91X2Db47247d5bebf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B29ca5ea1X2D7354X2D482bX2Db8d8X2Da2f7d755145b .
+_:Baaf60eb9X2D6c45X2D4c94X2D8a91X2Db47247d5bebf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Sub-Period> .
+_:B75867fe7X2Dcdb6X2D4641X2D8e51X2D7970deb04460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B5f8fb6faX2D1513X2D403aX2Da9b2X2D08ba6443fa7c .
+_:B75867fe7X2Dcdb6X2D4641X2D8e51X2D7970deb04460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
+_:Bb47664fbX2D5e3aX2D4f18X2Da731X2D30ac57704714 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B03f33b25X2De3bdX2D4f8bX2D8d25X2D9fc123f832e0 .
+_:Bb47664fbX2D5e3aX2D4f18X2Da731X2D30ac57704714 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:Bc5dd37359b52315ce31e4de23198c33b <http://www.w3.org/2002/07/owl#unionOf> _:B60e198baX2Dcb02X2D4424X2Da0bbX2Dec33b775ffe7 .
+_:Bc5dd37359b52315ce31e4de23198c33b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Beaed69d7X2Db5a5X2D4008X2D93dcX2Dd3e06b3d9cdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Beaed69d7X2Db5a5X2D4008X2D93dcX2Dd3e06b3d9cdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+_:B919dbf7e8174dbad14da5924a66abab1 <http://www.w3.org/2002/07/owl#unionOf> _:Bd09858bcX2Dca6eX2D4463X2Da538X2Dadb1fd50415e .
+_:B919dbf7e8174dbad14da5924a66abab1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bc55fa194X2D4bf1X2D419fX2D8a90X2D7d73b125b4a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Bc55fa194X2D4bf1X2D419fX2D8a90X2D7d73b125b4a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Bed6104d05ec984b1a580f56d1012a079 .
+<http://resource.geosciml.org/ontology/timescale/gts#boundary> <http://www.w3.org/2000/01/rdf-schema#range> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> .
+<http://resource.geosciml.org/ontology/timescale/gts#boundary> <http://www.w3.org/2000/01/rdf-schema#label> "geochronologic boundary" .
+<http://resource.geosciml.org/ontology/timescale/gts#boundary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#boundary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> .
+<http://resource.geosciml.org/ontology/timescale/gts#boundary> <http://www.w3.org/2000/01/rdf-schema#comment> "geochronologic boundary corresponding with this stratigraphic point" .
+<http://resource.geosciml.org/ontology/timescale/gts#boundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/rights> "Copyright 2012-2020 CSIRO" .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/title> "Geologic Timescale model" .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/created> "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/modified> "2020-05-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://resource.geosciml.org/ontology/timescale/gts> <https://schema.org/codeRepository> <https://github.com/CGI-IUGS/timescale-ont> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/source> "Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137." .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/vocab/vann/preferredNamespacePrefix> "gts" .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dx.doi.org/10.1130/GES00022.1> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/2004/02/skos/core#changeNote> "2017-04-28 - removed imports ISO ontologies" .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-6041-5302> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/description> "This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.\r\n\r\nThe permitted nesting relationships between eras of different ranks are axiomatized as local constraints using interval relationships from OWL-Time. " .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <doi:10.1130/GES00022.1> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/2002/07/owl#imports> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://resource.geosciml.org/ontology/timescale/gts#> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.geosciml.org> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1> .
+<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-3884-3420> .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:BaseJurassicSP\r\n  rdf:type gts:StratigraphicPoint ;\r\n  dct:source \"Episodes 36/3, p. 162-198, 2013\"@en ;\r\n  gts:boundaryLevel \"5.80 m above top of Koessen Formation\"@en ;\r\n  gts:correlationEvent \"FO of ammonite Psiloceras spelae tirolicum, FO of aragonitic foraminifer Praegubkinella turgescens\"@en ;\r\n  gts:ratifiedGSSP true ;\r\n  gts:status \"Ratified 2010\"@en ;\r\n  geo:hasGeometry isc:BaseJurassic-location ;\r\n  rdfs:comment \"Kuhjoch section,Tyrol, Austria \"@en ;\r\n  rdfs:label \"Stratotype Point Base of Jurassic\"@en ;\r\n  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Hettangian.pdf> ;\r\n  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;\r\n  skos:prefLabel \"Stratotype Point Base of Jurassic\"@en ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> <http://www.w3.org/2004/02/skos/core#definition> "A specified position within an agreed stratigraphic section, used to calibrate the temporal position (age) of a boundary within the geologic timescale. " .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B54f86cfa1501272f12e57c461b41c5e8 .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Be364cfcb56962825bacf58a9fedfab4c .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bc25b1571cf0e1273388089f831b45d7e .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sample> .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Stratigraphic Point"@en .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B45b6ece9X2D3a30X2D44c6X2D83e0X2D4095d621d091 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B45b6ece9X2D3a30X2D44c6X2D83e0X2D4095d621d091 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B8f29299875417dbd52114096f8a5638f .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2000/01/rdf-schema#label> "Epoch" .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bffe6ebc8d50825907c06ba0fccf243a8 .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:Cisuralian\r\n  rdf:type gts:Epoch ;\r\n  rdf:type gts:GeochronologicEra ;\r\n  rdf:type skos:Concept ;\r\n  rdf:type time:ProperInterval ;\r\n  gts:rank rank:Epoch ;\r\n  rdfs:comment \"older bound -298.9 +|-0.15 Ma\"@en ;\r\n  rdfs:comment \"younger bound -272.95 +|-0.11 Ma\"@en ;\r\n  rdfs:label \"Cisuralian Epoch\"@en ;\r\n  skos:notation \"a1.1.3.1.3\"^^gts:EraCode ;\r\n  skos:prefLabel \"Cisural\"@cs ;\r\n  skos:prefLabel \"Cisuralian\"@en ;\r\n  skos:prefLabel \"Kisuralis\"@lt ;\r\n  time:hasBeginning isc:BasePermian ;\r\n  time:hasEnd isc:BaseGuadalupian ;\r\n  time:intervalContains isc:Artinskian ;\r\n  time:intervalContains isc:Sakmarian ;\r\n  time:intervalFinishedBy isc:Kungurian ;\r\n  time:intervalIn isc:Permian ;\r\n  time:intervalMeets isc:Guadalupian ;\r\n  time:intervalMeets isc:Roadian ;\r\n  time:intervalMetBy isc:Carboniferous ;\r\n  time:intervalMetBy isc:Gzhelian ;\r\n  time:intervalMetBy isc:Pennsylvanian ;\r\n  time:intervalMetBy isc:UpperMississippian ;\r\n  time:intervalMetBy isc:UpperPennsylvanian ;\r\n  time:intervalStartedBy isc:Asselian ;\r\n  time:intervalStarts isc:Permian ;\r\n.\r\n" .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B4e121a5a859a7d9cce30de8bfa5a9732 .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B30a141bfdb6469b3eda7d30d2c6563d9 .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B40e82a321829805e47b1cd3a7cfadf06 .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra> .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B9995846a7a3a9137da6bafc0453cd69d .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B18cff43f9b8d9b1902b33407eba4c5f7 .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2004/02/skos/core#definition> "Geochronologic era of rank 'Epoch'" .
+<http://resource.geosciml.org/ontology/timescale/gts#Epoch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B149ede7f7d08d20230d460574b58bdf8 .
+_:B8f29299875417dbd52114096f8a5638f <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B8f29299875417dbd52114096f8a5638f <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:B8f29299875417dbd52114096f8a5638f <http://www.w3.org/2002/07/owl#onClass> _:Ba3724ca8f9b330489424600b12a08712 .
+_:B8f29299875417dbd52114096f8a5638f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Be2e319b1X2Da5abX2D4b25X2Db252X2D291d4d94f9ae <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ba901816bX2D53b0X2D4ca3X2Da93fX2D65d70e4351a8 .
+_:Be2e319b1X2Da5abX2D4b25X2Db252X2D291d4d94f9ae <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary> .
+_:Bf8741ce5bb2b6e2dcfa3ae2c621e5ab6 <http://www.w3.org/2002/07/owl#unionOf> _:B4a691b42X2D8eeeX2D4e37X2Da60aX2D6052fdb123e1 .
+_:Bf8741ce5bb2b6e2dcfa3ae2c621e5ab6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bf859a970e282fb80e3d0e8499f390b7e <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bf859a970e282fb80e3d0e8499f390b7e <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:Bf859a970e282fb80e3d0e8499f390b7e <http://www.w3.org/2002/07/owl#onClass> _:Bea2d43ea4391c7ec2f5f57726a8ea757 .
+_:Bf859a970e282fb80e3d0e8499f390b7e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B8df94b0ebf89bbd6a5265d1fab74c331 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B8df94b0ebf89bbd6a5265d1fab74c331 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
+_:B8df94b0ebf89bbd6a5265d1fab74c331 <http://www.w3.org/2002/07/owl#onClass> _:B6be92424388adb235507849fec094e1f .
+_:B8df94b0ebf89bbd6a5265d1fab74c331 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B149ede7f7d08d20230d460574b58bdf8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B149ede7f7d08d20230d460574b58bdf8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalIn> .
+_:B149ede7f7d08d20230d460574b58bdf8 <http://www.w3.org/2002/07/owl#onClass> _:Bf8741ce5bb2b6e2dcfa3ae2c621e5ab6 .
+_:B149ede7f7d08d20230d460574b58bdf8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Bea2d43ea4391c7ec2f5f57726a8ea757 <http://www.w3.org/2002/07/owl#unionOf> _:Bce8b9952X2Dc6baX2D4700X2Da4cbX2D3af33d4439bb .
+_:Bea2d43ea4391c7ec2f5f57726a8ea757 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Be977a398X2D8a02X2D48a0X2Db12eX2D0e19ceb8f64c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Be977a398X2D8a02X2D48a0X2Db12eX2D0e19ceb8f64c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> .
+_:B0138631b4c767f782f94c00b0271ef21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B0138631b4c767f782f94c00b0271ef21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalStartedBy> .
+_:B0138631b4c767f782f94c00b0271ef21 <http://www.w3.org/2002/07/owl#onClass> _:B5fc39faf1bb6f14fb89fdf6249ba22fe .
+_:B0138631b4c767f782f94c00b0271ef21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://resource.geosciml.org/ontology/timescale/gts#correlationEvent> <http://www.w3.org/2004/02/skos/core#example> "\r\nisc:BaseBathonianSP\r\n  a gts:StratigraphicPoint ;\r\n  gts:boundaryLevel \"Base of limestone bed RB07 \"@en ;\r\n  gts:correlationEvent \"Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)\"@en ;\r\n  gts:ratifiedGSSP true ;\r\n  gts:status \"Ratified 2008\"@en ;\r\n  geo:hasGeometry isc:BaseBathonian-location ;\r\n  rdfs:comment \"Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  \"@en ;\r\n  rdfs:label \"Stratotype Point Base of Bathonian\"@en ;\r\n." .
+<http://resource.geosciml.org/ontology/timescale/gts#correlationEvent> <http://www.w3.org/2000/01/rdf-schema#label> "correlation event" .
+<http://resource.geosciml.org/ontology/timescale/gts#correlationEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts#correlationEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> .
+<http://resource.geosciml.org/ontology/timescale/gts#correlationEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "the stratigraphic event that is intended to be represented by this stratigraphic point" .
+<http://resource.geosciml.org/ontology/timescale/gts#correlationEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:Bfa567de5f778203fabed4f3df8cbdc8e <http://www.w3.org/2002/07/owl#someValuesFrom> <http://resource.geosciml.org/ontology/timescale/gts#Epoch> .
+_:Bfa567de5f778203fabed4f3df8cbdc8e <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalContains> .
+_:Bfa567de5f778203fabed4f3df8cbdc8e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:B9ede044a7196d46802197fc07f0da3b6 <http://www.w3.org/2002/07/owl#unionOf> _:B3d5447ceX2D7b68X2D4bb4X2D8825X2Ddd5132876a08 .
+_:B9ede044a7196d46802197fc07f0da3b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bf740c7faX2Dc3e8X2D44d1X2D9df2X2D665d7b1fb296 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B2f3ad037X2Dcd4dX2D490bX2Da634X2De2978897ce65 .
+_:Bf740c7faX2Dc3e8X2D44d1X2D9df2X2D665d7b1fb296 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/gts#Period> .
