@@ -1,51 +1,71 @@
 <?xml version="1.0"?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:sdo="https://schema.org/"
     xmlns:gts="http://resource.geosciml.org/ontology/timescale/gts#"
-    xmlns:doap="http://usefulinc.com/ns/doap#"
     xmlns:voaf="http://purl.org/vocommons/voaf#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:thors="http://resource.geosciml.org/ontology/timescale/thors#"
     xmlns:rank="http://resource.geosciml.org/ontology/timescale/rank/"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:time="http://www.w3.org/2006/time#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:sosa="http://www.w3.org/ns/sosa/"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:vann="http://purl.org/vocab/vann/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://resource.geosciml.org/ontology/timescale/gts">
   <owl:Ontology rdf:about="">
-    <dcterms:creator rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-    >&lt;a href='https://orcid.org/0000-0002-3884-3420'&gt;Simon Jonathan David COX, CSIRO Australia&lt;/a&gt;</dcterms:creator>
+    <dcterms:rights>Copyright 2012-2020 CSIRO</dcterms:rights>
     <dcterms:title>Geologic Timescale model</dcterms:title>
     <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
     >2011-01-01</dcterms:created>
-    <prov:wasGeneratedBy>
-      <prov:Activity>
-        <doap:repository rdf:resource="https://github.com/CGI-IUGS/timescale-ont"/>
-        <rdf:type rdf:resource="http://usefulinc.com/ns/doap#Project"/>
-      </prov:Activity>
-    </prov:wasGeneratedBy>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2020-05-31</dcterms:modified>
+    <sdo:codeRepository rdf:resource="https://github.com/CGI-IUGS/timescale-ont"/>
     <dcterms:source>Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</dcterms:source>
     <vann:preferredNamespacePrefix>gts</vann:preferredNamespacePrefix>
-    <dcterms:rights>Copyright © 2012-2017 CSIRO</dcterms:rights>
     <rdfs:seeAlso rdf:resource="http://dx.doi.org/10.1130/GES00022.1"/>
+    <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
     <skos:changeNote>2017-04-28 - removed imports ISO ontologies</skos:changeNote>
-    <dcterms:description>This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</dcterms:description>
-    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:contributor rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-    >&lt;a href='https://orcid.org/0000-0001-6041-5302'&gt;Stephen M RICHARD&lt;/a&gt;</dcterms:contributor>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2017-04-28</dcterms:modified>
+    <dcterms:contributor>
+      <sdo:Person rdf:about="https://orcid.org/0000-0001-6041-5302">
+        <sdo:name xml:lang="en">Stepehen M Richard</sdo:name>
+        <sdo:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://orcid.org/0000-0001-6041-5302</sdo:identifier>
+        <sdo:email rdf:resource="mailto:smrTucson@gmail.com"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </sdo:Person>
+    </dcterms:contributor>
+    <dcterms:description>This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.&#xD;
+&#xD;
+The permitted nesting relationships between eras of different ranks are axiomatized as local constraints using interval relationships from OWL-Time. </dcterms:description>
     <rdfs:seeAlso rdf:resource="doi:10.1130/GES00022.1"/>
+    <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
     <owl:imports rdf:resource="http://resource.geosciml.org/ontology/timescale/thors"/>
     <vann:preferredNamespaceUri rdf:resource="#"/>
     <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
     <rdfs:seeAlso rdf:resource="http://www.geosciml.org"/>
     <rdfs:seeAlso rdf:resource="http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1"/>
+    <dcterms:creator>
+      <sdo:Person rdf:about="https://orcid.org/0000-0002-3884-3420">
+        <sdo:name xml:lang="en">Simon J D Cox</sdo:name>
+        <sdo:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://orcid.org/0000-0002-3884-3420</sdo:identifier>
+        <sdo:email rdf:resource="mailto:simon.cox@csiro.au"/>
+        <sdo:affiliation rdf:parseType="Resource">
+          <sdo:name>CSIRO</sdo:name>
+          <sdo:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+          >http://catalogue.linked.data.gov.au/org/csiro</sdo:identifier>
+        </sdo:affiliation>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </sdo:Person>
+    </dcterms:creator>
   </owl:Ontology>
   <rdfs:Datatype rdf:ID="EraCode">
+    <skos:example>&#xD;
+isc:Calabrian  skos:notation "a1.1.1.1.2.3"^^gts:EraCode .</skos:example>
     <owl:equivalentClass>
       <rdfs:Datatype>
         <owl:withRestrictions rdf:parseType="Collection">
@@ -53,18 +73,39 @@
             <xsd:pattern>[ax][12](.[1-9])*</xsd:pattern>
           </rdf:Description>
         </owl:withRestrictions>
-        <owl:onDataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
       </rdfs:Datatype>
     </owl:equivalentClass>
     <rdfs:label>Era code</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
   </rdfs:Datatype>
   <rdfs:Class rdf:ID="GeochronologicEraRank">
+    <skos:example>&#xD;
+rank:Period&#xD;
+  rdf:type gts:GeochronologicEraRank ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdfs:label "Period" ;&#xD;
+.</skos:example>
+    <skos:definition>Rank of geologic era within the standard hierarchy: Eon, Era, Period, Epoch, Age</skos:definition>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:label xml:lang="en">Geochronologic Era Rank</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
   </rdfs:Class>
   <owl:Class rdf:ID="GeologicTimescale">
+    <skos:example>&#xD;
+ts:gts2019&#xD;
+  rdf:type gts:GeologicTimescale ;&#xD;
+  rdf:type skos:ConceptScheme ;&#xD;
+  rdf:type time:TRS ;&#xD;
+  thors:component isc:Phanerozoic ;&#xD;
+  thors:component isc:Precambrian ;&#xD;
+  thors:referencePoint isc:BasePhanerozoic ;&#xD;
+  thors:referencePoint isc:FormationOfEarth ;&#xD;
+  thors:referencePoint isc:Present ;&#xD;
+  rdfs:label "Geologic Time Scale (2019)"@en ;&#xD;
+.&#xD;
+</skos:example>
+    <skos:definition>The hierarchical ordinal/nominal reference system known as the Geologic Timescale</skos:definition>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="http://resource.geosciml.org/ontology/timescale/thors#referencePoint"/>
@@ -90,19 +131,290 @@
     <rdfs:label xml:lang="en">Geologic Timescale</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
-  <owl:Class rdf:ID="Period">
-    <rdfs:label xml:lang="en">Period</rdfs:label>
+  <owl:Class rdf:ID="Sub-Period">
+    <skos:definition>Geochronologic era of rank 'Sub-Period'</skos:definition>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:ID="Super-Eon"/>
+              <owl:Class rdf:ID="Eon"/>
+              <owl:Class rdf:ID="Era"/>
+              <owl:Class rdf:ID="Period"/>
+              <owl:Class rdf:about="#Sub-Period"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:example>&#xD;
+isc:Mississippian&#xD;
+  rdf:type gts:GeochronologicEra ;&#xD;
+  rdf:type gts:Sub-Period ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdf:type time:ProperInterval ;&#xD;
+  gts:rank rank:Sub-Period ;&#xD;
+  rdfs:comment "older bound -358.9 +|-0.4 Ma"@en ;&#xD;
+  rdfs:comment "younger bound -323.2 +|-0.4 Ma"@en ;&#xD;
+  rdfs:label "Mississippian Sub-period"@en ;&#xD;
+  skos:notation "a1.1.3.2.2"^^gts:EraCode ;&#xD;
+  skos:prefLabel "Misisipis"@lt ;&#xD;
+  skos:prefLabel "Mississippian"@en ;&#xD;
+  time:hasBeginning isc:BaseCarboniferous ;&#xD;
+  time:hasEnd isc:BasePennsylvanian ;&#xD;
+  time:intervalContains isc:MiddleMississippian ;&#xD;
+  time:intervalFinishedBy isc:UpperMississippian ;&#xD;
+  time:intervalIn isc:Carboniferous ;&#xD;
+  time:intervalMeets isc:Bashkirian ;&#xD;
+  time:intervalMeets isc:LowerPennsylvanian ;&#xD;
+  time:intervalMeets isc:Pennsylvanian ;&#xD;
+  time:intervalMetBy isc:Devonian ;&#xD;
+  time:intervalMetBy isc:Famennian ;&#xD;
+  time:intervalMetBy isc:UpperDevonian ;&#xD;
+  time:intervalStartedBy isc:LowerMississippian ;&#xD;
+  time:intervalStarts isc:Carboniferous ;&#xD;
+.</skos:example>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass>
+          <owl:Class rdf:ID="Epoch"/>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Super-Eon"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Period"/>
+              <owl:Class rdf:about="#Sub-Period"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="#Epoch"/>
+        </owl:someValuesFrom>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeochronologicEra"/>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:ID="Sub-Period">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass>
+          <owl:Class rdf:about="#Epoch"/>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Super-Eon"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Period"/>
+              <owl:Class rdf:about="#Sub-Period"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:label>Sub-Period</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#GeochronologicEra"/>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="rank"/>
+        </owl:onProperty>
+        <owl:hasValue>
+          <skos:Concept rdf:about="http://resource.geosciml.org/ontology/timescale/rank/Sub-Period">
+            <rdfs:label>Sub-Period</rdfs:label>
+            <rdf:type rdf:resource="#GeochronologicEraRank"/>
+          </skos:Concept>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+        <owl:onClass>
+          <owl:Class rdf:about="#Period"/>
+        </owl:onClass>
+      </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
+  <owl:Class rdf:about="#Period">
+    <skos:definition>Geochronologic era of rank 'Period'</skos:definition>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+        <owl:onClass>
+          <owl:Class rdf:about="#Era"/>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:example>&#xD;
+isc:Stenian&#xD;
+  rdf:type gts:GeochronologicEra ;&#xD;
+  rdf:type gts:Period ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdf:type time:ProperInterval ;&#xD;
+  gts:rank rank:Period ;&#xD;
+  rdfs:comment "older bound -1200 Ma"@en ;&#xD;
+  rdfs:comment "younger bound -1000 Ma"@en ;&#xD;
+  rdfs:label "Stenian Period"@en ;&#xD;
+  skos:notation "a2.1.2.1"^^gts:EraCode ;&#xD;
+  skos:prefLabel "Esteniense"@es ;&#xD;
+  skos:prefLabel "Stenian"@en ;&#xD;
+  time:hasBeginning isc:BaseStenian ;&#xD;
+  time:hasEnd isc:BaseNeoproterozoic ;&#xD;
+  time:intervalFinishes isc:Mesoproterozoic ;&#xD;
+  time:intervalIn isc:Mesoproterozoic ;&#xD;
+  time:intervalMeets isc:Neoproterozoic ;&#xD;
+  time:intervalMeets isc:Tonian ;&#xD;
+  time:intervalMetBy isc:Ectasian ;&#xD;
+.</skos:example>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="#Epoch"/>
+        </owl:someValuesFrom>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass>
+          <owl:Class rdf:about="#Epoch"/>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#rank"/>
+        </owl:onProperty>
+        <owl:hasValue>
+          <skos:Concept rdf:about="http://resource.geosciml.org/ontology/timescale/rank/Period">
+            <rdfs:label>Period</rdfs:label>
+            <rdf:type rdf:resource="#GeochronologicEraRank"/>
+          </skos:Concept>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Super-Eon"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Period"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Super-Eon"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Period"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass>
+          <owl:Class rdf:about="#Epoch"/>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#GeochronologicEra"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Super-Eon"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Period"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Period</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="#GeochronologicBoundary">
+    <skos:example>&#xD;
+isc:BaseJurassic&#xD;
+  rdf:type gts:GeochronologicBoundary ;&#xD;
+  rdf:type thors:EraBoundary ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdf:type time:Instant ;&#xD;
+  gts:stratotype isc:BaseJurassicSP ;&#xD;
+  rdfs:label "Base of Jurassic"@en ;&#xD;
+  skos:altLabel "Base of Hettangian"@en ;&#xD;
+  skos:altLabel "Base of Lower Jurassic"@en ;&#xD;
+  skos:prefLabel "Base of Jurassic"@en ;&#xD;
+  time:inTemporalPosition isc:BaseJurassicTime ;&#xD;
+.</skos:example>
+    <skos:definition>Boundary between geochronologic eras, defined with reference to an agreed stratigraphic point. Typically denoted as the 'base of' the succeeding era</skos:definition>
     <owl:disjointWith>
       <owl:Class rdf:about="#NumericEraBoundary"/>
     </owl:disjointWith>
@@ -121,6 +433,22 @@
     <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
   <owl:Class rdf:about="#StratigraphicPoint">
+    <skos:example>&#xD;
+isc:BaseJurassicSP&#xD;
+  rdf:type gts:StratigraphicPoint ;&#xD;
+  dct:source "Episodes 36/3, p. 162-198, 2013"@en ;&#xD;
+  gts:boundaryLevel "5.80 m above top of Koessen Formation"@en ;&#xD;
+  gts:correlationEvent "FO of ammonite Psiloceras spelae tirolicum, FO of aragonitic foraminifer Praegubkinella turgescens"@en ;&#xD;
+  gts:ratifiedGSSP true ;&#xD;
+  gts:status "Ratified 2010"@en ;&#xD;
+  geo:hasGeometry isc:BaseJurassic-location ;&#xD;
+  rdfs:comment "Kuhjoch section,Tyrol, Austria "@en ;&#xD;
+  rdfs:label "Stratotype Point Base of Jurassic"@en ;&#xD;
+  rdfs:seeAlso &lt;http://www.stratigraphy.org/GSSP/Hettangian.pdf&gt; ;&#xD;
+  rdfs:seeAlso &lt;http://www.stratigraphy.org/GSSP/index.html&gt; ;&#xD;
+  skos:prefLabel "Stratotype Point Base of Jurassic"@en ;&#xD;
+.</skos:example>
+    <skos:definition>A specified position within an agreed stratigraphic section, used to calibrate the temporal position (age) of a boundary within the geologic timescale. </skos:definition>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -148,10 +476,12 @@
         >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sample"/>
     <rdfs:label xml:lang="en">Stratigraphic Point</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
   <owl:Class rdf:ID="StratigraphicSection">
+    <skos:definition>An agreed stratigraphic section, which hosts a stratigrpahic point that is used to calibrate the temporal position (age) of a boundary within the geologic timescale. </skos:definition>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -170,16 +500,134 @@
         >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sample"/>
     <rdfs:label xml:lang="en">Stratigraphic Section</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
   <owl:Class rdf:ID="Age">
-    <rdfs:label>Age</rdfs:label>
+    <skos:definition>Geochronologic era of rank 'Age'</skos:definition>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Epoch"/>
+              <owl:Class rdf:about="#Age"/>
+              <owl:Class rdf:about="#Sub-Period"/>
+              <owl:Class rdf:about="#Period"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Super-Eon"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Epoch"/>
+              <owl:Class rdf:about="#Age"/>
+              <owl:Class rdf:about="#Sub-Period"/>
+              <owl:Class rdf:about="#Period"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Super-Eon"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+        <owl:onClass>
+          <owl:Class rdf:about="#Epoch"/>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Epoch"/>
+              <owl:Class rdf:about="#Age"/>
+              <owl:Class rdf:about="#Sub-Period"/>
+              <owl:Class rdf:about="#Period"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Super-Eon"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeochronologicEra"/>
     </rdfs:subClassOf>
+    <skos:example>&#xD;
+isc:Calabrian&#xD;
+  rdf:type gts:Age ;&#xD;
+  rdf:type gts:GeochronologicEra ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdf:type time:ProperInterval ;&#xD;
+  gts:rank rank:Age ;&#xD;
+  rdfs:comment "older bound -1.80 Ma"@en ;&#xD;
+  rdfs:comment "younger bound -0.781 Ma"@en ;&#xD;
+  rdfs:label "Calabrian Age"@en ;&#xD;
+  skos:notation "a1.1.1.1.2.3"^^gts:EraCode ;&#xD;
+  skos:prefLabel "Calabr"@cs ;&#xD;
+  skos:prefLabel "Calabrian"@en ;&#xD;
+  time:hasBeginning isc:BaseCalabrian ;&#xD;
+  time:hasEnd isc:BaseMiddlePleistocene ;&#xD;
+  time:intervalDuring isc:Pleistocene ;&#xD;
+  time:intervalIn isc:Pleistocene ;&#xD;
+  time:intervalMeets isc:MiddlePleistocene ;&#xD;
+  time:intervalMetBy isc:Gelasian ;&#xD;
+.&#xD;
+</skos:example>
+    <rdfs:label>Age</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#rank"/>
+        </owl:onProperty>
+        <owl:hasValue>
+          <skos:Concept rdf:about="http://resource.geosciml.org/ontology/timescale/rank/Age">
+            <rdfs:label>Age</rdfs:label>
+            <rdf:type rdf:resource="#GeochronologicEraRank"/>
+          </skos:Concept>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#NumericEraBoundary">
+    <skos:example>&#xD;
+isc:BaseProterozoic&#xD;
+  rdf:type gts:NumericEraBoundary ;&#xD;
+  rdf:type thors:EraBoundary ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdf:type time:Instant ;&#xD;
+  gts:ratifiedGSSP true ;&#xD;
+  rdfs:label "Base of Proterozoic"@en ;&#xD;
+  skos:prefLabel "Base of Proterozoic"@en ;&#xD;
+  time:inTemporalPosition isc:BaseProterozoicTime ;&#xD;
+.</skos:example>
+    <skos:definition>Boundary between geochronologic eras, defined by an agreed chronometric position (i.e. numeric age). Typically denoted as the 'base of' the succeeding era</skos:definition>
     <owl:disjointWith rdf:resource="#GeochronologicBoundary"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -194,23 +642,243 @@
     <rdfs:label xml:lang="en">Numeric Era Boundary</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
-  <owl:Class rdf:ID="Eon">
+  <owl:Class rdf:about="#Eon">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Super-Eon"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass>
+          <owl:Class rdf:about="#Era"/>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass>
+          <owl:Class rdf:about="#Era"/>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:definition>Geochronologic era of rank 'Eon'</skos:definition>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Super-Eon"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:example>&#xD;
+isc:Proterozoic&#xD;
+  rdf:type gts:Eon ;&#xD;
+  rdf:type gts:GeochronologicEra ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdf:type time:ProperInterval ;&#xD;
+  gts:rank rank:Eon ;&#xD;
+  rdfs:comment "older bound -2500 Ma"@en ;&#xD;
+  rdfs:comment "younger bound -541.0 +|-1.0 Ma"@en ;&#xD;
+  rdfs:label "Proterozoic Eon"@en ;&#xD;
+  skos:notation "a2.1"^^gts:EraCode ;&#xD;
+  skos:prefLabel "Proterosoikum"@et ;&#xD;
+  skos:prefLabel "Proterozoic"@en ;&#xD;
+  time:hasBeginning isc:BaseProterozoic ;&#xD;
+  time:hasEnd isc:BasePhanerozoic ;&#xD;
+  time:intervalContains isc:Mesoproterozoic ;&#xD;
+  time:intervalFinishedBy isc:Neoproterozoic ;&#xD;
+  time:intervalFinishes isc:Precambrian ;&#xD;
+  time:intervalIn isc:Precambrian ;&#xD;
+  time:intervalMeets isc:Cambrian ;&#xD;
+  time:intervalMeets isc:Fortunian ;&#xD;
+  time:intervalMeets isc:Paleozoic ;&#xD;
+  time:intervalMeets isc:Phanerozoic ;&#xD;
+  time:intervalMeets isc:Terreneuvian ;&#xD;
+  time:intervalMetBy isc:Archean ;&#xD;
+  time:intervalMetBy isc:Neoarchean ;&#xD;
+  time:intervalStartedBy isc:Paleoproterozoic ;&#xD;
+.</skos:example>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#rank"/>
+        </owl:onProperty>
+        <owl:hasValue>
+          <skos:Concept rdf:about="http://resource.geosciml.org/ontology/timescale/rank/Eon">
+            <rdfs:label>Eon</rdfs:label>
+            <rdf:type rdf:resource="#GeochronologicEraRank"/>
+          </skos:Concept>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Super-Eon"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="#Era"/>
+        </owl:someValuesFrom>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+        <owl:onClass>
+          <owl:Class rdf:about="#Super-Eon"/>
+        </owl:onClass>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:maxQualifiedCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:label>Eon</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeochronologicEra"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="Super-Eon">
+  <owl:Class rdf:about="#Super-Eon">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass rdf:resource="#Super-Eon"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass rdf:resource="#Eon"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass rdf:resource="#Super-Eon"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass rdf:resource="#Eon"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:definition>Geochronologic era of rank 'Super-Eon'</skos:definition>
+    <skos:example>&#xD;
+isc:Precambrian&#xD;
+  rdf:type gts:GeochronologicEra ;&#xD;
+  rdf:type gts:Super-Eon ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdf:type time:ProperInterval ;&#xD;
+  gts:rank rank:Super-Eon ;&#xD;
+  rdfs:comment "older bound -4567 +|-1 Ma"@en ;&#xD;
+  rdfs:comment "younger bound -541.0 +|-1.0 Ma"@en ;&#xD;
+  rdfs:label "Precambrian Supereon"@en ;&#xD;
+  skos:notation "a2"^^gts:EraCode ;&#xD;
+  skos:prefLabel "Precambrian"@en ;&#xD;
+  skos:prefLabel "Précambrien"@fr ;&#xD;
+  time:hasBeginning isc:FormationOfEarth ;&#xD;
+  time:hasEnd isc:BasePhanerozoic ;&#xD;
+  time:intervalContains isc:Archean ;&#xD;
+  time:intervalFinishedBy isc:Proterozoic ;&#xD;
+  time:intervalMeets isc:Cambrian ;&#xD;
+  time:intervalMeets isc:Fortunian ;&#xD;
+  time:intervalMeets isc:Paleozoic ;&#xD;
+  time:intervalMeets isc:Phanerozoic ;&#xD;
+  time:intervalMeets isc:Terreneuvian ;&#xD;
+  time:intervalStartedBy isc:Hadean ;&#xD;
+.</skos:example>
     <rdfs:label>Super-Eon</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#Eon"/>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+        <owl:onClass rdf:resource="#Super-Eon"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeochronologicEra"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#GeochronologicEra">
+    <skos:example>&#xD;
+isc:Mesozoic&#xD;
+  rdf:type gts:Era ;&#xD;
+  rdf:type gts:GeochronologicEra ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdf:type time:ProperInterval ;&#xD;
+  rdfs:label "Mesozoic Era"@en ;&#xD;
+  skos:notation "a1.1.2"^^gts:EraCode ;&#xD;
+  skos:prefLabel "Mesosoikum"@et ;&#xD;
+  skos:prefLabel "Mesozoic"@en ;&#xD;
+  time:hasBeginning isc:BaseMesozoic ;&#xD;
+  time:hasEnd isc:BaseCenozoic ;&#xD;
+.&#xD;
+</skos:example>
+    <skos:definition>Named interval within the geologic timescale, of any rank</skos:definition>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="#EraCode"/>
         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#rank"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -225,25 +893,283 @@
     <rdfs:label xml:lang="en">Geochronologic Era</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
   </owl:Class>
-  <owl:Class rdf:ID="Epoch">
+  <owl:Class rdf:about="#Epoch">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Epoch"/>
+              <owl:Class rdf:about="#Period"/>
+              <owl:Class rdf:about="#Sub-Period"/>
+              <owl:Class rdf:about="#Super-Eon"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:label>Epoch</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#Age"/>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:example>&#xD;
+isc:Cisuralian&#xD;
+  rdf:type gts:Epoch ;&#xD;
+  rdf:type gts:GeochronologicEra ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdf:type time:ProperInterval ;&#xD;
+  gts:rank rank:Epoch ;&#xD;
+  rdfs:comment "older bound -298.9 +|-0.15 Ma"@en ;&#xD;
+  rdfs:comment "younger bound -272.95 +|-0.11 Ma"@en ;&#xD;
+  rdfs:label "Cisuralian Epoch"@en ;&#xD;
+  skos:notation "a1.1.3.1.3"^^gts:EraCode ;&#xD;
+  skos:prefLabel "Cisural"@cs ;&#xD;
+  skos:prefLabel "Cisuralian"@en ;&#xD;
+  skos:prefLabel "Kisuralis"@lt ;&#xD;
+  time:hasBeginning isc:BasePermian ;&#xD;
+  time:hasEnd isc:BaseGuadalupian ;&#xD;
+  time:intervalContains isc:Artinskian ;&#xD;
+  time:intervalContains isc:Sakmarian ;&#xD;
+  time:intervalFinishedBy isc:Kungurian ;&#xD;
+  time:intervalIn isc:Permian ;&#xD;
+  time:intervalMeets isc:Guadalupian ;&#xD;
+  time:intervalMeets isc:Roadian ;&#xD;
+  time:intervalMetBy isc:Carboniferous ;&#xD;
+  time:intervalMetBy isc:Gzhelian ;&#xD;
+  time:intervalMetBy isc:Pennsylvanian ;&#xD;
+  time:intervalMetBy isc:UpperMississippian ;&#xD;
+  time:intervalMetBy isc:UpperPennsylvanian ;&#xD;
+  time:intervalStartedBy isc:Asselian ;&#xD;
+  time:intervalStarts isc:Permian ;&#xD;
+.&#xD;
+</skos:example>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass rdf:resource="#Age"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Epoch"/>
+              <owl:Class rdf:about="#Period"/>
+              <owl:Class rdf:about="#Sub-Period"/>
+              <owl:Class rdf:about="#Super-Eon"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#rank"/>
+        </owl:onProperty>
+        <owl:hasValue>
+          <skos:Concept rdf:about="http://resource.geosciml.org/ontology/timescale/rank/Epoch">
+            <rdfs:label>Epoch</rdfs:label>
+            <rdf:type rdf:resource="#GeochronologicEraRank"/>
+          </skos:Concept>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="#GeochronologicEra"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+              <owl:Class rdf:about="#Epoch"/>
+              <owl:Class rdf:about="#Period"/>
+              <owl:Class rdf:about="#Sub-Period"/>
+              <owl:Class rdf:about="#Super-Eon"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass rdf:resource="#Age"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:definition>Geochronologic era of rank 'Epoch'</skos:definition>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Period"/>
+              <owl:Class rdf:about="#Sub-Period"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="StratigraphicEvent">
+    <skos:definition>Geologic event correlated with a specified stratotype. </skos:definition>
     <rdfs:label xml:lang="en">Stratigraphic Event</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:comment>A subclass of Geologic Event (placeholder) </rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="Era">
+  <owl:Class rdf:about="#Era">
     <rdfs:label>Era</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Super-Eon"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+        <owl:onClass rdf:resource="#Eon"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass rdf:resource="#Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Super-Eon"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Super-Eon"/>
+              <owl:Class rdf:about="#Eon"/>
+              <owl:Class rdf:about="#Era"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="#GeochronologicEra"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#Period"/>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:definition>Geochronologic era of rank 'Era'</skos:definition>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <owl:onClass rdf:resource="#Period"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:example>&#xD;
+isc:Mesoproterozoic&#xD;
+  rdf:type gts:Era ;&#xD;
+  rdf:type gts:GeochronologicEra ;&#xD;
+  rdf:type skos:Concept ;&#xD;
+  rdf:type time:ProperInterval ;&#xD;
+  gts:rank rank:Era ;&#xD;
+  rdfs:comment "older bound -1600 Ma"@en ;&#xD;
+  rdfs:comment "younger bound -1000 Ma"@en ;&#xD;
+  rdfs:label "Mesoproterozoic Era"@en ;&#xD;
+  skos:notation "a2.1.2"^^gts:EraCode ;&#xD;
+  skos:prefLabel "Mesoproterozoic"@en ;&#xD;
+  skos:prefLabel "Mesoproterozoico"@es ;&#xD;
+  time:hasBeginning isc:BaseMesoproterozoic ;&#xD;
+  time:hasEnd isc:BaseNeoproterozoic ;&#xD;
+  time:intervalContains isc:Ectasian ;&#xD;
+  time:intervalDuring isc:Proterozoic ;&#xD;
+  time:intervalFinishedBy isc:Stenian ;&#xD;
+  time:intervalIn isc:Proterozoic ;&#xD;
+  time:intervalMeets isc:Neoproterozoic ;&#xD;
+  time:intervalMeets isc:Tonian ;&#xD;
+  time:intervalMetBy isc:Paleoproterozoic ;&#xD;
+  time:intervalMetBy isc:Statherian ;&#xD;
+  time:intervalStartedBy isc:Calymmian ;&#xD;
+.&#xD;
+</skos:example>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#rank"/>
+        </owl:onProperty>
+        <owl:hasValue>
+          <skos:Concept rdf:about="http://resource.geosciml.org/ontology/timescale/rank/Era">
+            <rdfs:label>Era</rdfs:label>
+            <rdf:type rdf:resource="#GeochronologicEraRank"/>
+          </skos:Concept>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:ObjectProperty rdf:ID="era">
     <rdfs:range rdf:resource="#GeochronologicEra"/>
     <rdfs:label>geochronologic era</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:domain rdf:resource="#StratigraphicSection"/>
-    <rdfs:comment>geochronologic era corresponding with this section</rdfs:comment>
+    <rdfs:comment>geochronologic era corresponding with this stratigraphic section</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="correlatesWith">
     <rdfs:range>
@@ -259,7 +1185,17 @@
     <rdfs:comment>This property points from a geologic feature or event to a geochronologic element</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="positionalUncertainty">
-    <rdfs:label>Uncertainty in time position</rdfs:label>
+    <skos:example>&#xD;
+isc:BaseAeronianTime&#xD;
+  a time:TimePosition ;&#xD;
+  gts:positionalUncertainty isc:BaseAeronianUncertainty ;&#xD;
+  time:hasTRS &lt;http://resource.geosciml.org/classifier/cgi/geologicage/ma&gt; ;&#xD;
+  time:numericPosition 440.8 ;&#xD;
+.</skos:example>
+    <skos:definition>Uncertainty in a time position</skos:definition>
+    <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalDuration"/>
+    <rdfs:label>time position uncertainty</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalPosition"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="manifestedBy">
     <owl:inverseOf rdf:resource="#correlatesWith"/>
@@ -273,9 +1209,20 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
-    <rdfs:comment>This property points from a geochronologic element to a geologic feature</rdfs:comment>
+    <rdfs:comment>This property points from a geochronologic element to a geologic feature which shows characteristics associated with the event associated with the boundary or era</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#stratotype">
+    <skos:example>&#xD;
+isc:BaseAeronian&#xD;
+  a gts:GeochronologicBoundary ;&#xD;
+  a thors:EraBoundary ;&#xD;
+  a skos:Concept ;&#xD;
+  a time:Instant ;&#xD;
+  gts:stratotype isc:BaseAeronianSP ;&#xD;
+  rdfs:label "Base of Aeronian"@en ;&#xD;
+  skos:prefLabel "Base of Aeronian"@en ;&#xD;
+  time:inTemporalPosition isc:BaseAeronianTime ;&#xD;
+.</skos:example>
     <rdfs:range>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -294,22 +1241,14 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
-    <rdfs:comment>the characteristic point or section corresponding with a geochronologic concept</rdfs:comment>
+    <rdfs:comment>the characteristic stratigraphic point or section corresponding with a geochronologic concept</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="boundary">
     <rdfs:range rdf:resource="#GeochronologicBoundary"/>
     <rdfs:label>geochronologic boundary</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:domain rdf:resource="#StratigraphicPoint"/>
-    <rdfs:comment>geochronologic boundary corresponding with this point</rdfs:comment>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="rank">
-    <rdfs:range rdf:resource="#GeochronologicEraRank"/>
-    <rdfs:label>Geochronologic era rank</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:domain rdf:resource="#GeochronologicEra"/>
-    <rdfs:comment>Elements of all ranks are included in the class 'gts:GeochronologicEra'. &#xD;
-The rank may be indicated by membership of a sub-class, or is indicated using the 'gts:rank' property.</rdfs:comment>
+    <rdfs:comment>geochronologic boundary corresponding with this stratigraphic point</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="event">
     <rdfs:range rdf:resource="#StratigraphicEvent"/>
@@ -325,7 +1264,51 @@ The rank may be indicated by membership of a sub-class, or is indicated using th
     </rdfs:domain>
     <rdfs:comment>stratigraphic event corresponding with this boundary or point</rdfs:comment>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#rank">
+    <skos:example>&#xD;
+isc:Aalenian&#xD;
+  a gts:Age ;&#xD;
+  a gts:GeochronologicEra ;&#xD;
+  a skos:Concept ;&#xD;
+  a time:ProperInterval ;&#xD;
+  gts:rank rank:Age ;&#xD;
+.</skos:example>
+    <rdfs:range rdf:resource="#GeochronologicEraRank"/>
+    <rdfs:label>Geochronologic era rank</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="#GeochronologicEra"/>
+    <rdfs:comment>Elements of all ranks are included in the class 'gts:GeochronologicEra'. &#xD;
+The rank may be indicated by membership of a sub-class, or is indicated using the 'gts:rank' property.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="boundaryLevel">
+    <skos:example>&#xD;
+isc:BaseBathonianSP&#xD;
+  a gts:StratigraphicPoint ;&#xD;
+  gts:boundaryLevel "Base of limestone bed RB07 "@en ;&#xD;
+  gts:correlationEvent "Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)"@en ;&#xD;
+  gts:ratifiedGSSP true ;&#xD;
+  gts:status "Ratified 2008"@en ;&#xD;
+  geo:hasGeometry isc:BaseBathonian-location ;&#xD;
+  rdfs:comment "Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  "@en ;&#xD;
+  rdfs:label "Stratotype Point Base of Bathonian"@en ;&#xD;
+.</skos:example>
+    <rdfs:label>boundary level</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:domain rdf:resource="#StratigraphicPoint"/>
+    <rdfs:comment>the level within the section of the point characterizing the boundary</rdfs:comment>
+  </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#ratifiedGSSP">
+    <skos:example>&#xD;
+isc:BaseBathonianSP&#xD;
+  a gts:StratigraphicPoint ;&#xD;
+  gts:boundaryLevel "Base of limestone bed RB07 "@en ;&#xD;
+  gts:correlationEvent "Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)"@en ;&#xD;
+  gts:ratifiedGSSP true ;&#xD;
+  gts:status "Ratified 2008"@en ;&#xD;
+  geo:hasGeometry isc:BaseBathonian-location ;&#xD;
+  rdfs:comment "Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  "@en ;&#xD;
+  rdfs:label "Stratotype Point Base of Bathonian"@en ;&#xD;
+.</skos:example>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <rdfs:label>ratified</rdfs:label>
     <rdfs:domain>
@@ -337,26 +1320,44 @@ The rank may be indicated by membership of a sub-class, or is indicated using th
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
-    <rdfs:comment>'true' if ratified by ICS</rdfs:comment>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="boundaryLevel">
-    <rdfs:label>boundary level</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:domain rdf:resource="#StratigraphicPoint"/>
-    <rdfs:comment>the level within the section of the point characterizing the boundary</rdfs:comment>
+    <rdfs:comment>flag to indicate the status of the calibration details of a geochronologic boundary - 'true' if ratified by ICS</rdfs:comment>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#geologicDescription">
+    <skos:definition>geologic description of the stratigraphic section</skos:definition>
     <rdfs:label>geologic description</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:domain rdf:resource="#StratigraphicSection"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#correlationEvent">
+    <skos:example>&#xD;
+isc:BaseBathonianSP&#xD;
+  a gts:StratigraphicPoint ;&#xD;
+  gts:boundaryLevel "Base of limestone bed RB07 "@en ;&#xD;
+  gts:correlationEvent "Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)"@en ;&#xD;
+  gts:ratifiedGSSP true ;&#xD;
+  gts:status "Ratified 2008"@en ;&#xD;
+  geo:hasGeometry isc:BaseBathonian-location ;&#xD;
+  rdfs:comment "Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  "@en ;&#xD;
+  rdfs:label "Stratotype Point Base of Bathonian"@en ;&#xD;
+.</skos:example>
     <rdfs:label>correlation event</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:domain rdf:resource="#StratigraphicPoint"/>
     <rdfs:comment>the stratigraphic event that is intended to be represented by this stratigraphic point</rdfs:comment>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#status">
+    <skos:example>&#xD;
+isc:BaseBathonianSP&#xD;
+  a gts:StratigraphicPoint ;&#xD;
+  gts:boundaryLevel "Base of limestone bed RB07 "@en ;&#xD;
+  gts:correlationEvent "Ammonite FAD Gonolkite convergens (defines Base of Zigzagiceras zigzag Zone)"@en ;&#xD;
+  gts:ratifiedGSSP true ;&#xD;
+  gts:status "Ratified 2008"@en ;&#xD;
+  geo:hasGeometry isc:BaseBathonian-location ;&#xD;
+  rdfs:comment "Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  "@en ;&#xD;
+  rdfs:label "Stratotype Point Base of Bathonian"@en ;&#xD;
+.</skos:example>
+    <skos:definition>Description of the formal ICS status of this boundary and point</skos:definition>
     <rdfs:label>status</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:domain>
@@ -370,12 +1371,24 @@ The rank may be indicated by membership of a sub-class, or is indicated using th
     <rdfs:comment>formal ICS status of this boundary and point</rdfs:comment>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#geologicSetting">
+    <skos:definition>geologic setting of the stratigraphic section</skos:definition>
     <rdfs:label>geologic setting</rdfs:label>
     <rdfs:isDefinedBy rdf:resource=""/>
     <rdfs:domain rdf:resource="#StratigraphicSection"/>
   </owl:DatatypeProperty>
-  <rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#Medium.name">
-    <rdfs:label>Medium.name</rdfs:label>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/rank/">
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/ontology/timescale/rank/Super-Eon">
+        <rdfs:label>Super-Eon</rdfs:label>
+        <rdf:type rdf:resource="#GeochronologicEraRank"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Sub-Period"/>
+    <skos:member rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Period"/>
+    <skos:member rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Era"/>
+    <skos:member rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+    <skos:member rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Eon"/>
+    <skos:member rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Age"/>
   </rdf:Description>
 </rdf:RDF>
 
