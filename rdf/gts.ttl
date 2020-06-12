@@ -756,7 +756,7 @@ gts:StratigraphicSection
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty gts:geologicSetting ;
     ] ;
-  skos:definition "An agreed stratigraphic section, which hosts a stratigrpahic point that is used to calibrate the temporal position (age) of a boundary within the geologic timescale. " ;
+  skos:definition "An agreed stratigraphic section, which hosts a stratigraphic point that is used to calibrate the temporal position (age) of a boundary within the geologic timescale. " ;
 .
 gts:Sub-Period
   a owl:Class ;
@@ -929,14 +929,6 @@ isc:Precambrian
   time:intervalStartedBy isc:Hadean ;
 .""" ;
 .
-gts:boundary
-  a owl:ObjectProperty ;
-  rdfs:comment "geochronologic boundary corresponding with this stratigraphic point" ;
-  rdfs:domain gts:StratigraphicPoint ;
-  rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/gts> ;
-  rdfs:label "geochronologic boundary" ;
-  rdfs:range gts:GeochronologicBoundary ;
-.
 gts:boundaryLevel
   a owl:DatatypeProperty ;
   rdfs:comment "the level within the section of the point characterizing the boundary" ;
@@ -985,14 +977,6 @@ isc:BaseBathonianSP
   rdfs:comment \"Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  \"@en ;
   rdfs:label \"Stratotype Point Base of Bathonian\"@en ;
 .""" ;
-.
-gts:era
-  a owl:ObjectProperty ;
-  rdfs:comment "geochronologic era corresponding with this stratigraphic section" ;
-  rdfs:domain gts:StratigraphicSection ;
-  rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/gts> ;
-  rdfs:label "geochronologic era" ;
-  rdfs:range gts:GeochronologicEra ;
 .
 gts:event
   a owl:ObjectProperty ;
@@ -1091,6 +1075,22 @@ isc:BaseBathonianSP
   rdfs:comment \"Ravin du Bes, Bas Auran area, Alpes de Haute Provence, France  \"@en ;
   rdfs:label \"Stratotype Point Base of Bathonian\"@en ;
 .""" ;
+.
+gts:representsBoundary
+  a owl:ObjectProperty ;
+  rdfs:comment "geochronologic boundary corresponding with this stratigraphic point" ;
+  rdfs:domain gts:StratigraphicPoint ;
+  rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/gts> ;
+  rdfs:label "geochronologic boundary" ;
+  rdfs:range gts:GeochronologicBoundary ;
+.
+gts:representsEra
+  a owl:ObjectProperty ;
+  rdfs:comment "geochronologic era corresponding with this stratigraphic section" ;
+  rdfs:domain gts:StratigraphicSection ;
+  rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/gts> ;
+  rdfs:label "geochronologic era" ;
+  rdfs:range gts:GeochronologicEra ;
 .
 gts:status
   a owl:DatatypeProperty ;
