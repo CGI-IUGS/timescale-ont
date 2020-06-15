@@ -947,19 +947,6 @@ isc:BaseBathonianSP
   rdfs:label \"Stratotype Point Base of Bathonian\"@en ;
 .""" ;
 .
-gts:correlatesWith
-  a owl:ObjectProperty ;
-  rdfs:comment "This property points from a geologic feature or event to a geochronologic element" ;
-  rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/gts> ;
-  rdfs:label "correlating boundary or era" ;
-  rdfs:range [
-      a owl:Class ;
-      owl:unionOf (
-          gts:GeochronologicBoundary
-          gts:GeochronologicEra
-        ) ;
-    ] ;
-.
 gts:correlationEvent
   a owl:DatatypeProperty ;
   rdfs:comment "the stratigraphic event that is intended to be represented by this stratigraphic point" ;
@@ -1005,20 +992,6 @@ gts:geologicSetting
   rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/gts> ;
   rdfs:label "geologic setting" ;
   skos:definition "geologic setting of the stratigraphic section" ;
-.
-gts:manifestedBy
-  a owl:ObjectProperty ;
-  rdfs:comment "This property points from a geochronologic element to a geologic feature which shows characteristics associated with the event associated with the boundary or era" ;
-  rdfs:domain [
-      a owl:Class ;
-      owl:unionOf (
-          gts:GeochronologicBoundary
-          gts:GeochronologicEra
-        ) ;
-    ] ;
-  rdfs:isDefinedBy <http://resource.geosciml.org/ontology/timescale/gts> ;
-  rdfs:label "geologic manifestation" ;
-  owl:inverseOf gts:correlatesWith ;
 .
 gts:positionalUncertainty
   a owl:ObjectProperty ;
