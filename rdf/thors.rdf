@@ -38,7 +38,7 @@
   &#xD;
   The THORS ontology introduces the classes thors:Era and thors:eraBoundary which are elements in a thors:ReferenceSystem. &#xD;
 &#xD;
-  The temporal positions of boundaries, and topological relationships between Eras are aligned to the Allen temporal algebra, as impl;emented in &lt;a href='https://www.w3.org/TR/owl-time/'&gt;OWL-Time&lt;/a&gt;.&#xD;
+  The temporal positions of boundaries, and topological relationships between Eras are aligned to the Allen temporal algebra, as implemented in &lt;a href='https://www.w3.org/TR/owl-time/'&gt;OWL-Time&lt;/a&gt;.&#xD;
   </dcterms:description>
     <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>

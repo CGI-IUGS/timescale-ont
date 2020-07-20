@@ -51,7 +51,7 @@
     "contributor" : "https://orcid.org/0000-0001-6041-5302",
     "created" : "2011-01-01",
     "creator" : "https://orcid.org/0000-0002-3884-3420",
-    "description" : "An OWL representation of the model for Temporal Hierarchical Ordinal Reference Systems defined in GeoSciML v3, and modeled after ISO 19108. \r\n  \r\n  The THORS ontology introduces the classes thors:Era and thors:eraBoundary which are elements in a thors:ReferenceSystem. \r\n\r\n  The temporal positions of boundaries, and topological relationships between Eras are aligned to the Allen temporal algebra, as impl;emented in <a href='https://www.w3.org/TR/owl-time/'>OWL-Time</a>.\r\n  ",
+    "description" : "An OWL representation of the model for Temporal Hierarchical Ordinal Reference Systems defined in GeoSciML v3, and modeled after ISO 19108. \r\n  \r\n  The THORS ontology introduces the classes thors:Era and thors:eraBoundary which are elements in a thors:ReferenceSystem. \r\n\r\n  The temporal positions of boundaries, and topological relationships between Eras are aligned to the Allen temporal algebra, as implemented in <a href='https://www.w3.org/TR/owl-time/'>OWL-Time</a>.\r\n  ",
     "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
     "modified" : "2020-05-31",
     "rights" : "Copyright 2012-2020 CSIRO",
