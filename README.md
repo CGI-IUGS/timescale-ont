@@ -13,4 +13,6 @@ The structure is based on the model described in UML in [Cox & Richard 2005 _A f
 An alignment with the ISO 19100 models is now provided through 
 [thors/iso.ttl](./rdf/thors/iso.ttl) and [gts/iso.ttl](./rdf/gts/iso.ttl)
 
+Datasets (timescales) that use this ontology are in https://github.com/CGI-IUGS/timescale-data. 
+
 **NOTE:** this repository is a subtree forked from https://github.com/GeoscienceAustralia/geosciml.org/tree/master/resource/static/ontology/timescale
