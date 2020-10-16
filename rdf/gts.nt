@@ -176,7 +176,7 @@ _:B9254b24687b6186a82eb8801179871c7 <http://www.w3.org/2002/07/owl#qualifiedCard
 _:B9254b24687b6186a82eb8801179871c7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#intervalFinishedBy> .
 _:B9254b24687b6186a82eb8801179871c7 <http://www.w3.org/2002/07/owl#onClass> <http://resource.geosciml.org/ontology/timescale/gts#Eon> .
 _:B9254b24687b6186a82eb8801179871c7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://orcid.org/0000-0001-6041-5302> <https://schema.org/name> "Stepehen M Richard"@en .
+<https://orcid.org/0000-0001-6041-5302> <https://schema.org/name> "Stephen M Richard"@en .
 <https://orcid.org/0000-0001-6041-5302> <https://schema.org/identifier> "https://orcid.org/0000-0001-6041-5302"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://orcid.org/0000-0001-6041-5302> <https://schema.org/email> <mailto:smrTucson@gmail.com> .
 <https://orcid.org/0000-0001-6041-5302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .

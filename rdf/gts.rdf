@@ -31,7 +31,7 @@
     <skos:changeNote>2017-04-28 - removed imports ISO ontologies</skos:changeNote>
     <dcterms:contributor>
       <sdo:Person rdf:about="https://orcid.org/0000-0001-6041-5302">
-        <sdo:name xml:lang="en">Stepehen M Richard</sdo:name>
+        <sdo:name xml:lang="en">Stephen M Richard</sdo:name>
         <sdo:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
         >https://orcid.org/0000-0001-6041-5302</sdo:identifier>
         <sdo:email rdf:resource="mailto:smrTucson@gmail.com"/>

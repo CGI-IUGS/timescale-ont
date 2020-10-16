@@ -227,7 +227,7 @@ time:intervalStartedBy
   a sdo:Person ;
   sdo:email <mailto:smrTucson@gmail.com> ;
   sdo:identifier "https://orcid.org/0000-0001-6041-5302"^^xsd:anyURI ;
-  sdo:name "Stepehen M Richard"@en ;
+  sdo:name "Stephen M Richard"@en ;
 .
 <https://orcid.org/0000-0002-3884-3420>
   a owl:NamedIndividual ;

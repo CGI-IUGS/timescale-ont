@@ -119,7 +119,7 @@ _:B892d78daa1e7fef231bd570b9d4ebb35 <http://www.w3.org/2002/07/owl#inverseOf> <h
 _:B892d78daa1e7fef231bd570b9d4ebb35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 _:Bd558f94c61879f052d766458932467fb <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/2006/time#hasEnd> .
 _:Bd558f94c61879f052d766458932467fb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://orcid.org/0000-0001-6041-5302> <https://schema.org/name> "Stepehen M Richard"@en .
+<https://orcid.org/0000-0001-6041-5302> <https://schema.org/name> "Stephen M Richard"@en .
 <https://orcid.org/0000-0001-6041-5302> <https://schema.org/identifier> "https://orcid.org/0000-0001-6041-5302"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://orcid.org/0000-0001-6041-5302> <https://schema.org/email> <mailto:smrTucson@gmail.com> .
 <https://orcid.org/0000-0001-6041-5302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
